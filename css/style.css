@@ -1,0 +1,1085 @@
+:root {
+    --primary-color: #FFD966;
+    --font-size-normal: 16px;
+    --font-size-heading: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: var(--primary-color);
+}
+
+.header-col {
+    height: 100px;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar ul {
+    width: 100%;
+    margin-right: 50px;
+    gap: 5px;
+
+}
+
+.navbar ul li {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.navbar ul li a {
+    font-weight: 900;
+    height: 45px;
+    font-size: var(--font-size-heading);
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #c7c2c2;
+    border-radius: 10px;
+}
+
+.logo {
+    height: 120px;
+}
+
+.imgLogo2 {
+    width: 90%;
+}
+
+.navbar-toggler-btn {
+    padding: 5px 10px;
+}
+
+#topNavbarUl {
+    text-align: center;
+    transition: all 1.5s;
+    overflow: hidden;
+    max-height: 0px;
+}
+
+#topNavbarUl li {
+    list-style-type: none;
+    border-bottom: 2px solid black;
+    width: 97%;
+    padding: 10px;
+}
+
+#topNavbarUl li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 75vh;
+    left: -250px;
+    background-color: #111;
+    padding-top: 20px;
+    z-index: 3;
+    transition: left 0.3s;
+}
+
+.sidebar a {
+    padding: 7px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #c7c2c2;
+}
+
+.toggle-btn {
+    position: fixed;
+    margin-top: 5px;
+    left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+    background: rgb(233, 183, 48);
+    border-radius: 5px;
+    border: none;
+    z-index: 4;
+    padding: 0px 10px;
+}
+
+#sideNavbarNav ul {
+    font-weight: 900;
+    padding-left: 25px;
+    padding-right: 5px;
+    gap: 10px 0px;
+}
+
+#sideNavbarNav ul li {
+    border: 2px solid black;
+    padding: 7px 0px;
+    border-radius: 10px;
+}
+
+#sideNavbarNav ul li a {
+    font-size: var(--font-size-heading);
+    display: block;
+}
+
+#sideNavbarNav ul li:hover {
+    background-color: #c7c2c2;
+}
+
+.centerpanel {
+    border: 2px solid black;
+    border-top: 0px;
+
+}
+
+.DashboardCol {
+    padding-right: 50px;
+
+}
+
+.DashboardContentArea {
+    border-top: 2px solid black;
+}
+
+.SchoolName {
+    background-color: #FFC000;
+    border: 2px solid black;
+
+}
+
+.DashboardCol h1 {
+    font-weight: 700;
+}
+
+.DashboardDate {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    background-color: #FFD966;
+
+}
+
+.DashboardContentArea .mainpicture img {
+    height: 443px;
+    width: 100%;
+
+}
+
+.quickNotes button {
+    position: relative;
+
+}
+
+.quickNotesContainer {
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.birthdays {
+    background-color: rgb(69, 191, 212);
+    line-height: 0.4;
+}
+
+/* Dashboard Style end */
+/* Add New Student Start */
+.date {
+    position: absolute;
+    top: 0px;
+    font-weight: 700;
+    font-size: 22px;
+    right: 10px;
+}
+
+.addStudentCenterPanel {
+    border: 2px solid black;
+    height: 82vh;
+    overflow-y: scroll;
+}
+
+.ImageBox {
+    border: 2px solid rgb(155, 148, 148);
+    padding: 2px 10px;
+    background-color: white;
+    height: 100%;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-heading);
+
+}
+
+.namePortion {
+    border: 2px solid rgb(155, 148, 148);
+    background-color: white;
+}
+
+.namePortion label {
+    line-height: 1px;
+}
+
+.namePortion input {
+    border: none;
+    border-bottom: 2px solid rgb(155, 148, 148);
+    width: 65%;
+}
+
+.addressPortion {
+    border: 2px solid rgb(155, 148, 148);
+    margin-top: 2px;
+    background-color: white;
+}
+
+.addressPortion input {
+    border: none;
+}
+
+.addressPortion label {
+    line-height: 1px;
+}
+
+.addressPortion .addressInput {
+
+    border-bottom: 2px solid rgb(155, 148, 148);
+    width: 87%;
+}
+
+.addressPortion .addressCol {
+
+    border: 1px solid rgb(155, 148, 148);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.addressPortion .addressCol input {
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 70%;
+
+}
+
+.DOBPortion .row {
+    border: 2px solid rgb(155, 148, 148);
+    background-color: white;
+    margin-bottom: 2px;
+    padding: 3px 0px;
+
+}
+
+.DOBPortion input {
+    border: 2px solid rgb(155, 148, 148);
+}
+
+.DOBPortion .cellPhone input {
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid rgb(155, 148, 148);
+}
+
+.DOBPortion .dateTime .col {
+    padding-right: 0px;
+
+}
+
+.emailRow {
+    border: 2px solid rgb(155, 148, 148);
+    padding: 3px 0px;
+    background-color: white;
+}
+
+.emailRow .email {
+    border: none;
+    border-bottom: 2px solid rgb(155, 148, 148);
+    width: 90%;
+}
+
+.EmergencyContact {
+    background-color: white;
+    border: 2px solid rgb(155, 148, 148);
+
+}
+
+.EmergencyContact input {
+    width: 100%;
+}
+
+.MedicalCondition {
+    border: 2px solid rgb(155, 148, 148);
+    background-color: white;
+}
+
+.MedicalCondition input {
+    width: 40%;
+    margin-left: 5px;
+    border: none;
+    border-bottom: 2px solid rgb(155, 148, 148);
+}
+
+.trainingInfo .row .trainingCol {
+    border: 2px solid rgb(155, 148, 148);
+    background-color: white;
+}
+
+.trainingInfo .row .trainingCol .col input {
+    padding: 1px 0px;
+    border: none;
+    width: 100%;
+    margin: 3px 0px;
+    border-bottom: 2px solid rgb(155, 148, 148);
+
+}
+
+.notes {
+    padding-right: 16px;
+    padding-left: 0%;
+}
+
+.notes .stdNotes {
+    border: 2px solid rgb(155, 148, 148);
+    background-color: white;
+    height: 99%;
+    width: 100%;
+}
+
+.classesContainer {
+    border: 2px solid rgb(155, 148, 148);
+    background-color: white;
+    margin-right: 4px;
+
+}
+
+.classesContainer .classes {
+    border: 2px solid rgb(155, 148, 148);
+}
+
+.rankSectionRow {
+    padding-bottom: 5px;
+}
+
+.rankLeft {
+    border: 2px solid rgb(155, 148, 148);
+}
+
+.rankLeft .topCheck {
+    width: 25px;
+    height: 25px;
+
+}
+
+.rankLeft2 {
+    border: 2px solid rgb(155, 148, 148);
+    padding-bottom: 13px;
+}
+
+.rankLeft2 .grades {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0px 4px;
+}
+
+.rankLeft2 .grades input {
+    width: 100%;
+}
+
+.rankLeft2 .row {
+    height: 25px;
+    margin-top: 12.8px;
+    text-align: center;
+
+}
+
+.rankLeft2 .chkBoxes {
+    height: 25px;
+    margin-top: 20%;
+    width: 25px;
+}
+
+.rankRight {
+    border: 2px solid rgb(155, 148, 148);
+    background-color: antiquewhite;
+
+}
+
+.rankRight .StdName {
+    border: 1px Solid rgb(155, 148, 148);
+}
+
+.rankSectionRow {
+    padding-right: 14px;
+}
+
+.rankRight .rankColor {
+    border: 1px solid rgb(155, 148, 148);
+    padding: 2px 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.rankRight .promotionDate input {
+    width: 100%;
+}
+
+.rankRight .leftRecord {
+    margin-top: 7.8px;
+}
+
+.rankRight span {
+    border: 1px solid rgb(155, 148, 148);
+    padding: 2px 15px;
+}
+
+.rankRight .rightRecord {
+    margin-top: 7.7px;
+}
+
+.rankRight .promotionDateHeading {
+    margin: 22px 0px;
+}
+
+.MembershipSection {
+    border: 2px solid rgb(155, 148, 148);
+    background-color: white;
+    height: 580px;
+    overflow-y: scroll;
+}
+
+.MembershipSection h5 {
+    border: 2px solid rgb(155, 148, 148);
+}
+
+.MembershipSection .Description {
+    border: 2px solid rgb(155, 148, 148);
+    width: fit-content;
+    font-size: 20px;
+    margin: auto;
+}
+
+.MembershipSection .memChkBox {
+    margin: auto;
+}
+
+.MembershipSection .membershipRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MembershipSection .memChkBox input {
+    width: 25px;
+    height: 25px;
+}
+
+.MembershipSection .memRecord {
+    border: 2px solid rgb(155, 148, 148);
+    width: fit-content;
+    padding: 5px 10px;
+    line-height: 16px;
+    font-weight: 700;
+    font-size: var(--font-size-heading);
+}
+
+.PaymentSection {
+    border: 2px solid rgb(155, 148, 148);
+    background-color: white;
+
+}
+
+.PaymentSection h5 {
+    border: 2px solid rgb(155, 148, 148);
+
+}
+
+.PaymentSection .paymentSection {
+    font-size: var(--font-size-heading);
+    text-align: center;
+}
+
+.PaymentSection .input {
+    border: none;
+    border-bottom: 2px solid rgb(155, 148, 148);
+}
+
+.PaymentSection .inputYes {
+    border: none;
+    border-bottom: 2px solid rgb(155, 148, 148);
+    width: 60%;
+    max-height: 25px;
+
+}
+
+.PaymentSection .inputNo {
+    border: none;
+    border-bottom: 2px solid rgb(155, 148, 148);
+    width: 60%;
+    max-height: 25px;
+
+}
+
+.PaymentSection .memPlan {
+    width: 100%;
+}
+
+.PaymentSection .inputAmount {
+    border: 1px solid black;
+    border-top: 3px solid rgb(155, 148, 148);
+    width: 100%;
+
+}
+
+.PaymentSection .days {
+    border: 2px solid rgb(155, 148, 148);
+    padding: 10px;
+}
+
+.PaymentSection .days input {
+    width: 20%;
+}
+
+.PaymentSection .duration span {
+    display: grid;
+    border: 2px solid rgb(155, 148, 148);
+    width: fit-content;
+    padding: 1px 5px;
+    margin-bottom: 2px;
+}
+
+.PaymentSection .entryFee {
+    border: none;
+    border-bottom: 2px solid rgb(155, 148, 148);
+    width: 15%;
+}
+
+.PaymentSection .Walver {
+    width: 25px;
+    height: 100%;
+}
+
+.submitBtn {
+    float: right;
+}
+
+.submitBtn button {
+    width: 200px;
+    font-weight: bold;
+    padding: 2px 0px;
+    background-color: rgb(62, 250, 87);
+}
+
+/* Students Page Css Starts from here */
+
+
+#myTab {
+    border: none;
+}
+
+#myTab button {
+    color: black;
+    font-weight: bold;
+}
+
+#myTabContent {
+    height: 77vh;
+}
+
+.StudentContent {
+    border: 2px solid rgb(155, 148, 148);
+    margin-right: 50px;
+}
+
+.StudentContent .tabpanel {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.StudentContent .StdHeading {
+    width: fit-content;
+    margin: auto;
+    font-size: 36px;
+}
+
+.StudentContent .paymentDue {
+    border: 2px solid rgb(155, 148, 148);
+    width: fit-content;
+    float: right;
+    background-color: white;
+    padding: 0px 0px 0px 10px;
+    display: flex;
+}
+
+.StudentContent .paymentDue .redBox {
+    border-left: 2px solid rgb(155, 148, 148);
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    background-color: red;
+}
+
+#dateDisplay {
+    font-weight: bold;
+    font-size: var(--font-size-heading);
+}
+
+.activeContainer button {
+    font-weight: bold;
+}
+
+.activeContainer .record .col div {
+    border: 2px solid black;
+    width: fit-content;
+    padding: 1px 5px;
+    margin: auto;
+    background-color: white;
+}
+
+.activeContainer .headings {
+    font-weight: bold;
+    font-size: var(--font-size-heading);
+}
+
+.activeContainer .record .classAsign {
+    height: 50px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.InactiveContainer .headings {
+    font-weight: bold;
+    font-size: var(--font-size-heading);
+}
+
+.InactiveContainer .record .col div {
+    border: 2px solid black;
+    width: fit-content;
+    padding: 1px 5px;
+    margin: auto;
+    background-color: white;
+}
+
+.InactiveContainer .record .classAsign {
+    height: 50px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.FrozenContainer .headings {
+    font-weight: bold;
+    font-size: var(--font-size-heading);
+}
+
+.FrozenContainer .record .col div {
+    border: 2px solid black;
+    width: fit-content;
+    padding: 1px 5px;
+    margin: auto;
+    background-color: white;
+}
+
+.FrozenContainer .record .classAsign {
+    height: 50px;
+    width: 100%;
+    overflow: scroll;
+}
+
+#birthdayPageDate {
+    font-weight: bold;
+    font-size: var(--font-size-heading);
+}
+
+.BirthdaysPage .EmailText .col div {
+    border: 2px solid black;
+    width: fit-content;
+    margin: auto;
+    padding: 2px 10px;
+    background-color: white;
+}
+
+.BirthdaysPage .tableDiv {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableHeadings {
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+.BirthdaysPage .table td {
+    background-color: lightblue;
+    border: 1px solid black;
+
+}
+
+.BirthdaysPage .tableDiv2 {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableDiv2 .table td {
+    border: 1px solid black;
+    background-color: antiquewhite;
+
+}
+
+.BirthdaysPage .tableDiv3 {
+    border: 1px solid black;
+    background-color: cyan;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableDiv3 .table td {
+    border: 1px solid black;
+    background-color: cyan;
+
+}
+
+.BirthdaysPage .tableDiv4 {
+    border: 1px solid black;
+    background-color: coral;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableDiv4 .table td {
+    border: 1px solid black;
+    background-color: coral;
+
+}
+
+.BirthdaysPage .tableDiv5 {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableDiv5 .table td {
+    border: 1px solid black;
+    background-color: antiquewhite;
+
+}
+
+.BirthdaysPage .tableDiv6 {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableDiv6 .table td {
+    border: 1px solid black;
+    background-color: antiquewhite;
+
+}
+
+.BirthdaysPage .tableDiv7 {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableDiv7 .table td {
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
+
+.BirthdaysPage .tableDiv8 {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableDiv8 .table td {
+    border: 1px solid black;
+    background-color: antiquewhite;
+
+}
+
+.BirthdaysPage .tableDiv9 {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableDiv9 .table td {
+    border: 1px solid black;
+    background-color: antiquewhite;
+
+}
+
+.BirthdaysPage .tableDiv10 {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableDiv10 .table td {
+    border: 1px solid black;
+    background-color: antiquewhite;
+
+}
+
+.BirthdaysPage .tableDiv11 {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableDiv11 .table td {
+    border: 1px solid black;
+    background-color: antiquewhite;
+
+}
+
+.BirthdaysPage .tableDiv12 {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 10px;
+
+}
+
+.BirthdaysPage .tableDiv12 .table td {
+    border: 1px solid black;
+    background-color: antiquewhite;
+
+}
+
+/* rank page styling */
+.rankAddForm {
+    max-width: 550px;
+    margin: auto;
+}
+
+.rankPageDiv {
+    border: 2px solid black;
+    margin-right: 50px;
+}
+
+.rankPageDiv form {
+    border: 2px solid black;
+    padding: 0px 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.rankPageDiv form label {
+    font-weight: bold;
+}
+
+.rankPageDiv form input {
+    border: 2px solid black;
+    border-radius: 3px;
+
+}
+
+.rankPageDiv .styleName {
+    width: fit-content;
+    border: 1px solid #111;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 15px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.rankPageDiv #rankPageDate {
+    width: fit-content;
+    float: right;
+    padding-right: 5px;
+    font-weight: bold;
+    font-size: var(--font-size-heading);
+}
+
+.rankPageDiv .rankHeading {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.rankPageDiv .rankTableHeading {
+    border: 1px solid black;
+    font-weight: bold;
+    width: fit-content;
+    padding: 0px 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.rankPageDiv .rankTable div {
+    border: 1px solid rgb(155, 148, 148);
+    text-align: center;
+}
+
+.rankPageDiv .rankTable .rankColor {
+    background-color: #c7c2c2;
+    width: 95%;
+    height: 20px;
+    margin: auto;
+}
+
+.rankPageDiv .tableContentRow {
+    margin: 0px 20px;
+    overflow-y: scroll;
+    height: 60vh;
+}
+
+.rankPageDiv .rankTable img {
+    max-height: 30px;
+}
+
+.rankPageDiv #requirementTabDate {
+    font-weight: bold;
+    font-size: var(--font-size-heading);
+}
+
+.rankPageDiv .SashColor {
+    border: 2px solid black;
+    background-color: orange;
+}
+
+.rankPageDiv .requirementHeading {
+    font-size: 30px;
+    margin: auto;
+}
+
+.rankPageDiv .movesForm {
+    height: 150px;
+}
+
+.rankPageDiv .blocks {
+    background-color: white;
+    max-width: 250px;
+    height: 150px;
+    margin: auto;
+}
+
+.ClassSheduleContent {
+    border: 2px solid black;
+    margin-right: 50px;
+    min-height: 83vh;
+
+}
+
+/* Class schedule css  starts from here */
+.ClassSheduleContent .addClassFormDiv {
+    max-width: 700px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 5%;
+    background-color: white;
+}
+
+.ClassSheduleContent .addClassFormDiv form {
+    border: none;
+}
+
+.ClassSheduleContent .addClassFormDiv form input {
+    width: 60%;
+}
+
+.ClassSheduleContent .addClassFormDiv form button {
+    padding: 0px 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.ClassSheduleContent .addClassFormDiv form .tableDiv {
+    height: 150px;
+    background-color: lightgray;
+    border: 2px solid black;
+    overflow-y: scroll;
+}
+
+.ClassSheduleContent .allClassesDetailDiv {
+    max-width: 800px;
+    margin: auto;
+}
+
+.ClassSheduleContent .allClassesDetailDiv .heading div {
+    font-size: 22px;
+}
+
+.ClassSheduleContent .scheduleManagementDiv .heading {
+    font-size: 22px;
+
+}
+
+.ClassSheduleContent .scheduleManagementDiv .tableCol {
+    height: 66vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.ClassSheduleContent .ScheduleDiv {
+    border: 2px solid black;
+    min-height: 250px;
+}
+
+.ClassSheduleContent .ScheduleDiv .className {
+    border: 2px solid black;
+    width: fit-content;
+    padding: 2px 5px;
+    line-height: 25px;
+    font-weight: bold;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+
+.ClassSheduleContent .allSchedules {
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.ClassSheduleContent .ScheduleDiv .dayName {
+    width: fit-content;
+    background-color: white;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 2px 5px;
+    margin: auto;
+    margin-top: 5px;
+
+}
+
+.ClassSheduleContent .ScheduleDiv .classTime {
+    border: 2px solid black;
+    background-color: white;
+    width: fit-content;
+    line-height: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 9px;
+    margin: auto;
+}
