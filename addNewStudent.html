@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from abdulrehman0309.github.io/main/addNewStudent.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Jun 2026 06:21:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome Icons Link -->
+    <link rel="stylesheet" href="icons/css/all.min.css">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <a class="d-flex align-items-center justify-content-center mt-1" href="index.html"><img
+                            class="img-fluid logo" src="images/resize3.png" alt=""></a>
+                </div>
+                <div class="col-10 text-center d-lg-grid align-items-center d-flex py-0 px-0">
+                    <div class=" mt-lg-2 mt-md-1"><img class="imgLogo2" src="images/E-MASS%20Logo.jpg" alt=""></div>
+
+                    <nav class="navbar navbar-expand-lg py-0 px-0 mt-lg-auto">
+                        <button class="navbar-toggler navbar-toggler-btn mx-2" type="button"
+                            onclick="toggleTopNavBar()">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav text-center lh-1">
+                                <li class="nav-item">
+                                    <a class="nav-link active d-flex align-items-center justify-content-center"
+                                        aria-current="page" href="student.html">Students</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active d-flex align-items-center justify-content-center"
+                                        href="#">Attendance</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link active d-flex align-items-center justify-content-center"
+                                        href="rank.html">Rank / Tests</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active d-flex align-items-center justify-content-center"
+                                        href="#">Prospects - Appointments</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link active d-flex align-items-center justify-content-center"
+                                        href="#">Emails Blasts</a>
+                                </li>
+                                <li class="nav-item " style="border-right:2px solid black;">
+                                    <a class="nav-link active d-flex align-items-center justify-content-center"
+                                        href="#">Payments - Promotions</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+        <div class="d-lg-none" id="topNavbarUl">
+            <ul>
+                <li><a href="student.html">Students</a></li>
+                <li><a href="#">Attendance</a></li>
+                <li><a href="rank.html">Rank / Tests</a></li>
+                <li><a href="#">Propects - Appointments</a></li>
+                <li><a href="#">Email blasts</a></li>
+                <li><a href="#">Payments - Memberships</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <button class="toggle-btn d-lg-none" id="change" onclick="toggleSidebar()">></button>
+        <div class="sidebar d-lg-none" id="sidebar">
+            <a class="mt-4" href="addNewStudent.html">Add New Student</a>
+            <a href="classSchhedule.html">Class Schedule</a>
+            <a href="#">Newsletters</a>
+            <a href="#">Documents</a>
+            <a href="#">Documents</a>
+            <a href="#">Videos</a>
+            <a href="#">Events</a>
+            <a href="#">Merchandise</a>
+            <a href="#">School Statistics</a>
+            <a href="#">Settings</a>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-0 gx-0 text-center">
+                    <div id="sideNavbarNav">
+                        <ul class="navbar-nav  text-center   lh-1">
+                            <li class="nav-item">
+                                <a class="nav-link active d-flex align-items-center justify-content-center"
+                                    aria-current="page" href="addNewStudent.html">Add New Student</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active d-flex align-items-center justify-content-center"
+                                    href="classSchhedule.html">Class Schedule</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active d-flex align-items-center justify-content-center"
+                                    href="#">Newsletters</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active d-flex align-items-center justify-content-center"
+                                    href="#">Documents</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active d-flex align-items-center justify-content-center"
+                                    href="#">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active d-flex align-items-center justify-content-center"
+                                    href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active d-flex align-items-center justify-content-center"
+                                    href="#">Merchandise</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active d-flex align-items-center justify-content-center"
+                                    href="#">School Statistics</a>
+                            </li>
+                            <li class="nav-item"
+                                style="border-bottom:2px solid black; background-color: rgb(69, 191, 212);">
+                                <a class="nav-link active d-flex align-items-center justify-content-center"
+                                    href="#">Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-12 gx-lg-0 DashboardCol py-0">
+
+
+
+                    <div class="addStudentCenterPanel">
+                        <div class="container-fluid">
+                            <div class="row pt-2">
+                                <div class="col-12 text-end position-relative fs-3 fw-bold ">
+                                    <span class="date ">Monday , February 12, 2025</span>
+                                </div>
+                            </div>
+
+                            <form>
+                                <div class="row pt-2">
+                                    <div class="col-12  text-center mt-2 mt-lg-0 fs-3 fw-bold">
+                                        <span class="StdProfile">Student Profile</span>
+                                    </div>
+                                </div>
+                                <!-- Student Basic Info DOB Contact START here -->
+                                <div class="row py-2 gx-0">
+
+
+                                    <div class="col-lg-2 col-md-3 col-12  mb-md-0 mb-1">
+                                        <label for="FileInput" class="ImageBox fw-bold text-center"
+                                            id="photo">Upload<br> Photo <br> Here</label>
+                                        <input type="file" class="" id="FileInput" hidden>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-9 col-12 px-sm-0 ">
+                                        <div class="namePortion">
+                                            <div class="container-fluid">
+
+                                                <div class="row py-1">
+                                                    <div class="col-sm-7 col-12 my-1">
+                                                        <label for="exampleInputPassword1" class="form-label">Name
+                                                            [First]</label>
+                                                        <input type="text" class="" "">
+                                                    </div>
+                                                    <div class="col-sm-5 col-12 my-1 px-sm-0">
+
+                                                        <label for="exampleInputPassword1"
+                                                            class="form-label">Last</label>
+                                                        <input type="text" class="" "">
+
+                                                    </div>
+                                                    <div class="col-12 my-1">
+                                                        <label for="exampleInputPassword1"
+                                                            class="form-label pb-1">Nickname (if preffered)</label>
+                                                        <input type="text" class="" "" style="width:50%;">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="addressPortion">
+                                            <div class="container-fluid">
+                                                <div class="row py-1">
+                                                    <div class=" col-12 my-1">
+                                                        <label for="exampleInputPassword1"
+                                                            class="form-label">Address</label>
+                                                        <input type="text" class="addressInput" "">
+
+                                                    </div>
+                                                    <div class="d-sm-flex justify-content-around align-items-center">
+                                                        <div class="col-sm-3 col-12 my-1 addressCol ">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label">City</label>
+                                                            <input type="text" class="" "">
+
+                                                        </div>
+                                                        <div class="col-sm-3 col-12 my-1 addressCol ">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label">State</label>
+                                                            <input type="text" class="" "">
+
+                                                        </div>
+                                                        <div class="col-sm-4 col-12 my-1 addressCol ">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label">ZipCode</label>
+                                                            <input type="text" class="" "">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="col-lg-4  col-12 px-lg-1 px-0 py-lg-0 py-1  ">
+
+                                        <div class="DOBPortion ">
+                                            <div class="container-fluid ">
+                                                <div class="row dateTime">
+                                                    <div class=" col-12 col" style="padding-bottom: 1px;">
+                                                        <label for="datetime">Enrollment Date</label>
+                                                        <input type="date" id="datetime" name="datetime">
+                                                    </div>
+                                                </div>
+                                                <div class="row ">
+                                                    <div class=" col-12 col px-3" style="padding-bottom: 1px;">
+
+                                                        <label for="datetime">Date of Birth</label>
+                                                        <input type="date" id="datetime" name="datetime">
+                                                        <label for="datetime">Age</label>
+                                                        <label for="datetime"
+                                                            style="border-bottom: 2px solid rgb(155, 148, 148);">18</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container-fluid ">
+                                                <div class="row cellPhone  d-flex">
+                                                    <div class=" col-12 d-flex justify-content-between py-1">
+                                                        <label for="datetime">Cell Phone #</label>
+                                                        <input type="text" id="datetime" name="datetime">
+                                                    </div>
+                                                    <div class=" col-12 d-flex justify-content-between py-1 mb-1">
+
+                                                        <label for="datetime">2nd Cell Phone#</label>
+                                                        <input type="text" id="datetime" name="datetime">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+                                </div>
+
+                                <!-- Student Basic Info DOB Contact END here -->
+
+                                <!-- Additional Deatails email emergency contact medical history notes START  -->
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-12">
+                                                <div class="container-fluid">
+                                                    <div class="row emailRow ">
+                                                        <div class="col-md-8 col-12 d-flex">
+                                                            <label for="Email">Email</label>
+                                                            <input type="email" class="email">
+                                                        </div>
+                                                        <div class="col-md-4 col-12 d-flex my-1">
+                                                            <label for="Gender">Gender</label>&nbsp;&nbsp;
+                                                            <input class="form-check-input border border-dark"
+                                                                type="radio" name="flexRadioDefault"
+                                                                id="flexRadioDefault1">&nbsp;Male
+                                                            &nbsp;<input class="form-check-input border border-dark"
+                                                                type="radio" name="flexRadioDefault"
+                                                                id="flexRadioDefault1">&nbsp; Female
+                                                        </div>
+                                                    </div>
+                                                    <div class="row EmergencyContact mt-1 py-2">
+                                                        <div class="container-fluid">
+                                                            <div class="row py-1">
+                                                                <div class="col-md-3 col-12 mb-1">Emergency Contact #1
+                                                                </div>
+                                                                <div class="col-md-3 col-4 px-1"><input type="text"
+                                                                        placeholder="Name"></div>
+                                                                <div class="col-md-3 col-4"><input type="text"
+                                                                        placeholder="Phone"></div>
+                                                                <div class="col-md-3 col-4"><input type="text"
+                                                                        placeholder="Relationship"></div>
+                                                            </div>
+                                                            <div class="row mt-1">
+                                                                <div class="col-md-3 col-12 mb-2">Emergency Contact #2
+                                                                </div>
+                                                                <div class="col-md-3 col-4 px-1"><input type="text"
+                                                                        placeholder="Name"></div>
+                                                                <div class="col-md-3 col-4"><input type="text"
+                                                                        placeholder="Phone"></div>
+                                                                <div class="col-md-3 col-4"><input type="text"
+                                                                        placeholder="Relationship"></div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row MedicalCondition py-2 mt-1">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-md-3 col-5">Medical Condition</div>
+                                                                <div class="col-3 d-flex">
+                                                                    <label class="form-label">(None) </label>
+                                                                    <input type="text">
+                                                                </div>
+                                                                <div class="col-3 d-flex">
+                                                                    <label class="form-label">(Yes) </label>
+                                                                    <input type="text">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-3">Describe</div>
+                                                                <div class="col-9"><input type="text" style="width:90%">
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row trainingInfo py-1">
+                                                        <div class="container-fluid">
+                                                            <div class="row ">
+                                                                <div class="col-md-6 col-12 trainingCol py-2">
+                                                                    <div class="container-fluid">
+                                                                        <div class="row">
+                                                                            <div class="col-4 ">Previous Training</div>
+                                                                            <div class="col-8 col"><input type="text">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-4 ">How Long</div>
+                                                                            <div class="col-8 col"><input type="text">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-4">Rank Achieved</div>
+                                                                            <div class="col-8 col"><input type="text">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-12">Reason For Discontinuing
+                                                                                Previous Style?</div>
+                                                                            <div class="col"><input type="text"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12 trainingCol py-2">
+                                                                    <div class="container-fluid">
+                                                                        <div class="row">
+                                                                            <div class="col col-5">Motivation / Reason
+                                                                                For Joining Us?</div>
+                                                                            <div class="col col-7 mt-2"><input
+                                                                                    type="text"></div>
+                                                                        </div>
+                                                                        <div class="row mt-3">
+                                                                            <div class="col-5">How They Heard About Us
+                                                                            </div>
+                                                                            <div class="col-7 col mt-2"><input
+                                                                                    type="text"></div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 col-12 notes text-center">
+                                                <textarea class="stdNotes text-center" placeholder="Notes"></textarea>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Additional Deatails email emergency contact medical history notes END  -->
+
+
+                                <!-- Assighn Classes To student Section START  -->
+                                <div class="row gx-0 mt-1">
+                                    <div class="col">
+                                        <h2 class="text-center fw-bold">Assign a Student To Classes</h2>
+                                    </div>
+                                </div>
+                                <div class="row classesContainer mt-1 py-2 px-lg-5 px-3  gx-0">
+                                    <div class="container-fluid ">
+
+                                        <div class="row gx-0">
+                                            <div class="col">
+                                                <h3>Classes Assigned</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row classes py-2">
+                                            <div class="col-12">
+                                                <h4>Monday</h4>
+                                            </div>
+                                            <div class="col-12 "><input type="checkbox"> Taikwandu : 5:20PM - 6:20PM
+                                            </div>
+                                            <div class="col-12">
+                                                <h4>Tuesday</h4>
+                                            </div>
+                                            <div class="col-12 "><input type="checkbox"> Taikwandu : 5:20PM - 6:20PM
+                                            </div>
+                                            <div class="col-12 "><input type="checkbox"> Yoga : 4:00PM - 5:00PM</div>
+                                            <div class="col-12">
+                                                <h4>Wednesday</h4>
+                                            </div>
+                                            <div class="col-12 "><input type="checkbox"> Open Adult : 5:20PM - 6:20PM
+                                            </div>
+                                            <div class="col-12 "><input type="checkbox"> Yoga : 4:00PM - 5:00PM</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Assighn Classes To student Section END HERE  -->
+
+                                <!-- Rank Promotion STARTS HERE  -->
+                                <div class="row gx-0 mt-1">
+                                    <div class="col">
+                                        <h2 class="text-center fw-bold">Rank Promotions</h2>
+                                    </div>
+                                </div>
+                                <div class="row my-4">
+
+                                    <div class="container-fluid">
+                                        <div class="row rankSectionRow">
+                                            <div class="col-xl-2 col-md-3 col-sm-4 col-12 mb-2 ">
+                                                <div class="container-fluid rankLeft">
+                                                    <div class="row">
+                                                        <div class="col-12 px-xl-2 px-0"><h6 class="fw-bold text-center ">To Promote Student =</h6></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 px-0 " style="font-size: 12px;text-align: center;">Click Checkbox</div>
+                                                        <div class="col-2 px-0"><input type="checkbox"  class="topCheck" value="" checked></div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 "><h6 class="fw-bold" style="font-size: 13px; text-align: center;"> (Must provide promotion Date)</h6></div>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div class="container-fluid rankLeft2 mt-1 ">
+                                                    <div class="row">
+                                                        <div class="col-9  grades  fw-bold px-0 bg-light my-1 border"><div style="width:100%; padding:auto;line-height:12px; ;">Score /Grades</div></div>
+                                                        <div class="col-2  px-0"><input type="checkbox" class="chkBoxes" name="" id="" ></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0 "><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    <div class="row mb-1">
+                                                        <div class="col-9 fw-bold grades px-0"><input type="text" class="text-center"></div>
+                                                        <div class="col-2 px-0"><input type="checkbox" class="chkBoxes" name="" id=""></div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-10 col-md-9 col-sm-8 col-12 rankRight ">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-xl-6 col-12 px-0">
+                                                        <div class="container-fluid">
+                                                            <div class="row mt-2">
+                                                                <div class="col-9 text-end mt-1"><span class="fw-bold fs-3   px-2 StdName">(StudentName)</span></div>
+                                                            </div>
+                                                            <div class="row py-2 promotionDateHeading">
+                                                                <div class="col text-center"><span class="fw-bold  py-1 px-2 StdName">Rank</span></div>
+                                                                <div class="col px-0  text-end "><span class="fw-bold   py-1 px-2">Promotion Date</span></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>1<sup>st</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: White;">White Sash</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text" placeholder="May 25,2025"> </div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>2<sup>nd</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: Yellow;">Yellow Sash</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>3<sup>rd</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: Gold;">Golg Sash</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>4<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: Orange;">Orange Sash</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>5<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: Green;">Green Sash</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>6<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: lightblue;">Blue Sash</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>7<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: Purple;">Purple Sash</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>8<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: maroon;">Maroon Sash</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>9<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: Brown;">Brown Sash </div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>10<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: Black; color: white;">Black Sash1</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>11<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: Black; color: white;">Black Sash2</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>12<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: Black; color: white;">Black Sash3</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>13<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: Black; color: white;">Black Sash4</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>14<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: Black; color: white;">Black Sash5</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row leftRecord">
+                                                                <div class="col-4 px-1 d-flex  align-items-center justify-content-center px-0"><span>15<sup>th</sup> Level</span></div>
+                                                                <div class="col-4 px-1"><div class="rankColor" style="background-color: salmon;">Saifu Sash</div></div>
+                                                                <div class="col-4  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            
+                                                            
+                                                            
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6 col-12">
+                                                         <div class="container-fluid">
+                                                            <div class="row pt-2">
+                                                                <div class="col-md-2 col-3 text-center px-0 my-2" style="border:1px solid rgb(155, 148, 148); font-size:14px;">Classes Needed for Next Level</div>
+                                                                <div class="col-4  text-center mx-2 py-0  my-4 fw-bold ApxHeadings" style="border:1px solid rgb(155, 148, 148);">Approximate Time To Next Level</div>
+                                                                <div class="col-4  text-center d-flex align-items-center  mt-4 mb-4 fw-bold  ApxHeadings" style="border:1px solid rgb(155, 148, 148);">Next Eligible Test Date</div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 d-flex  align-items-center justify-content-center px-1 "><span>8</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">1 Month</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text" placeholder="June 25,2025"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>10</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor" >2 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>15</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor" >4 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>18</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor" >5 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>22</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">6 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>30</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">8 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>35</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">10 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>40</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">12 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>45</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">15 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>48</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">18 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>50</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">20 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>52</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">22 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>55</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">25 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>60</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">28 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                            <div class="row rightRecord">
+                                                                <div class="col-2 text-center d-flex  align-items-center justify-content-center px-1 "><span>62</span></div>
+                                                                <div class="col-lg-4 col-5 px-1"><div class="rankColor">32 Months</div></div>
+                                                                <div class="col-lg-4 col-5  px-1 promotionDate" ><input type="text"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Rank Promotion ENDS HERE-->
+                                 <!-- Membership and Payment portion START HERE-->
+                                  <div class="conatainer-fluid">
+                                    <div class="row mb-4">
+                                        <div class="col px-0">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-12">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col"><h3 class="text-center fw-bold">Membership Plans</h3></div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col MembershipSection">
+                                                                    <div class="container-fluid">
+                                                                        <div class="row py-2 membershipRow">
+                                                                            <div class="col-2"></div>
+                                                                            <div class="col-3"><h5 class="text-center fw-bold">Short <br/> Code</h5></div>
+                                                                            <div class="col-7"><div class="text-center fw-bold Description px-sm-4 px-2">Description</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2 ">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2 ">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2 ">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2 ">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2 ">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2 ">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2 ">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2 ">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2 ">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2 ">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                        <div class="row text-center mb-2 ">
+                                                                            <div class="col-2"><div class="memChkBox"><input type="checkbox" name="" id=""></div></div>
+                                                                            <div class="col-4"><div class="memRecord">1M- 19.00</div></div>
+                                                                            <div class="col-6"><div class="memRecord">1Member - $19.00 / Month</div></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-12 px-sm-2 px-0">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col"><h3 class="text-center fw-bold">Membership Payments</h3></div>
+                                                            </div>
+                                                            <div class="row gx-0">
+                                                                <div class="col PaymentSection ">
+                                                                    <div class="container-fluid">
+                                                                        <div class="row py-2">
+                                                                            <div class="col"><div class="fw-bold paymentSection">Payment Agreement</div></div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-xxl-4 col-xl-5 col-6  fw-bold mt-1"><span >Membership Plan :</span></div>
+                                                                            <div class="col-5"><input type="text" class="input memPlan"></div>
+                                                                        </div>
+                                                                        <div class="row mt-1">
+                                                                            <div class="col-xxl-4 col-5 fw-bold mt-1"><span>Signed Agreement :</span></div>
+                                                                            <div class="col-3 d-flex">Yes <input type="text" class="inputYes"></div>
+                                                                            <div class="col-3 d-flex">No <input type="text" class="inputNo"></div>
+                                                                        </div>
+                                                                        <div class="row mt-2">
+                                                                            <div class="col-xxl-4 col-5  fw-bold mt-1"><span>Tuition Amount :</span></div>
+                                                                            <div class="col-xl-4 col-6 "><input type="text" class="inputAmount text-center fw-bold" value="$39.00"></div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col ">
+                                                                              <div class="container-fluid">
+                                                                                <div class="row py-2">
+                                                                                    <div class="col-6   fw-bold">
+                                                                                       <div class="days mt-5"> Every <input type="text" name="" id=""> and <input type="text" name="" id=""> 
+                                                                                       <br/> day of the month
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <div class="col-6 fw-bold  px-xl-5 px-3">
+                                                                                        <div class="duration text-center">
+                                                                                            <span>2 weeks</span>
+                                                                                            <span>1 month</span>
+                                                                                            <span>3 months</span>
+                                                                                            <span>6 months</span>
+                                                                                            <span>1 year</span>
+                                                                                            <span>custom</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-xl-10  col-12 fw-bold mt-1">Entry Free, Registration and other Fees Paid Upon Enrollment? Yes <input type="text" class="entryFee" />
+                                                                             No <input type="text" class="entryFee" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-xl-10 col-12 fw-bold mt-1 text-center text-capitalize">(This software program is no a contract)</div>
+                                                                            <div class="col-xl-10 col-12 fw-bold mt-1 text-capitalize">Actual Fees and panelaties should be agreed upon and signed prior to enrollment.</div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class=" col-12 fw-bold mt-1">Walver Signed? &nbsp;&nbsp;&nbsp; Yes <input type="checkbox" class="Walver" />
+                                                                             No <input type="checkbox" class="Walver" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class=" col-12 fw-bold mt-3">Student Status &nbsp; <select>
+                                                                                <option>-- Select Status --</option>
+                                                                                <option>Active</option>
+                                                                                <option>Inactive</option>
+                                                                                <option>Frozen</option>
+                                                                            </select>   
+                                                                         </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="submitBtn">
+                                                            <button type="submit">Save to Add Student</button>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                 <!-- Membership and Payment portion ENDS HERE-->
+
+
+
+
+                               
+                            </form>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap js File Link -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Icons Js File Link -->
+    <script src="icons/js/all.min.js"></script>
+    <!-- JavaScript Link -->
+    <script src="js/script.js"></script>
+</body>
+
+
+<!-- Mirrored from abdulrehman0309.github.io/main/addNewStudent.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Jun 2026 06:21:25 GMT -->
+</html>
