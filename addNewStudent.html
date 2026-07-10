@@ -18,64 +18,74 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <a class="d-flex align-items-center justify-content-center mt-1" href="index.html"><img
-                            class="img-fluid logo" src="images/resize3.png" alt=""></a>
-                </div>
-                <div class="col-10 text-center d-lg-grid align-items-center d-flex py-0 px-0">
-                    <div class=" mt-lg-2 mt-md-1"><img class="imgLogo2" src="images/E-MASS%20Logo.jpg" alt=""></div>
+     <div class="CustomContainer" style="max-width:1140px; margin:auto; ">
 
-                    <nav class="navbar navbar-expand-lg py-0 px-0 mt-lg-auto">
-                        <button class="navbar-toggler navbar-toggler-btn mx-2" type="button"
-                            onclick="toggleTopNavBar()">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse">
-                            <ul class="navbar-nav text-center lh-1">
-                                <li class="nav-item">
-                                    <a class="nav-link active d-flex align-items-center justify-content-center"
-                                        aria-current="page" href="student.html">Students</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active d-flex align-items-center justify-content-center"
-                                        href="#">Attendance</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link active d-flex align-items-center justify-content-center"
-                                        href="rank.html">Rank / Tests</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active d-flex align-items-center justify-content-center"
-                                        href="#">Prospects - Appointments</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link active d-flex align-items-center justify-content-center"
-                                        href="#">Emails Blasts</a>
-                                </li>
-                                <li class="nav-item " style="border-right:2px solid black;">
-                                    <a class="nav-link active d-flex align-items-center justify-content-center"
-                                        href="#">Payments - Promotions</a>
-                                </li>
-                            </ul>
-                        </div>
-                </div>
-                </nav>
+    
+  <header>
+    <div class="container-fluid">
+      <div class="row bg-white">
+        <div class="col-12 text-center ">
+          <img class="imgLogo2" src="images/E-MASS%20Logo.jpg" alt="" style="height:30px;">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2 col-3 gx-0 px-1" >
+          <a class="d-flex align-items-center justify-content-center" href="index.html" style="background-color: #F00005;"><img src="images/resize3.png"
+              class="img-fluid" alt=""> </a>
+        </div>
+        <div class="col-sm-10 col-9  d-lg-grid align-items-center justify-content-between d-flex py-0 px-0">
+          <div class=" d-flex gap-lg-5">
+            <div class="DashboardDate text-center d-lg-block d-none">Monday <br>February 10, 2026</div>
+            <span class="SchoolName text-center fw-bold display-6 px-lg-5 px-sm-2  mt-1 pb-1">American Kung Fu
+              Academy</span>
+          </div>
+
+          <nav class=" navbar navbar-expand-lg py-0 pb-1 px-0 mt-lg-auto">
+            <button class="navbar-toggler navbar-toggler-btn mx-2" type="button" onclick="toggleTopNavBar()">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav text-center lh-1">
+                <li class="nav-item">
+                  <a class="nav-link active d-flex align-items-center justify-content-center" aria-current="page"
+                    href="student.html">Students</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active d-flex align-items-center justify-content-center" href="#">Attendance</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link active d-flex align-items-center justify-content-center" href="rank.html">Rank /
+                    Tests</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active d-flex align-items-center justify-content-center" href="#">Prospects -
+                    Appointments</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link active d-flex align-items-center justify-content-center" href="#">Emails Blasts</a>
+                </li>
+                <li class="nav-item " style="border-right:2px solid black;">
+                  <a class="nav-link active d-flex align-items-center justify-content-center" href="#">Payments -
+                    Promotions</a>
+                </li>
+              </ul>
             </div>
         </div>
-        <div class="d-lg-none" id="topNavbarUl">
-            <ul>
-                <li><a href="student.html">Students</a></li>
-                <li><a href="#">Attendance</a></li>
-                <li><a href="rank.html">Rank / Tests</a></li>
-                <li><a href="#">Propects - Appointments</a></li>
-                <li><a href="#">Email blasts</a></li>
-                <li><a href="#">Payments - Memberships</a></li>
-            </ul>
-        </div>
-    </header>
+        </nav>
+      </div>
+    </div>
+    <div class="d-lg-none" id="topNavbarUl">
+      <ul>
+        <li><a href="student.html">Students</a></li>
+        <li><a href="#">Attendance</a></li>
+        <li><a href="rank.html">Rank / Tests</a></li>
+        <li><a href="#">Propects - Appointments</a></li>
+        <li><a href="#">Email blasts</a></li>
+        <li><a href="#">Payments - Memberships</a></li>
+      </ul>
+    </div>
+  </header>
 
     <section>
         <button class="toggle-btn d-lg-none" id="change" onclick="toggleSidebar()">></button>
@@ -94,69 +104,60 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-2 col-0 gx-0 text-center">
-                    <div id="sideNavbarNav">
-                        <ul class="navbar-nav  text-center   lh-1">
-                            <li class="nav-item">
-                                <a class="nav-link active d-flex align-items-center justify-content-center"
-                                    aria-current="page" href="addNewStudent.html">Add New Student</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active d-flex align-items-center justify-content-center"
-                                    href="classSchhedule.html">Class Schedule</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link active d-flex align-items-center justify-content-center"
-                                    href="#">Newsletters</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active d-flex align-items-center justify-content-center"
-                                    href="#">Documents</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link active d-flex align-items-center justify-content-center"
-                                    href="#">Videos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active d-flex align-items-center justify-content-center"
-                                    href="#">Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active d-flex align-items-center justify-content-center"
-                                    href="#">Merchandise</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active d-flex align-items-center justify-content-center"
-                                    href="#">School Statistics</a>
-                            </li>
-                            <li class="nav-item"
-                                style="border-bottom:2px solid black; background-color: rgb(69, 191, 212);">
-                                <a class="nav-link active d-flex align-items-center justify-content-center"
-                                    href="#">Settings</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+              <div class="col-lg-2 col-0 gx-0 text-center">
+          <div id="sideNavbarNav">
+            <ul class="navbar-nav  text-center   lh-1">
+          <li class="nav-item mt-1 " style="background-color:#92D14F;">
+    <a class="nav-link active d-flex align-items-center justify-content-center"
+       href="addNewStudent.html"
+       style=" border-radius:10px;">
+        Add New Student
+    </a>
+</li>
+              <li class="nav-item">
+                <a class="nav-link active d-flex align-items-center justify-content-center"
+                  href="classSchhedule.html">Class Schedule</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active d-flex align-items-center justify-content-center" href="#">Newsletters</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active d-flex align-items-center justify-content-center" href="#">Documents</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active d-flex align-items-center justify-content-center" href="#">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active d-flex align-items-center justify-content-center" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active d-flex align-items-center justify-content-center" href="#">Merchandise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active d-flex align-items-center justify-content-center" href="#">School
+                  Statistics</a>
+              </li>
+              <li class="nav-item" style="border-bottom:2px solid black; background-color: rgb(69, 191, 212);">
+                <a class="nav-link active d-flex align-items-center justify-content-center" href="#">Setup/Edit</a>
+              </li>
+            </ul>
+          </div>
+        </div>
                 <div class="col-lg-10 col-12 gx-lg-0 DashboardCol py-0">
 
 
 
                     <div class="addStudentCenterPanel">
-                        <div class="container-fluid">
-                            <div class="row pt-2">
-                                <div class="col-12 text-end position-relative fs-3 fw-bold ">
-                                    <span class="date ">Monday , February 12, 2025</span>
-                                </div>
-                            </div>
+                        <div class="container-fluid px-1">
 
                             <form>
-                                <div class="row pt-2">
-                                    <div class="col-12  text-center mt-2 mt-lg-0 fs-3 fw-bold">
+                                <div class="row ">
+                                    <div class="col-12  text-center  mt-lg-0 fs-3 fw-bold px-0">
                                         <span class="StdProfile">Student Profile</span>
                                     </div>
                                 </div>
                                 <!-- Student Basic Info DOB Contact START here -->
-                                <div class="row py-2 gx-0">
+                                <div class="row  gx-0">
 
 
                                     <div class="col-lg-2 col-md-3 col-12  mb-md-0 mb-1">
@@ -169,23 +170,23 @@
                                         <div class="namePortion">
                                             <div class="container-fluid">
 
-                                                <div class="row py-1">
-                                                    <div class="col-sm-7 col-12 my-1">
+                                                <div class="row ">
+                                                    <div class="col-sm-7 col-12 px-1">
                                                         <label for="exampleInputPassword1" class="form-label">Name
                                                             [First]</label>
-                                                        <input type="text" class="" "">
+                                                        <input type="text" class="mt-1 px-1">
                                                     </div>
-                                                    <div class="col-sm-5 col-12 my-1 px-sm-0">
+                                                    <div class="col-sm-5 col-12 px-sm-0">
 
                                                         <label for="exampleInputPassword1"
                                                             class="form-label">Last</label>
-                                                        <input type="text" class="" "">
+                                                        <input type="text" class="mt-1 px-1">
 
                                                     </div>
-                                                    <div class="col-12 my-1">
+                                                    <div class="col-12 px-1" style="margin-top:1px;">
                                                         <label for="exampleInputPassword1"
                                                             class="form-label pb-1">Nickname (if preffered)</label>
-                                                        <input type="text" class="" "" style="width:50%;">
+                                                        <input type="text" class="my-1 px-1" style="width:50%;">
 
                                                     </div>
                                                 </div>
@@ -194,30 +195,30 @@
 
                                         <div class="addressPortion">
                                             <div class="container-fluid">
-                                                <div class="row py-1">
-                                                    <div class=" col-12 my-1">
+                                                <div class="row ">
+                                                    <div class=" col-12 px-1">
                                                         <label for="exampleInputPassword1"
                                                             class="form-label">Address</label>
-                                                        <input type="text" class="addressInput" "">
+                                                        <input type="text" class="addressInput w-75" >
 
                                                     </div>
-                                                    <div class="d-sm-flex justify-content-around align-items-center">
+                                                    <div class="d-sm-flex justify-content-between align-items-center px-1">
                                                         <div class="col-sm-3 col-12 my-1 addressCol ">
                                                             <label for="exampleInputPassword1"
-                                                                class="form-label">City</label>
-                                                            <input type="text" class="" "">
+                                                                class="form-label mt-1">City</label>
+                                                            <input type="text" class="px-1" style="border-bottom:2px solid gray; margin-bottom: 2px;;">
 
                                                         </div>
                                                         <div class="col-sm-3 col-12 my-1 addressCol ">
                                                             <label for="exampleInputPassword1"
-                                                                class="form-label">State</label>
-                                                            <input type="text" class="" "">
+                                                                class="form-label mt-2">State</label>
+                                                            <input type="text" class="px-1" style="border-bottom:2px solid gray; margin-bottom: 2px;;">
 
                                                         </div>
                                                         <div class="col-sm-4 col-12 my-1 addressCol ">
                                                             <label for="exampleInputPassword1"
-                                                                class="form-label">ZipCode</label>
-                                                            <input type="text" class="" "">
+                                                                class="form-label mt-2">ZipCode</label>
+                                                            <input type="text" class="px-1" style="border-bottom:2px solid gray; margin-bottom: 2px;;">
 
                                                         </div>
                                                     </div>
@@ -234,33 +235,41 @@
 
                                         <div class="DOBPortion ">
                                             <div class="container-fluid ">
-                                                <div class="row dateTime">
-                                                    <div class=" col-12 col" style="padding-bottom: 1px;">
-                                                        <label for="datetime">Enrollment Date</label>
-                                                        <input type="date" id="datetime" name="datetime">
+                                                <div class="row dateTime py-0">
+                                                    <div class=" col-12 col px-1" >
+                                                        <label for="datetime" >Enrollment Date</label>
+                                                        <input type="date" id="datetime" name="datetime" style="margin-top:1px; margin-bottom:1px;">
                                                     </div>
                                                 </div>
-                                                <div class="row ">
-                                                    <div class=" col-12 col px-3" style="padding-bottom: 1px;">
-
+                                                <div class="row py-0">
+                                                    <div class=" col-12 col px-1 py-0">
+                                                         
                                                         <label for="datetime">Date of Birth</label>
-                                                        <input type="date" id="datetime" name="datetime">
+                                                        <input type="date" id="datetime" name="datetime" style="width:120px; margin-top:1px;">
                                                         <label for="datetime">Age</label>
                                                         <label for="datetime"
-                                                            style="border-bottom: 2px solid rgb(155, 148, 148);">18</label>
+                                                            style="border-bottom: 2px solid rgb(155, 148, 148); margin-bottom: 1px; ">18</label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="container-fluid ">
-                                                <div class="row cellPhone  d-flex">
-                                                    <div class=" col-12 d-flex justify-content-between py-1">
-                                                        <label for="datetime">Cell Phone #</label>
-                                                        <input type="text" id="datetime" name="datetime">
+                                                <div class="row cellPhone py-0 ">
+                                                    <div class=" col-12 d-flex px-lg-1">
+                                                        <label for="datetime">Cell Phone #1</label>
+                                                       <input
+    type="tel"
+    class="phone-input px-1"
+    id="phone1"
+    placeholder="(___) ___-_________" style="margin-top:3px;">
                                                     </div>
-                                                    <div class=" col-12 d-flex justify-content-between py-1 mb-1">
+                                                    <div class=" col-12 d-flex px-1 mb-1" style="margin-top: 2px;">
 
-                                                        <label for="datetime">2nd Cell Phone#</label>
-                                                        <input type="text" id="datetime" name="datetime">
+                                                        <label for="datetime">Cell Phone #2</label>
+                                                        <input
+    type="tel"
+    class="phone-input px-1"
+    id="phone2"
+    placeholder="(___) ___-_________">
                                                     </div>
                                                 </div>
                                             </div>
@@ -278,15 +287,15 @@
                                 <!-- Student Basic Info DOB Contact END here -->
 
                                 <!-- Additional Deatails email emergency contact medical history notes START  -->
-                                <div class="row">
+                                <div class="row mt-2">
                                     <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-9 col-12">
+                                        <div class="row ">
+                                            <div class="col-lg-9 col-12 ">
                                                 <div class="container-fluid">
-                                                    <div class="row emailRow ">
-                                                        <div class="col-md-8 col-12 d-flex">
-                                                            <label for="Email">Email</label>
-                                                            <input type="email" class="email">
+                                                    <div class="row emailRow py-0">
+                                                        <div class="col-md-8 col-12 d-flex justify-content-between px-1">
+                                                            <label for="Email" class="mt-1">Email</label>
+                                                            <input type="email" class="email px-1 my-1">
                                                         </div>
                                                         <div class="col-md-4 col-12 d-flex my-1">
                                                             <label for="Gender">Gender</label>&nbsp;&nbsp;
@@ -298,47 +307,47 @@
                                                                 id="flexRadioDefault1">&nbsp; Female
                                                         </div>
                                                     </div>
-                                                    <div class="row EmergencyContact mt-1 py-2">
+                                                    <div class="row EmergencyContact mt-1 ">
                                                         <div class="container-fluid">
                                                             <div class="row py-1">
-                                                                <div class="col-md-3 col-12 mb-1">Emergency Contact #1
+                                                                <div class="col-md-3 col-12 mb-1 px-1">Emergency Contact #1
                                                                 </div>
                                                                 <div class="col-md-3 col-4 px-1"><input type="text"
-                                                                        placeholder="Name"></div>
+                                                                        placeholder="Name" class="px-1"></div>
                                                                 <div class="col-md-3 col-4"><input type="text"
-                                                                        placeholder="Phone"></div>
+                                                                        placeholder="Phone" class="px-1"></div>
                                                                 <div class="col-md-3 col-4"><input type="text"
-                                                                        placeholder="Relationship"></div>
+                                                                        placeholder="Relationship" class="px-1"></div>
                                                             </div>
                                                             <div class="row mt-1">
-                                                                <div class="col-md-3 col-12 mb-2">Emergency Contact #2
+                                                                <div class="col-md-3 col-12 mb-2 px-1">Emergency Contact #2
                                                                 </div>
                                                                 <div class="col-md-3 col-4 px-1"><input type="text"
-                                                                        placeholder="Name"></div>
+                                                                        placeholder="Name" class="px-1"></div>
                                                                 <div class="col-md-3 col-4"><input type="text"
-                                                                        placeholder="Phone"></div>
+                                                                        placeholder="Phone" class="px-1"></div>
                                                                 <div class="col-md-3 col-4"><input type="text"
-                                                                        placeholder="Relationship"></div>
+                                                                        placeholder="Relationship" class="px-1"></div>
                                                             </div>
                                                         </div>
 
                                                     </div>
-                                                    <div class="row MedicalCondition py-2 mt-1">
+                                                    <div class="row MedicalCondition mt-1">
                                                         <div class="container">
                                                             <div class="row">
-                                                                <div class="col-md-3 col-5">Medical Condition</div>
-                                                                <div class="col-3 d-flex">
+                                                                <div class="col-md-3 col-5 px-1">Medical Condition :</div>
+                                                                <div class="col-3 d-flex px-1">
                                                                     <label class="form-label">(None) </label>
-                                                                    <input type="text">
+                                                                    <input type="text" class="px-1" style="height:25px; margin-top: 2px;">
                                                                 </div>
-                                                                <div class="col-3 d-flex">
+                                                                <div class="col-3 d-flex px-1">
                                                                     <label class="form-label">(Yes) </label>
-                                                                    <input type="text">
+                                                                    <input type="text" class="px-1" style="height:25px;margin-top: 2px;">
                                                                 </div>
                                                             </div>
                                                             <div class="row">
-                                                                <div class="col-3">Describe</div>
-                                                                <div class="col-9"><input type="text" style="width:90%">
+                                                                <div class="col-3 px-1 mt-2">Describe :</div>
+                                                                <div class="col-9 px-1 my-1"><input type="text" class="px-1" style="width:90%">
                                                                 </div>
 
                                                             </div>
@@ -348,43 +357,43 @@
                                                     <div class="row trainingInfo py-1">
                                                         <div class="container-fluid">
                                                             <div class="row ">
-                                                                <div class="col-md-6 col-12 trainingCol py-2">
+                                                                <div class="col-md-6 col-12 trainingCol px-1">
                                                                     <div class="container-fluid">
                                                                         <div class="row">
-                                                                            <div class="col-4 ">Previous Training</div>
-                                                                            <div class="col-8 col"><input type="text">
+                                                                            <div class="col-5 px-0">Previous Training</div>
+                                                                            <div class="col-7 col px-0"><input type="text" class="px-1">
                                                                             </div>
                                                                         </div>
                                                                         <div class="row">
-                                                                            <div class="col-4 ">How Long</div>
-                                                                            <div class="col-8 col"><input type="text">
+                                                                            <div class="col-5 px-0">How Long</div>
+                                                                            <div class="col-7 col px-0"><input type="text" class="px-1">
                                                                             </div>
                                                                         </div>
                                                                         <div class="row">
-                                                                            <div class="col-4">Rank Achieved</div>
-                                                                            <div class="col-8 col"><input type="text">
+                                                                            <div class="col-5 px-0">Rank Achieved</div>
+                                                                            <div class="col-7 col px-0"><input type="text" class="px-1">
                                                                             </div>
                                                                         </div>
                                                                         <div class="row">
-                                                                            <div class="col-12">Reason For Discontinuing
+                                                                            <div class="col-12 px-0">Reason For Discontinuing
                                                                                 Previous Style?</div>
-                                                                            <div class="col"><input type="text"></div>
+                                                                            <div class="col px-1"><input type="text" class="px-1"></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6 col-12 trainingCol py-2">
                                                                     <div class="container-fluid">
                                                                         <div class="row">
-                                                                            <div class="col col-5">Motivation / Reason
+                                                                            <div class="col col-5 px-0">Motivation / Reason
                                                                                 For Joining Us?</div>
-                                                                            <div class="col col-7 mt-2"><input
-                                                                                    type="text"></div>
+                                                                            <div class="col col-7 mt-4 px-0"><input
+                                                                                    type="text" class="px-1"></div>
                                                                         </div>
                                                                         <div class="row mt-3">
-                                                                            <div class="col-5">How They Heard About Us
+                                                                            <div class="col-5 px-0">How They Heard About Us
                                                                             </div>
-                                                                            <div class="col-7 col mt-2"><input
-                                                                                    type="text"></div>
+                                                                            <div class="col-7 col mt-2 px-0"><input
+                                                                                    type="text" class="px-1"></div>
                                                                         </div>
 
                                                                     </div>
@@ -409,38 +418,346 @@
 
 
                                 <!-- Assighn Classes To student Section START  -->
-                                <div class="row gx-0 mt-1">
+                                <div class="row gx-0 my-3">
                                     <div class="col">
                                         <h2 class="text-center fw-bold">Assign a Student To Classes</h2>
                                     </div>
                                 </div>
-                                <div class="row classesContainer mt-1 py-2 px-lg-5 px-3  gx-0">
+                                <div class="row classesContainer mt-1 py-2 px-lg-2   gx-0">
                                     <div class="container-fluid ">
-
-                                        <div class="row gx-0">
-                                            <div class="col">
-                                                <h3>Classes Assigned</h3>
+                                        <div class="row ">
+                                           <div class="col-md-6 p-2">
+                                            <div class="border border-2 border-dark pt-2 px-3" style="background-color: #EBCDB9;">
+                                            <div class="text-center fs-5 fw-bold" >
+                                                Monday
                                             </div>
+                                            <table class="table border  border-dark mt-2 monTable"   >
+<tbody >
+    <tr >
+        <td  width="50"><input type="checkbox"  class="large-checkbox"/></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody>
+
+                                            </table>
+                                            </div>
+                                           </div>
+                                             <div class="col-md-6 p-2">
+                                            <div class="border border-2 border-dark pt-2 px-3" style="background-color: #BECDE6;">
+                                            <div class="text-center fs-5 fw-bold">
+                                                Tuesday
+                                            </div>
+                                            <table class="table border  border-dark mt-2 tuesTable">
+<tbody >
+    <tr >
+        <td class="py-1" width="60"></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody>
+
+                                            </table>
+                                            </div>
+                                           </div>
+                                              <div class="col-md-6 p-2">
+                                            <div class="border border-2 border-dark pt-2 px-3" style="background-color: #CDE1BE;">
+                                            <div class="text-center fs-5 fw-bold" >
+                                                Wednesday
+                                            </div>
+                                            <table class="table border  border-dark mt-2 wedTable">
+<tbody >
+    <tr >
+        <td class="py-1" width="60"></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody>
+
+                                            </table>
+                                            </div>
+                                           </div>
+                                              <div class="col-md-6 p-2">
+                                            <div class="border border-2 border-dark pt-2 px-3" style="background-color: #F0DC96;">
+                                            <div class="text-center fs-5 fw-bold" >
+                                                Thursday
+                                            </div>
+                                            <table class="table border  border-dark mt-2 thursTable">
+<tbody >
+    <tr >
+        <td class="py-1" width="60"></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody>
+
+                                            </table>
+                                            </div>
+                                           </div>
+                                              <div class="col-md-6 p-2">
+                                            <div class="border border-2 border-dark pt-2 px-3" style="background-color: #DCDCDC;">
+                                            <div class="text-center fs-5 fw-bold" >
+                                             Friday
+                                            </div>
+                                            <table class="table border  border-dark mt-2 friTable">
+<tbody >
+    <tr >
+        <td class="py-1" width="60"></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody>
+
+                                            </table>
+                                            </div>
+                                           </div>
+                                              <div class="col-md-6 p-2">
+                                            <div class="border border-2 border-dark pt-2 px-3" style="background-color:#EBCDB9;">
+                                            <div class="text-center fs-5 fw-bold" >
+                                                Saturday
+                                            </div>
+                                            <table class="table border  border-dark mt-2 satTable">
+<tbody >
+    <tr >
+        <td class="py-1" width="60"></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody>
+
+                                            </table>
+                                            </div>
+                                           </div>
+                                       
                                         </div>
-                                        <div class="row classes py-2">
-                                            <div class="col-12">
-                                                <h4>Monday</h4>
+                                        <div class="row justify-content-center">
+                                                   <div class="col-md-6 p-2">
+                                            <div class="border border-2 border-dark pt-2 px-3" style="background-color: #E6DCF5;">
+                                            <div class="text-center fs-5 fw-bold" >
+                                                Sunday
                                             </div>
-                                            <div class="col-12 "><input type="checkbox"> Taikwandu : 5:20PM - 6:20PM
-                                            </div>
-                                            <div class="col-12">
-                                                <h4>Tuesday</h4>
-                                            </div>
-                                            <div class="col-12 "><input type="checkbox"> Taikwandu : 5:20PM - 6:20PM
-                                            </div>
-                                            <div class="col-12 "><input type="checkbox"> Yoga : 4:00PM - 5:00PM</div>
-                                            <div class="col-12">
-                                                <h4>Wednesday</h4>
-                                            </div>
-                                            <div class="col-12 "><input type="checkbox"> Open Adult : 5:20PM - 6:20PM
-                                            </div>
-                                            <div class="col-12 "><input type="checkbox"> Yoga : 4:00PM - 5:00PM</div>
+                                            <table class="table border  border-dark mt-2 sunTable">
+<tbody >
+    <tr >
+        <td class="py-1" width="60"></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody>
 
+                                            </table>
+                                            </div>
+                                           </div>
                                         </div>
                                     </div>
                                 </div>
@@ -908,8 +1225,35 @@
             </div>
         </div>
     </section>
+</div>
 
-    <!-- Bootstrap js File Link -->
+<script>
+function formatPhone(inputId) {
+    const phone = document.getElementById(inputId);
+
+    phone.addEventListener("input", function (e) {
+        let x = e.target.value.replace(/\D/g, "").substring(0, 10);
+
+        let formatted = "";
+
+        if (x.length > 0)
+            formatted = "(" + x.substring(0, 3);
+
+        if (x.length >= 4)
+            formatted += ") " + x.substring(3, 6);
+
+        if (x.length >= 7)
+            formatted += "-" + x.substring(6, 10);
+
+        e.target.value = formatted;
+    });
+}
+
+// Apply formatting to both phone fields
+formatPhone("phone1");
+formatPhone("phone2");
+</script>
+<!-- Bootstrap js File Link -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- Icons Js File Link -->
     <script src="icons/js/all.min.js"></script>
