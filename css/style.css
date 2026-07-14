@@ -153,7 +153,7 @@ body {
 }
 
 .DashboardCol {
-    padding-right: 5px;
+    padding-right: 5px !important;
 
 }
 
@@ -164,6 +164,7 @@ body {
 .SchoolName {
     background-color: #FFC000;
     border: 2px solid black;
+    font-size: 35px;
 
 }
 
@@ -174,9 +175,8 @@ body {
 .DashboardDate {
     font-weight: bold;
     font-size: 20px;
-    line-height: 25px;
     background-color: #FFD966;
-
+  margin-top: 0%;
 }
 
 .DashboardContentArea .mainpicture img {
@@ -194,9 +194,15 @@ body {
     border: 1px solid black;
     border-bottom: none;
 }
-
+.quickNotesContainer button{
+    border-radius: 5px;
+}
+.quickNotesContainer p{
+    font-weight: bold;
+    text-align: center;
+}
 .birthdays {
-    background-color: rgb(69, 191, 212);
+    background-color:#8FABDD;
     line-height: 0.4;
 }
 
@@ -439,6 +445,7 @@ body {
     border: 1px solid rgb(155, 148, 148);
     padding: 2px 5px;
     text-align: center;
+    font-size: 14px;
     width: 100%;
 }
 
@@ -1124,4 +1131,77 @@ body {
 
 .sunTable td{
     background-color: #E6DCF5 !important;
+}
+.MobileNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap:5px;
+}
+.MobileNav a{
+    background-color: transparent;
+    border-radius: 5px;
+    border:2px solid black;
+    text-decoration: none;
+    color: #000;
+    align-content: center;
+    text-align: center;
+    font-size: 10px;
+    padding:2px;
+    font-weight: 500;
+    max-width:80px;
+}
+
+.rankSectionMobileView table th, .rankSectionMobileView table td{
+background-color: #d2dff7;
+text-align: center;
+align-content: center;
+}
+.rankSectionMobileView table td input[type="text"] {
+  max-width:100px;
+    border: 1px solid black;
+}
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.checkmark {
+    width: 30px;
+    height: 25px;
+    border: 1px solid #000;
+    background: #fff;
+    border-radius: 1px;
+    position: relative;
+}
+
+/* Orange Tick */
+.custom-checkbox input:checked + .checkmark.orange::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: 8px;
+    height: 16px;
+    border: solid orange;
+    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Green Tick */
+.custom-checkbox input:checked + .checkmark.green::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: 8px;
+    height: 16px;
+    border: solid green;
+    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
