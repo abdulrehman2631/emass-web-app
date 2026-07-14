@@ -23,9 +23,9 @@
         font-size: small;
     }
 
-    .rankRight .promotionDateHeading {
+    /* .rankRight .promotionDateHeading {
         margin: 14px 0px;
-    }
+    } */
 
     .rankRight .leftRecord {
         margin-top: 7.9px;
@@ -48,7 +48,13 @@
     .date {
         position: relative;
     }
+    .DashboardCol {
+    padding-right: 0px !important;
 
+}
+.SchoolName {
+border:none;
+}
     .logo {
         height: auto;
     }
@@ -181,11 +187,13 @@
     }
 
     .quickNotesContainer button {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .quickNotesContainer h4 {
-        font-size: 18px;
+        font-size: 14px;
+        font-weight: bold;
+
     }
 
     .logo {
@@ -200,9 +208,12 @@
     .navbar-toggler-btn {
         padding: 0px 5px;
     }
-
+.DashboardDate{
+    font-size: 16px;
+}
     .SchoolName {
         border: 1px solid black;
+    font-size: 25px;
     }
 
     .DashboardContentArea {
@@ -461,7 +472,15 @@
     overflow-y: hidden;
 }
 }
-
+@media(max-width:400px) {
+.DashboardDate{
+    font-size: 14px;
+}
+    .SchoolName {
+        border: 1px solid black;
+    font-size: 20px;
+    }
+}
 @media(max-width:462px) {
     .ClassSheduleContent .addClassFormDiv form button {
         margin-top: 32px;
@@ -484,7 +503,7 @@
         height: 40px;
         width: 50%;
     }
-
+ 
     .navbar-collapse {
         left: 100px;
         top: 200px;
