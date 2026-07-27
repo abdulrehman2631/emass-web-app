@@ -128,12 +128,12 @@ body {
     font-weight: 900;
     padding-left: 5px;
     padding-right: 5px;
-    gap: 10px 0px;
+    gap: 30px 0px;
 }
 
 #sideNavbarNav ul li {
     border: 2px solid black;
-    padding: 7px 0px;
+    padding: 15px 0px;
     border-radius: 10px;
 }
 
@@ -164,6 +164,7 @@ body {
 .SchoolName {
     background-color: #FFC000;
     border: 2px solid black;
+    font-family: 'Segoe';
     font-size: 35px;
 
 }
@@ -180,7 +181,7 @@ body {
 }
 
 .DashboardContentArea .mainpicture img {
-    height: 443px;
+    height: 394px;
     width: 100%;
 
 }
@@ -196,6 +197,7 @@ body {
 }
 .quickNotesContainer button{
     border-radius: 5px;
+
 }
 .quickNotesContainer p{
     font-weight: bold;
@@ -1136,7 +1138,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    gap:5px;
+    /* gap:5px; */
 }
 .MobileNav a{
     background-color: transparent;
@@ -1146,10 +1148,10 @@ body {
     color: #000;
     align-content: center;
     text-align: center;
-    font-size: 10px;
-    padding:2px;
-    font-weight: 500;
-    max-width:80px;
+    font-size: 14px;
+    font-weight: bold;
+    /* max-width:80px; */
+    height:50px;
 }
 
 .rankSectionMobileView table th, .rankSectionMobileView table td{
