@@ -166,9 +166,9 @@ border:none;
     .rankRight .promotionDateHeading {
         margin: 17px 0px;
     }
-.logoText{
+/* .logoText{
  line-height: 22px;   
-}
+} */
     .rankPageDiv {
         padding-bottom: 10px;
     }
@@ -234,7 +234,7 @@ border:none;
     }
 
     .DashboardContentArea img {
-        min-height: 300px;
+        /* min-height: 300px; */
         border: 1px solid black;
     }
 
@@ -479,10 +479,10 @@ border:none;
 }
 
  @media(max-width:440px) {
- .logoText{
+ /* .logoText{
  line-height: 16px; 
  font-size: 12px;  
-}
+} */
 .MobileNav a{
     font-size: 10px;
     height:40px;
@@ -494,13 +494,13 @@ border:none;
 .DashboardDate{
     font-size: 12px;
 }
- .logoText{
+ /* .logoText{
     line-height: 14px;
  font-size: 14px;  
-}
+} */
     .SchoolName {
         border: 1px solid black;
-    font-size: 20px;
+    font-size: 24px;
     }
 }
 @media(max-width:424px) {
