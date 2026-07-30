@@ -156,17 +156,21 @@ body {
     padding-right: 5px !important;
 
 }
-
-.DashboardContentArea {
-    border-top: 2px solid black;
-}
-
 .SchoolName {
     background-color: #FFC000;
     border: 2px solid black;
     font-family: 'Segoe';
     font-size: 35px;
 
+}
+.DashboardContentArea {
+    border-top: 2px solid black;
+}
+.DashboardContentArea .mainpicture {
+    height: 100%;
+}
+.DashboardContentArea .mainpicture .col {
+    height: 100%;
 }
 
 .DashboardCol h1 {
@@ -180,10 +184,17 @@ body {
   margin-top: 0%;
 }
 
-.DashboardContentArea .mainpicture img {
-    height: 394px;
-    width: 100%;
+.DashboardContentArea {
+       width:100%;
+    overflow:hidden;
+    height:auto;
+}
 
+.DashboardContentArea .mainpicture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
 .quickNotes button {
