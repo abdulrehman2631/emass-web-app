@@ -513,7 +513,7 @@ fieldset.group-box legend {
     border: 2px solid rgb(155, 148, 148);
     width: fit-content;
     font-size: 20px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .MembershipSection .memChkBox {
