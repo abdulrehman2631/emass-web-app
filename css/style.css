@@ -640,17 +640,25 @@ fieldset.group-box legend {
 }
 
 #myTabContent {
-    height: 77vh;
+    height: 64vh;
 }
 
 .StudentContent {
-    border: 2px solid rgb(155, 148, 148);
-    margin-right: 50px;
+    /* border: 2px solid rgb(155, 148, 148); */
+    margin-right: 5px;
+
 }
+.StudentContent h3{
+    background-color: royalblue;
+
+}
+
+
 
 .StudentContent .tabpanel {
     overflow-y: scroll;
-    height: 100%;
+    height: 47.7vh;
+    margin-right:0px;
 }
 
 .StudentContent .StdHeading {
@@ -675,7 +683,11 @@ fieldset.group-box legend {
     margin-left: 5px;
     background-color: red;
 }
-
+.StudentContent .birthday{
+    height: 63.6vh;
+    overflow-y: scroll;
+    background-color: white;
+}
 #dateDisplay {
     font-weight: bold;
     font-size: var(--font-size-heading);
@@ -1027,8 +1039,8 @@ fieldset.group-box legend {
 
 .ClassSheduleContent {
     border: 2px solid black;
-    margin-right: 50px;
-    min-height: 83vh;
+    margin-right: 5px;
+    min-height: 69vh;
 
 }
 
@@ -1086,7 +1098,19 @@ fieldset.group-box legend {
     border: 2px solid black;
     min-height: 250px;
 }
+.ScheduleDiv .card1 td{
+    background-color: #EBCDB9;
+}
+.ScheduleDiv .card2 td{
+    background-color: #BECDE6;;
+}
 
+.ScheduleDiv .card3 td{
+    background-color:#CDE1BE;
+}
+.ScheduleDiv .card4 td{
+    background-color:#F0DC96;
+}
 .ClassSheduleContent .ScheduleDiv .className {
     border: 2px solid black;
     width: fit-content;
@@ -1232,4 +1256,93 @@ align-content: center;
     border: solid green;
     border-width: 0 3px 3px 0;
     transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+
+
+
+/* Normal (Inactive) Tabs */
+.StudentContent .nav .nav-link {
+    border: 1px solid black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0;
+}
+
+.StudentContent .nav .nav-link.active {
+    background-color: #92D14F; /* Green */
+    color: #fff;
+    border-color: #000;
+}
+
+.StudentContent .nav .nav-link:hover {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+.StudentContent .nav .nav-link.active:hover {
+    background-color: #92D14F;
+    color: #fff;
+}
+
+
+
+
+
+.student-card{
+    width:32%;
+    height:200px;
+    border:1px solid #d5d5d5;
+    border-radius:10px;
+    background:#f8f8f8;
+}
+
+.student-card .card-body{
+    height:100%;
+}
+
+.student-img{
+    width:75px;
+    height:70px;
+    object-fit:cover;
+    border:1px solid #ccc;
+    background:#fff;
+}
+
+.view-btn{
+    width:100%;
+    font-size:10px;
+    padding:2px 4px;
+    color:#00AEEF;
+    border:1px solid #ccc;
+    background:#fff;
+}
+
+.class-list{
+    height:45px;
+    overflow-y:auto;
+    border:1px solid #ddd;
+    background:#fff;
+    padding:2px 4px;
+    font-size:11px;
+    line-height:14px;
+}
+
+.student-card h6{
+    font-size:16px;
+    margin-bottom:2px;
+}
+
+.student-card .form-control{
+    height:24px;
+    font-size:12px;
+    padding:2px 5px;
+}
+
+.student-card small{
+    font-size:11px;
+    line-height:1.2;
 }
