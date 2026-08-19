@@ -2,6 +2,9 @@
     --primary-color: #FFD966;
     --font-size-normal: 16px;
     --font-size-heading: 20px;
+    --top-heading-bg-color:royalblue;
+    --top-heading-Fore-color:yellow;
+    --bg-color:#FBE5D7;
 }
 
 * {
@@ -234,6 +237,11 @@ body {
     height: 69vh;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+.addStudentCenterPanel .StdProfile{
+    background-color: var(--top-heading-bg-color);
+    color:var(--top-heading-Fore-color);
+    padding:5px 20px 5px 20px;
 }
 fieldset.group-box {
     border: 2px solid #6c757d !important;
@@ -519,13 +527,7 @@ fieldset.group-box legend {
      margin: 0;
       text-align: left; 
     }
-.rank-student-name {
-     background: #ffe17a; 
-     border: 1px solid #777;
-      font-size: 1.5rem;
-       padding: 8px 12px; 
-       text-align: center;
-     }
+
 .rank-promotion-content {
      display: flex;
       gap: 8px; 
@@ -581,7 +583,11 @@ fieldset.group-box legend {
 .rank-table-scroll { flex: 1; overflow-x: auto; }
 .rank-table-pair { flex: 1 1 0; min-width: 0; width: auto; }
 .rank-promotion-table { min-width: 0; width: 100%; table-layout: fixed; border-collapse: collapse; background: #f8f8f8; text-align: center; }
-.rank-promotion-header { display: grid; grid-template-columns: 8fr 15fr 23fr 15fr 12fr 12fr 15fr; gap: 0; height: 65px; align-items: end; }
+.rank-promotion-header { display: grid;
+     grid-template-columns: 8fr 15fr 23fr 15fr 12fr 12fr 15fr; 
+     gap: 0; height: 65px;
+      align-items: end;
+    margin-top:12px !important; }
 .rank-header-cell { height: 31px; 
     align-self: end;
      justify-self: center;
@@ -810,6 +816,8 @@ fieldset.group-box legend {
     overflow-y: scroll;
     height: 47.7vh;
     margin-right:0px;
+    margin: 5px;
+    padding:0px;
 }
 
 .StudentContent .StdHeading {
@@ -847,6 +855,10 @@ fieldset.group-box legend {
 .activeContainer button {
     font-weight: bold;
 }
+.activeContainer{
+    background-color: var(--bg-color);
+
+}
 
 .activeContainer .record .col div {
     border: 2px solid black;
@@ -871,7 +883,9 @@ fieldset.group-box legend {
     font-weight: bold;
     font-size: var(--font-size-heading);
 }
-
+.InactiveContainer{
+     background-color: var(--bg-color);
+}
 .InactiveContainer .record .col div {
     border: 2px solid black;
     width: fit-content;
@@ -890,7 +904,9 @@ fieldset.group-box legend {
     font-weight: bold;
     font-size: var(--font-size-heading);
 }
-
+.FrozenContainer{
+         background-color: var(--bg-color);
+}
 .FrozenContainer .record .col div {
     border: 2px solid black;
     width: fit-content;
@@ -909,7 +925,32 @@ fieldset.group-box legend {
     font-weight: bold;
     font-size: var(--font-size-heading);
 }
-
+.birthdayheading{
+    background-color: var(--top-heading-bg-color);
+    color:var(--top-heading-Fore-color);
+   
+    width:fit-content;
+    margin: auto;
+ margin-top: 10px;
+ padding: 5px 10px 5px 10px;
+}
+.stdDocuments{
+     background-color: var(--top-heading-bg-color);
+    color:var(--top-heading-Fore-color);
+     flex-wrap: nowrap;   
+    width:fit-content;
+    margin: auto;
+ margin-top: 10px;
+ padding: 5px 10px 5px 10px;
+}
+.uploadDocument{
+     background-color: var(--top-heading-bg-color);
+    color:var(--top-heading-Fore-color);
+     flex-wrap: nowrap;   
+    width:fit-content;
+    margin: auto;
+ padding: 5px 10px 5px 10px;
+}
 .BirthdaysPage .EmailText .col div {
     border: 2px solid black;
     width: fit-content;
@@ -1448,7 +1489,7 @@ align-content: center;
     height:200px;
     border:1px solid #d5d5d5;
     border-radius:10px;
-    background:#f8f8f8;
+    background:#E8F0FE;
 }
 
 .student-card .card-body{
@@ -1496,4 +1537,452 @@ align-content: center;
 .student-card small{
     font-size:11px;
     line-height:1.2;
+}
+
+/* Student directory cards */
+
+
+/* .student-card .card-body > .row > .col-4 {
+    width: 34%;
+    padding: 0 !important;
+}
+
+.student-card .card-body > .row > .col-8 {
+    width: 66%;
+    padding: 0 !important;
+    min-width: 0;
+} */
+
+.student-img {
+    display: block;
+    width: 80px;
+    height: 78px;
+    margin: 0 auto 10px;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.student-card h6 {
+    font-size: 15px;
+    line-height: 1.1;
+    margin: 2px 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.student-card .form-control {
+    width: 82px;
+    height: 21px;
+    margin: 0 0 6px !important;
+    border: 1px solid #555;
+    border-radius: 0;
+    background: #fff;
+    font-size: 12px;
+    padding: 1px 5px;
+}
+
+.student-card small {
+    display: block;
+    font-size: 11px;
+    line-height: 1.35;
+    color: #173454;
+    white-space: nowrap;
+}
+
+.student-card small:nth-of-type(1)::before { content: 'Email: '; font-weight: 700; }
+.student-card small:nth-of-type(2)::before { content: 'Emg Contact: '; font-weight: 700; }
+.student-card small:nth-of-type(3)::before { content: 'Phone1: '; font-weight: 700; }
+.student-card small:nth-of-type(3)::after {
+    content: 'Phone2:';
+    display: block;
+    font-weight: 700;
+}
+
+.student-card .class-list {
+    height: 39px;
+    margin: 0 0 4px;
+    padding: 0 0 0 0;
+    border: 0;
+    background: transparent;
+    overflow-y: auto;
+    font-size: 11px;
+    line-height: 1.25;
+    color: #173454;
+}
+
+.student-card .class-list::before {
+    content: 'Classes:';
+    display: block;
+    font-weight: 700;
+}
+
+.student-card .class-list div {
+    white-space: nowrap;
+}
+
+.student-card .view-btn {
+    display: block;
+    width: 84px;
+    min-height: 27px;
+    margin: 0 auto !important;
+    padding: 3px 5px;
+    border: 1px solid #555;
+    border-radius: 0;
+    color: #075fc7;
+    font-size: 10px;
+    font-weight: 700;
+    background: #f8f8f8;
+}
+
+/* Rank promotion header alignment. Only the heading rows are changed. */
+@media (min-width: 992px) {
+    .rank-promotion-panel {
+        padding: 0;
+    }
+
+    .rank-promotion-panel .rank-promotion-heading {
+        grid-template-columns: 148px minmax(0, 1fr);
+        gap: 0;
+        align-items: stretch;
+        margin: 0 0 5px;
+    }
+
+
+    .rank-promotion-panel .rank-promotion-heading h2 {
+        display: flex;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        border: 1px solid #111;
+        background: #4472c4;
+        color: #ffe699;
+        font-size: 30px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .rank-promotion-panel .rank-promotion-content {
+        gap: 0;
+    }
+
+    .rank-promotion-panel .promote-controls {
+        position: relative;
+        flex: 0 0 148px;
+        width: 148px;
+        margin-top: 0;
+    }
+
+    .rank-promotion-panel .promote-title {
+        position: absolute;
+        top: -34px;
+        left: 0;
+        z-index: 2;
+        width: 148px;
+        height: 25px;
+        padding: 2px 0;
+        border-color: #111;
+        background: #bdd7ee;
+        color: #111;
+        font-size: 15px;
+    }
+
+    .rank-promotion-panel .promote-toggle {
+        position: absolute;
+        top: -9px;
+        left: 0;
+        z-index: 2;
+        width: 148px;
+        height: 25px;
+        padding: 0 4px;
+        border-color: #111;
+        background: #bdd7ee;
+        color: #111;
+        font-size: 14px;
+    }
+
+    .rank-promotion-panel .promote-toggle input {
+        width: 22px;
+        height: 22px;
+    }
+
+    .rank-promotion-panel .promote-controls > small {
+        position: absolute;
+        top: 16px;
+        left: 0;
+        z-index: 2;
+        width: 148px;
+        height: 19px;
+        padding: 0;
+        border-color: #111;
+        background: #bdd7ee;
+        color: #111;
+        font-size: 9px;
+        line-height: 19px;
+        white-space: nowrap;
+    }
+
+    .rank-promotion-panel .promotion-checks {
+        position: relative;
+        z-index: 1;
+        margin-top: 0;
+    }
+
+    .rank-promotion-panel .rank-table-pair {
+        min-width: 0;
+        flex: 1 1 0;
+    }
+
+    .rank-promotion-panel .rank-promotion-header {
+        height: 58px;
+        align-items: start;
+    }
+
+    .rank-promotion-panel .rank-header-cell,
+    .rank-promotion-panel .rank-header-cell:nth-child(n) {
+        width: 100%;
+        height: 58px;
+        align-self: start;
+        padding: 3px;
+        border-color: #111;
+        background: #f8cbad;
+        color: #111;
+        font-size: .78rem;
+        line-height: 1.05;
+    }
+
+    .rank-promotion-panel .rank-promotion-data {
+        margin-top: 0;
+    }
+}
+
+/* Final rank-promotion composition: left controls beside one padded white
+   container holding the purple title and the complete right table. */
+@media (min-width: 992px) {
+    .rank-promotion-panel {
+        padding: 0;
+    }
+
+    .rank-promotion-panel .rank-promotion-content {
+        display: flex;
+        gap: 0;
+        align-items: flex-start;
+    }
+
+    .rank-promotion-panel .promote-controls {
+        position: static;
+        flex: 0 0 210px;
+        width: 210px;
+        margin: 0;
+        text-align: center;
+    }
+
+    
+    .rank-promotion-panel .promote-title {
+        position: static;
+        width: 100%;
+        height: 28px;
+        padding: 3px 0;
+        border: 1px solid #111;
+        border-bottom: 0;
+        background: #bdd7ee;;
+        color: #111;
+        font-size: 16px;
+    }
+
+    .rank-promotion-panel .promote-toggle {
+        position: static;
+        width: 100%;
+        height: 28px;
+        border-color: #111;
+        background: #bdd7ee;
+        color: #111;
+        font-size: 15px;
+    }
+
+    .rank-promotion-panel .promote-toggle input {
+        width: 22px;
+        height: 22px;
+    }
+
+    .rank-promotion-panel .promote-controls > small {
+        position: static;
+        width: 100%;
+        height: 20px;
+        border-color: #111;
+        background: #bdd7ee;
+        color: #111;
+        font-size: 10px;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+
+    .rank-promotion-panel .promotion-checks {
+        position: static;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .rank-promotion-panel .rank-right-container {
+        flex: 1 1 auto;
+        min-width: 0;
+        padding:5px 5px 0px 5px;
+        background: #fff;
+        border:1px solid black;
+    }
+
+#rank-promotions-title{
+   display: flex;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        border: 1px solid #111;
+        background: #4472c4;
+        color: #ffe699;
+        font-size: 30px;
+        line-height: 1;
+        text-align: center;
+}
+    .rank-promotion-panel .rank-table-pair {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .rank-promotion-panel .rank-promotion-header {
+        width: 100%;
+        height: 65px;
+        align-items: end;
+    }
+
+    .rank-promotion-panel .rank-header-cell,
+    .rank-promotion-panel .rank-header-cell:nth-child(n) {
+        width: 100%;
+        height: 58px;
+        align-self: end;
+        padding: 3px;
+        border-color: #111;
+        background: #f8cbad;
+        color: #111;
+        font-size: .78rem;
+        line-height: 1.05;
+    }
+
+    .rank-promotion-panel .rank-promotion-data {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /* Final pixel-level alignment with the reference layout. */
+    .rank-promotion-panel .promote-controls {
+        background: #bdd7ee;
+    }
+
+  
+    .rank-promotion-panel .promote-title {
+        background: #bdd7ee;
+    }
+
+    .rank-promotion-panel .promotion-checks {
+        margin-top: 0;
+        background: #bdd7ee;
+    }
+
+    .rank-promotion-panel .promotion-checks th,
+    .rank-promotion-panel .promotion-checks td {
+        background: #bdd7ee;
+        border-color: #111;
+    }
+
+    .rank-promotion-panel .promotion-checks th {
+        height: 58px;
+    }
+
+    .rank-promotion-panel .promotion-checks td {
+        height: 37px;
+    }
+
+
+    .rank-promotion-panel .rank-right-container > h2 {
+        margin: 0;
+        background: #4472c4;
+    }
+
+    .rank-promotion-panel .rank-promotion-table td {
+        height: 37px;
+    }
+}
+
+/* Rank promotion panel: match the reference header only. */
+@media (min-width: 992px) {
+    .rank-promotion-panel {
+        padding: 0;
+    }
+
+    .rank-promotion-panel .rank-promotion-heading {
+        grid-template-columns: 170px minmax(0, 1fr);
+        gap: 8px;
+        align-items: stretch;
+        margin: 0 0 4px;
+    }
+
+    .rank-promotion-panel .rank-student-name {
+        display: flex;
+        min-height: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 6px;
+        border: 1px solid #111;
+        background: #fff;
+        color: #111;
+        font-size: 14px;
+        line-height: 1.1;
+    }
+
+    .rank-promotion-panel .rank-promotion-heading h2 {
+        display: flex;
+        min-height: 60px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 4px 10px;
+        border: 1px solid #111;
+        background: #4472c4;
+        color: #ffe699;
+        font-size: 30px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .rank-promotion-panel .promote-controls {
+        margin-top: 0;
+    }
+
+    .rank-promotion-panel .promote-title {
+        background: #bdd7ee;
+        border-color: #111;
+        color: #111;
+    }
+
+    .rank-promotion-panel .promote-toggle,
+    .rank-promotion-panel .promote-controls > small {
+        background: #bdd7ee;
+        border-color: #111;
+        color: #111;
+    }
+
+    .rank-promotion-panel .rank-promotion-header {
+        height: 65px;
+        margin: 0;
+    }
+
+    .rank-promotion-panel .rank-header-cell {
+        background: #f8cbad;
+        border-color: #111;
+        color: #111;
+        font-weight: 700;
+    }
 }
