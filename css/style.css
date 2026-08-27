@@ -811,7 +811,7 @@ fieldset.group-box legend {
 
 }
 
-.tabpanel {
+.StudentContent .tabpanel {
     overflow-y: auto;
     height: 49.5vh;
     margin:1px;
