@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="icons/css/all.min.css">
     <!-- Css Link -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rank.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 
@@ -132,7 +133,7 @@
                     <div class="rankPageDiv">
 
 
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <ul class="nav rank-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="promoteAStudent-tab" data-bs-toggle="tab"
                                     data-bs-target="#promoteAStudent" type="button" role="tab">
@@ -140,15 +141,15 @@
                                 </button>
                             </li>
                              <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="rankingLevel-tab" data-bs-toggle="tab"
-                                    data-bs-target="#rankingLevel" type="button" role="tab">
-                                    Ranking Levels
+                                <button class="nav-link" id="UpcomingTests-tab" data-bs-toggle="tab"
+                                    data-bs-target="#UpcomingTests" type="button" role="tab">
+                                    Upcoming Tests
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link " id="rankRequirements-tab" data-bs-toggle="tab"
-                                    data-bs-target="#rankRequirements" type="button" role="tab">
-                                    Rank Requirements
+                                <button class="nav-link " id="StudentsListedByRanks-tab" data-bs-toggle="tab"
+                                    data-bs-target="#StudentsListedByRanks" type="button" role="tab">
+                                    All Students Listed By Ranks
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
@@ -698,327 +699,75 @@ Notes
                                 </div>
                             </div>
                             <!-- First Tab -->
-                            <div class="tab-pane fade " id="rankingLevel" role="tabpanel">
-                                <div class="container-fluid gx-sm-2 gx-1">
-                                    <div class="row">
-                                        <div class="col-sm-2 col-3 px-0">
-                                            <div class="styleName">Style #1 <br /> (Name)</div>
-                                        </div>
-                                        <div class="col-sm-10 col-9 px-0">
-                                            <div class="container-fluid">
-                                                <div class="row gx-0">
-                                                    <div class="col px-0">
-                                                        <div id="rankPageDate"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col px-2">
-                                                        <span class="rankHeading">Rank And Promotion Time For Each
-                                                            Level</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row bg-white mt-2 border border-dark pt-2 tableContentRow">
-                                        <div class="col-12">
-                                            <div class="container-fluid">
-                                                <div class="row d-flex align-items-center">
-                                                    <div class="col-2 px-0">
-                                                        <div class="rankTableHeading">Levels</div>
-                                                    </div>
-                                                    <div class="col-2 px-0">
-                                                        <div class="rankTableHeading">Colors</div>
-                                                    </div>
-                                                    <div class="col-2 px-0">
-                                                        <div class="rankTableHeading">Name Of Rank</div>
-                                                    </div>
-                                                    <div class="col-2 px-0">
-                                                        <div class="rankTableHeading"
-                                                            style="max-width: 100px;float: right;">Classes Needed For
-                                                            Next Level
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-2 px-0">
-                                                        <div class="rankTableHeading">Apx. Time to Next Level</div>
-                                                    </div>
-                                                    <div class="col-2 px-0">
-                                                        <div class="rankTableHeading">Action Controls</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="container-fluid mt-2">
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                    <div class="row rankTable">
-                                                        <div class="col-2 px-md-2 px-0">1<sup>st</sup> Level</div>
-                                                        <div class="col-2 px-md-2 px-0 d-flex align-items-center">
-                                                            <div class="rankColor"></div>
-                                                        </div>
-                                                        <div class="col-3 px-md-2 px-0">Gray Sash</div>
-                                                        <div class="col-1 px-md-2 px-0">8</div>
-                                                        <div class="col-2 px-md-2 px-0">2 Weeks</div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/icons8-edit-50.png" /></div>
-                                                        <div class="col-1 px-md-2 px-0"><img class="img-fluid"
-                                                                src="images/delete.png" /></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="tab-pane fade upcoming-tests-pane" id="UpcomingTests" role="tabpanel" aria-labelledby="UpcomingTests-tab">
+                                <div class="upcoming-tests-heading">Upcoming Tests / Rank Promotions</div>
+                                <div class="upcoming-tests-scroll">
+                                    <div class="upcoming-tests-table-wrap">
+                                        <table class="upcoming-tests-table">
+                                            <caption class="visually-hidden">Upcoming tests and rank promotions</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Profile<br>Picture</th>
+                                                    <th scope="col">Student Name<br>And Rank</th>
+                                                    <th scope="col">Eligible<br>Promotion Date</th>
+                                                    <th scope="col">Rank to be<br>Promoted To</th>
+                                                    <th scope="col">Schedule Test or<br>Promotion Date and Time</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="upcoming-tests-body">
+                                                <!-- Replace these example rows with database results. Keep the same cell structure. -->
+                                                <tr><td><div class="upcoming-profile-placeholder" aria-label="Sarah profile picture"><i class="fa-solid fa-user"></i></div></td><td><strong>Sarah</strong><span class="rank-swatch orange"></span></td><td><strong>12-2-2026</strong></td><td><span class="rank-swatch green" aria-label="Green sash"></span></td><td><div class="schedule-cell"><strong>8-12-2026</strong><button type="button">Fill in Time</button></div></td></tr>
+                                                <tr><td><div class="upcoming-profile-placeholder" aria-label="Ikkl profile picture"><i class="fa-solid fa-user"></i></div></td><td><strong>Smith</strong><span class="rank-swatch black"></span></td><td><strong>2-4-2028</strong></td><td><span class="rank-swatch black" aria-label="Black sash"></span></td><td><div class="schedule-cell"><strong>8-7-2026</strong><button type="button">Fill in Time</button></div></td></tr>
+                                                <tr><td><div class="upcoming-profile-placeholder" aria-label="Mellburn profile picture"><i class="fa-solid fa-user"></i></div></td><td><strong>Steive</strong><span class="rank-swatch maroon"></span></td><td><strong>5-14-2027</strong></td><td><span class="rank-swatch brown" aria-label="Brown sash"></span></td><td><div class="schedule-cell"><strong>8-7-2026</strong><button type="button">Fill in Time</button></div></td></tr>
+                                                <tr><td><div class="upcoming-profile-placeholder" aria-label="Sdss profile picture"><i class="fa-solid fa-user"></i></div></td><td><strong>Albert</strong><span class="rank-none">None</span></td><td><strong>8-13-2026</strong></td><td><span class="rank-swatch white" aria-label="White sash"></span></td><td><div class="schedule-cell"><strong>7-16-2026</strong><button type="button">Fill in Time</button></div></td></tr>
+                                                <tr><td><div class="upcoming-profile-placeholder" aria-label="Dfafd profile picture"><i class="fa-solid fa-user"></i></div></td><td><strong>Dawid</strong><span class="rank-swatch black"></span></td><td><strong>8-20-2026</strong></td><td><span class="rank-swatch pink" aria-label="Pink sash"></span></td><td><div class="schedule-cell"><strong>8-20-2026</strong><button type="button">Fill in Time</button></div></td></tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
 
 
 
-                            <div class="tab-pane fade" id="rankRequirements" role="tabpanel">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col"><span id="requirementTabDate"></span></div>
-                                        <div class="col-xl-2 col-md-3  col-5 ">
-                                            <h5>Select Level</h5>
-                                            <select>
-                                                <option>Gray Sash</option>
-                                                <option>Orange Sash</option>
-                                                <option>Blue Sash</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col ">
-                                            <div class="requirementHeading" style="max-width: 450px;">
-                                                <div class="fw-bold">Rank Requirements - 3rd Level Orange Sash <span
-                                                        class="SashColor">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-5 mt-2">
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <h3 class="text-decoration-underline text-center fw-bold">Stances</h3>
-                                            <div class="movesForm"></div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <h3 class="text-decoration-underline text-center fw-bold">Blocks</h3>
-                                            <div class="movesForm"></div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <h3 class="text-decoration-underline text-center fw-bold">Strikes</h3>
-                                            <div class="movesForm"></div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <h3 class="text-decoration-underline text-center fw-bold">Kicks</h3>
-                                            <div class="movesForm"></div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <h3 class="text-decoration-underline text-center fw-bold">Forms</h3>
-                                            <div class="movesForm"></div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <h3 class="text-decoration-underline text-center fw-bold">Self-Defence</h3>
-                                            <div class="movesForm"></div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
+                            <div class="tab-pane fade all-ranks-pane" id="StudentsListedByRanks" role="tabpanel" aria-labelledby="StudentsListedByRanks-tab">
+    <div class="all-ranks-heading">All Students Listed By Ranks</div>
+    <div class="all-ranks-scroll">
+        <div class="all-ranks-grid" id="students-by-rank-list">
+            <article class="rank-student-card">
+                <header class="rank-card-header novice"><strong>Novice</strong><span>Level 0</span></header>
+                <ol><li></li><li>Wajid</li><li>waleed</li><li>sdss</li><li></li></ol><footer>Total = 4</footer>
+            </article>
+            <article class="rank-student-card">
+                <header class="rank-card-header white-sash"><strong>White Sash</strong><span>Level 1</span></header>
+                <ol><li>mark</li><li></li><li></li><li></li><li></li></ol><footer>Total = 1</footer>
+            </article>
+            <article class="rank-student-card">
+                <header class="rank-card-header yellow-sash"><strong>Yellow Sash</strong><span>Level 2</span></header>
+                <ol><li>robert</li><li></li><li></li><li></li><li></li></ol><footer>Total = 1</footer>
+            </article>
+            <article class="rank-student-card">
+                <header class="rank-card-header gold-sash"><strong>Gold Sash</strong><span>Level 3</span></header>
+                <ol><li></li><li></li><li></li><li></li><li></li></ol><footer>Total = 0</footer>
+            </article>
+            <article class="rank-student-card">
+                <header class="rank-card-header orange-sash"><strong>Orange Sash</strong><span>Level 4</span></header>
+                <ol><li>Sarah</li><li></li><li></li><li></li><li></li></ol><footer>Total = 1</footer>
+            </article>
+            <article class="rank-student-card">
+                <header class="rank-card-header green-sash"><strong>Green Sash</strong><span>Level 5</span></header>
+                <ol><li></li><li></li><li></li><li></li><li></li></ol><footer>Total = 0</footer>
+            </article>
+            <article class="rank-student-card">
+                <header class="rank-card-header blue-sash"><strong>Blue Sash</strong><span>Level 6</span></header>
+                <ol><li></li><li></li><li></li><li></li><li></li></ol><footer>Total = 0</footer>
+            </article>
+            <article class="rank-student-card">
+                <header class="rank-card-header purple-sash"><strong>Purple Sash</strong><span>Level 7</span></header>
+                <ol><li></li><li></li><li></li><li></li><li></li></ol><footer>Total = 0</footer>
+            </article>
+        </div>
+    </div>
+</div>
 
                             <div class="tab-pane fade" id="setSetNewRequirements" role="tabpanel">
                                 <div class="container-fluid">
@@ -1165,6 +914,36 @@ Notes
     <script src="icons/js/all.min.js"></script>
     <!-- JavaScript Link -->
     <script src="js/script.js"></script>
+  <script>
+    // Use one deterministic tab handler for all rank panes.
+    document.querySelectorAll('#myTab [data-bs-toggle="tab"]').forEach(function (tabButton) {
+      tabButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+
+        var targetSelector = tabButton.getAttribute('data-bs-target');
+        var targetPane = document.querySelector(targetSelector);
+        if (!targetPane) return;
+
+        document.querySelectorAll('#myTab .nav-link').forEach(function (button) {
+          button.classList.remove('active');
+          button.setAttribute('aria-selected', 'false');
+        });
+
+        document.querySelectorAll('#myTabContent > .tab-pane').forEach(function (pane) {
+          pane.classList.remove('show', 'active');
+          pane.style.display = 'none';
+          pane.style.opacity = '0';
+        });
+
+        tabButton.classList.add('active');
+        tabButton.setAttribute('aria-selected', 'true');
+        targetPane.classList.add('show', 'active');
+        targetPane.style.display = targetPane.classList.contains('upcoming-tests-pane') || targetPane.classList.contains('all-ranks-pane') ? 'flex' : 'block';
+        targetPane.style.opacity = '1';
+      }, true);
+    });
+  </script>
 </body>
 
 
