@@ -1,0 +1,406 @@
+:root {
+    --primary-color: #FFD966;
+    --font-size-normal: 16px;
+    --font-size-heading: 20px;
+    --top-heading-bg-color: royalblue;
+    --top-heading-Fore-color: yellow;
+    --bg-color: #FBE5D7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+/* Rank page tabs */
+.rankPageDiv .rank-tabs {
+    display: flex;
+    align-items: stretch;
+    overflow-x: auto;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.rankPageDiv .rank-tabs .nav-item {
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.rankPageDiv .rank-tabs .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 0;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.rankPageDiv .rank-tabs .nav-item + .nav-item .nav-link {
+    border-left: 0;
+}
+
+.rankPageDiv .rank-tabs .nav-link.active,
+.rankPageDiv .rank-tabs .nav-link.active:hover,
+.rankPageDiv .rank-tabs .nav-link.active:focus {
+    background: #92D14F;
+    border-color: #000;
+    color: #000;
+}
+
+.rankPageDiv .rank-tabs .nav-link:hover,
+.rankPageDiv .rank-tabs .nav-link:focus {
+    background: #e9ecef;
+    color: #000;
+}
+
+/* Upcoming tests / rank promotions */
+.rankPageDiv #myTabContent {
+    height: 64vh;
+    overflow: hidden;
+}
+
+/* Ensure every rank tab becomes visible when Bootstrap marks it active. */
+.rankPageDiv #myTabContent > .tab-pane.active {
+    display: block;
+    height: 100%;
+    opacity: 1;
+}
+
+.rankPageDiv #myTabContent > .upcoming-tests-pane.active,
+.rankPageDiv #myTabContent > #StudentsListedByRanks.all-ranks-pane.active {
+    display: flex;
+}
+
+.rankPageDiv .upcoming-tests-pane {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    background: var(--primary-color);
+}
+
+.rankPageDiv .upcoming-tests-heading {
+    align-self: center;
+    margin: 10px auto 16px;
+    padding: 4px 14px;
+    background: royalblue;
+    color: yellow;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.rankPageDiv .upcoming-tests-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 8px;
+}
+
+.rankPageDiv .upcoming-tests-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.rankPageDiv .upcoming-tests-table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #FBE5D7;
+    color: #000;
+    font-size: clamp(.85rem, 1.6vw, 1.1rem);
+}
+
+.rankPageDiv .upcoming-tests-table th,
+.rankPageDiv .upcoming-tests-table td {
+    border: 2px solid #9b9b9b;
+    padding: 7px 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.rankPageDiv .upcoming-tests-table th {
+    height: 54px;
+    background: #bdd7ee;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.rankPageDiv .upcoming-tests-table td {
+    height: 76px;
+    font-weight: 700;
+}
+
+.rankPageDiv .upcoming-tests-table th:nth-child(1) { width: 10%; }
+.rankPageDiv .upcoming-tests-table th:nth-child(2) { width: 20%; }
+.rankPageDiv .upcoming-tests-table th:nth-child(3) { width: 22%; }
+.rankPageDiv .upcoming-tests-table th:nth-child(4) { width: 19%; }
+.rankPageDiv .upcoming-tests-table th:nth-child(5) { width: 29%; }
+
+.rankPageDiv .upcoming-profile-placeholder {
+    display: grid;
+    place-items: center;
+    width: 74px;
+    height: 48px;
+    margin: auto;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+    color: #aaa;
+    font-size: 1.6rem;
+}
+
+.rankPageDiv .upcoming-tests-table td:nth-child(2) strong,
+.rankPageDiv .rank-none {
+    display: block;
+}
+
+.rankPageDiv .rank-swatch {
+    display: block;
+    width: 68%;
+    min-width: 72px;
+    height: 25px;
+    margin: 6px auto 0;
+    background: #fff;
+}
+
+.rankPageDiv .rank-swatch.orange { background: #ed7d31; }
+.rankPageDiv .rank-swatch.green { background: #00b050; }
+.rankPageDiv .rank-swatch.black { background: #000; }
+.rankPageDiv .rank-swatch.maroon { background: #990000; }
+.rankPageDiv .rank-swatch.brown { background: #806000; }
+.rankPageDiv .rank-swatch.white { background: #fff; }
+.rankPageDiv .rank-swatch.pink { background: #f8b9c8; }
+
+.rankPageDiv .schedule-cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.rankPageDiv .schedule-cell button {
+    padding: 3px 8px;
+    border: 1px solid #999;
+    background: #f2f2f2;
+    color: #333;
+    font: inherit;
+    font-size: .8em;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+    .rankPageDiv .upcoming-tests-heading {
+        margin: 5px auto 8px;
+        padding: 3px 6px;
+        font-size: 1rem;
+    }
+
+    .rankPageDiv .upcoming-tests-scroll {
+        padding-bottom: 3px;
+    }
+
+    .rankPageDiv .upcoming-tests-table {
+        min-width: 680px;
+        font-size: .72rem;
+    }
+
+    .rankPageDiv .upcoming-tests-table th,
+    .rankPageDiv .upcoming-tests-table td {
+        border-width: 1px;
+        padding: 3px;
+    }
+
+    .rankPageDiv .upcoming-tests-table th { height: 38px; }
+    .rankPageDiv .upcoming-tests-table td { height: 58px; }
+
+    .rankPageDiv .upcoming-profile-placeholder {
+        width: 48px;
+        height: 32px;
+        font-size: 1rem;
+    }
+
+    .rankPageDiv .rank-swatch {
+        min-width: 50px;
+        height: 16px;
+        margin-top: 3px;
+    }
+
+    .rankPageDiv .schedule-cell { gap: 4px; }
+
+    .rankPageDiv .schedule-cell button {
+        padding: 2px 4px;
+        font-size: .7rem;
+    }
+}
+/* Students listed by ranks */
+#StudentsListedByRanks.all-ranks-pane {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    background: var(--primary-color);
+}
+
+.rankPageDiv .all-ranks-heading {
+    align-self: center;
+    margin: 22px auto 28px;
+    padding: 5px 12px;
+    background: royalblue;
+    color: yellow;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.rankPageDiv .all-ranks-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 0 20px 20px;
+}
+
+.rankPageDiv .all-ranks-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px 15px;
+    align-items: flex-start;
+}
+
+.rankPageDiv .rank-student-card {
+    flex: 0 0 calc((100% - 50px) / 4);
+    border: 1px solid #999;
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+}
+
+.rankPageDiv .rank-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 62px;
+    padding: 7px 4px;
+    text-align: center;
+}
+
+.rankPageDiv .rank-card-header strong {
+    font-size: 1.05em;
+}
+
+.rankPageDiv .rank-card-header span {
+    /* margin-top: 10px; */
+    font-size: .9em;
+}
+
+.rankPageDiv .rank-card-header.novice { background: #888; }
+.rankPageDiv .rank-card-header.white-sash { background: #fff; }
+.rankPageDiv .rank-card-header.yellow-sash { background: #ffff00; }
+.rankPageDiv .rank-card-header.gold-sash { background: #ffc000; }
+.rankPageDiv .rank-card-header.orange-sash { background: #ed7d31; }
+.rankPageDiv .rank-card-header.green-sash { background: #00b050; color: #fff; }
+.rankPageDiv .rank-card-header.blue-sash { background: #0070c0; color: #fff; }
+.rankPageDiv .rank-card-header.purple-sash { background: #7030a0; color: #fff; }
+
+.rankPageDiv .rank-student-card ol {
+    margin: 5px 10px 12px;
+    padding-left: 28px;
+    border: 1px solid #888;
+    background: #fff;
+}
+
+.rankPageDiv .rank-student-card li {
+    min-height: 31px;
+    padding: 5px 4px;
+    margin-right: 10px;
+    border-bottom: 2px solid #888;
+    line-height: 1.2;
+}
+
+.rankPageDiv .rank-student-card li:last-child {
+    border-bottom: 1;
+    margin-bottom: 5px;
+}
+
+.rankPageDiv .rank-student-card footer {
+    min-height: 35px;
+    padding: 0 10px 12px;
+    font-weight: 700;
+    text-align: right;
+}
+
+@media (max-width: 991.98px) {
+    .rankPageDiv .rank-student-card {
+        flex-basis: calc((100% - 32px) / 2);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .rankPageDiv .rank-student-card {
+        flex-basis: 100%;
+    }
+
+    .rankPageDiv .all-ranks-heading {
+        margin: 10px auto 14px;
+        font-size: 1.25rem;
+    }
+
+    .rankPageDiv .all-ranks-scroll {
+        padding: 0 8px 10px;
+    }
+
+    .rankPageDiv .all-ranks-grid {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .rankPageDiv .rank-student-card {
+        font-size: .82rem;
+    }
+
+    .rankPageDiv .rank-card-header {
+        min-height: 48px;
+        padding: 5px 4px;
+    }
+
+    .rankPageDiv .rank-card-header span {
+        margin-top: 5px;
+    }
+
+    .rankPageDiv .rank-student-card ol {
+        margin: 4px 7px 8px;
+        padding-left: 24px;
+    }
+
+    .rankPageDiv .rank-student-card li {
+        min-height: 25px;
+        padding: 4px;
+    }
+
+    .rankPageDiv .rank-student-card footer {
+        min-height: 28px;
+        padding: 0 8px 8px;
+    }
+}
