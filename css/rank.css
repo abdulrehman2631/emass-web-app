@@ -132,7 +132,7 @@ body {
 .rankPageDiv .upcoming-tests-table th,
 .rankPageDiv .upcoming-tests-table td {
     border: 2px solid #9b9b9b;
-    padding: 7px 8px;
+    padding: 4px 6px;
     text-align: center;
     vertical-align: middle;
 }
@@ -145,7 +145,7 @@ body {
 }
 
 .rankPageDiv .upcoming-tests-table td {
-    height: 76px;
+    height: 55px;
     font-weight: 700;
 }
 
@@ -158,13 +158,13 @@ body {
 .rankPageDiv .upcoming-profile-placeholder {
     display: grid;
     place-items: center;
-    width: 74px;
-    height: 48px;
+    width: 58px;
+    height: 28px;
     margin: auto;
     border: 1px solid #d0d0d0;
     background: #fff;
     color: #aaa;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .rankPageDiv .upcoming-tests-table td:nth-child(2) strong,
@@ -175,9 +175,9 @@ body {
 .rankPageDiv .rank-swatch {
     display: block;
     width: 68%;
-    min-width: 72px;
-    height: 25px;
-    margin: 6px auto 0;
+    min-width: 60px;
+    height: 16px;
+    margin: 0 auto;
     background: #fff;
 }
 
@@ -230,11 +230,11 @@ body {
     }
 
     .rankPageDiv .upcoming-tests-table th { height: 38px; }
-    .rankPageDiv .upcoming-tests-table td { height: 58px; }
+    .rankPageDiv .upcoming-tests-table td { height: 34px; }
 
     .rankPageDiv .upcoming-profile-placeholder {
         width: 48px;
-        height: 32px;
+        height: 28px;
         font-size: 1rem;
     }
 
@@ -381,7 +381,7 @@ body {
     }
 
     .rankPageDiv .rank-card-header {
-        min-height: 48px;
+        min-height: 28px;
         padding: 5px 4px;
     }
 
@@ -395,7 +395,7 @@ body {
     }
 
     .rankPageDiv .rank-student-card li {
-        min-height: 25px;
+        min-height: 16px;
         padding: 4px;
     }
 
@@ -403,4 +403,416 @@ body {
         min-height: 28px;
         padding: 0 8px 8px;
     }
+}
+/* Rank levels and time chart */
+.rankPageDiv .RankTimeChart-pane {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    padding: 10px 12px;
+    background: var(--primary-color);
+}
+
+.rankPageDiv .rank-time-chart-heading {
+    align-self: center;
+    margin: 0 auto 24px;
+    padding: 5px 12px;
+    background: royalblue;
+    color: yellow;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.rankPageDiv .rank-time-chart-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.rankPageDiv .rank-time-chart-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.rankPageDiv .rank-time-table-wrap {
+    order: 1;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.rankPageDiv .rank-time-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #fff;
+    color: #000;
+    font-size: clamp(.72rem, 1.1vw, .9rem);
+}
+
+.rankPageDiv .rank-time-table th,
+.rankPageDiv .rank-time-table td {
+    border: 1px solid #999;
+    padding: 5px 7px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.rankPageDiv .rank-time-table thead th {
+    height: 62px;
+    background: #f4b184;
+    font-weight: 400;
+    line-height: 1.12;
+}
+
+.rankPageDiv .rank-time-table tbody th,
+.rankPageDiv .rank-time-table tbody td {
+    height: 35px;
+    font-weight: 700;
+}
+
+.rankPageDiv .rank-time-table th:nth-child(1) { width: 10%; }
+.rankPageDiv .rank-time-table th:nth-child(2) { width: 22%; }
+.rankPageDiv .rank-time-table th:nth-child(3) { width: 31%; }
+.rankPageDiv .rank-time-table th:nth-child(4) { width: 15.5%; }
+.rankPageDiv .rank-time-table th:nth-child(5) { width: 21.5%; }
+
+.rankPageDiv .rank-time-sash {
+    display: block;
+    width: 92%;
+    height: 27px;
+    margin: auto;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.rankPageDiv .rank-time-sash.novice { background: #fff; }
+.rankPageDiv .rank-time-sash.yellow { background: #ffff00; }
+.rankPageDiv .rank-time-sash.gold { background: #ffc000; }
+.rankPageDiv .rank-time-sash.orange { background: #ed7d31; }
+.rankPageDiv .rank-time-sash.green { background: #00b050; }
+.rankPageDiv .rank-time-sash.blue { background: #0070c0; }
+.rankPageDiv .rank-time-sash.purple { background: #7030a0; }
+.rankPageDiv .rank-time-sash.maroon { background: #990000; }
+.rankPageDiv .rank-time-sash.brown { background: #806000; }
+.rankPageDiv .rank-time-sash.black { background: #000; }
+.rankPageDiv .rank-time-sash.level-one { background: linear-gradient(to right, #000 0 88%, #ffc000 88% 92%, #000 92%); }
+.rankPageDiv .rank-time-sash.level-two { background: linear-gradient(to right, #000 0 82%, #ffc000 82% 86%, #000 86% 90%, #ffc000 90% 94%, #000 94%); }
+.rankPageDiv .rank-time-sash.level-three { background: linear-gradient(to right, #000 0 76%, #f00 76% 80%, #000 80% 84%, #f00 84% 88%, #000 88% 92%, #f00 92% 96%, #000 96%); }
+.rankPageDiv .rank-time-sash.level-four { background: linear-gradient(to right, #000 0 70%, #f00 70% 74%, #000 74% 78%, #f00 78% 82%, #000 82% 86%, #f00 86% 90%, #000 90% 94%, #f00 94% 98%, #000 98%); }
+.rankPageDiv .rank-time-sash.level-five { background: linear-gradient(to right, #000 0 64%, #f00 64% 68%, #000 68% 72%, #f00 72% 76%, #000 76% 80%, #f00 80% 84%, #000 84% 88%, #f00 88% 92%, #000 92% 96%, #f00 96% 99%, #000 99%); }
+.rankPageDiv .rank-time-sash.sifu { background: linear-gradient(#fcb900 0 42%, #000 42%); }
+.sash { display: block; height: 24px; border: 2px solid #999;box-shadow: inset 0 0 0 1px #fff; }
+.sash.sifu { background: linear-gradient(#fcb900 0 42%, #000 42%); }
+
+
+.rankPageDiv .attendance-parameters {
+    order: 2;
+    align-self: flex-start;
+    flex: 0 0 auto;
+    width: 125px;
+    margin: 0;
+    padding: 16px 8px 14px;
+    border: 1px solid #999;
+    background: #fff;
+    color: #000;
+}
+
+.rankPageDiv .attendance-parameters h2 {
+    margin: 0 0 14px;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.rankPageDiv .attendance-parameters div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 12px 0;
+    font-size: .85rem;
+}
+
+.rankPageDiv .attendance-parameters span {
+    flex: 0 0 34px;
+    text-align: right;
+}
+
+.rankPageDiv .attendance-parameters i {
+    display: block;
+    flex: 1;
+    height: 3px;
+    background: #222;
+}
+
+/* Keep the page fixed-width above 700px; scroll only the table below it. */
+@media (max-width: 700px) {
+    .rankPageDiv .rank-time-chart-layout {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .rankPageDiv .attendance-parameters {
+        order: 1;
+        align-self: flex-end;
+    }
+
+    .rankPageDiv .rank-time-table-wrap {
+        order: 2;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .rankPageDiv .rank-time-table {
+        width: 620px;
+        max-width: none;
+        font-size: .72rem;
+    }
+
+    .rankPageDiv .rank-time-table th,
+    .rankPageDiv .rank-time-table td {
+        padding: 3px 4px;
+    }
+
+    .rankPageDiv .rank-time-table thead th {
+        height: 52px;
+        font-weight: 700;
+    }
+
+    .rankPageDiv .rank-time-sash {
+        width: 78%;
+        height: 22px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .rankPageDiv .RankTimeChart-pane { padding: 5px; }
+    .rankPageDiv .rank-time-chart-heading {
+        margin-bottom: 10px;
+        padding: 3px 6px;
+        font-size: 1rem;
+    }
+
+    .rankPageDiv .rank-time-table { width: 560px; font-size: .64rem; }
+    .rankPageDiv .rank-time-table thead th { height: 48px; font-weight: 700; }
+    .rankPageDiv .rank-time-table tbody th,
+    .rankPageDiv .rank-time-table tbody td {
+        height: 35px;
+        padding: 3px;
+    }
+
+    .rankPageDiv .rank-time-sash { width: 72%; height: 18px; }
+    .rankPageDiv .attendance-parameters { width: 120px; }
+}
+/* Rank requirements */
+.rankPageDiv .rank-requirements-pane {
+    height: 100%;
+    overflow-y: auto;
+    padding: 8px 22px 24px;
+    background: var(--primary-color);
+    color: #000;
+}
+
+.rankPageDiv .rank-requirements-heading {
+    width: fit-content;
+    margin: 0 auto 12px;
+    padding: 2px 54px;
+    background: royalblue;
+    color: yellow;
+    font-size: clamp(1.5rem, 3vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.rankPageDiv .rank-requirements-toolbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.rankPageDiv .rank-requirements-summary {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: clamp(14px, 2.5vw, 32px);
+    padding-top: 2px;
+    font-weight: 700;
+}
+
+.rankPageDiv .rank-requirements-summary > span:first-child { flex: 0 0 78px; }
+.rankPageDiv .rank-requirements-summary strong {
+    flex: 1 1 auto;
+    min-width: 0;
+    white-space: nowrap;
+    font-size: clamp(1.45rem, 2.7vw, 2.15rem);
+}
+.rankPageDiv .rank-requirement-sash {
+    display: block;
+    width: 174px;
+    height: 35px;
+    border: 1px solid #777;
+    background: linear-gradient(to right, #000 0 60%, #f00 60% 64%, #000 64% 68%, #f00 68% 72%, #000 72% 76%, #f00 76% 80%, #000 80% 84%, #f00 84% 88%, #000 88% 92%, #f00 92% 96%, #000 96%);
+}
+
+.rankPageDiv .rank-requirements-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    flex: 0 0 180px;
+    min-width: 180px;
+}
+
+.rankPageDiv .rank-requirements-actions label { font-size: 1.15rem; font-weight: 700; }
+.rankPageDiv .rank-requirements-actions select { width: 152px; height: 33px; padding: 3px 8px; font-size: .9rem; }
+.rankPageDiv .rank-requirements-actions button {
+        width: 180px;
+margin-top: 12px;
+    padding: 4px 10px;
+    border: 2px solid #008000;
+    border-radius: 14px;
+    background: #7cff00;
+    color: #000;
+    font-size: .9rem;
+}
+
+.rankPageDiv .rank-requirements-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 28px 34px;
+}
+
+.rankPageDiv .rank-requirement-block {
+    flex: 1 1 240px;
+    max-width: 280px;
+}
+
+.rankPageDiv .rank-requirement-block h2 {
+    margin: 0 0 5px;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+.rankPageDiv .rank-requirement-block > div {
+    min-height: 178px;
+    padding: 5px 3px;
+    border: 2px solid #aaa;
+    background: #f1f1f1;
+    box-shadow: inset 1px 1px #fff;
+    font-size: .9rem;
+    line-height: 1.1;
+}
+
+@media (max-width: 700px) {
+    .rankPageDiv .rank-requirements-pane { padding: 6px 8px 18px; }
+    .rankPageDiv .rank-requirements-heading { padding: 3px 20px; font-size: 1.45rem; }
+    .rankPageDiv .rank-requirements-toolbar { flex-direction: column-reverse; align-items: stretch; gap: 14px; }
+    .rankPageDiv .rank-requirements-actions { align-self: flex-end; }
+    .rankPageDiv .rank-requirements-summary { flex-wrap: wrap; gap: 8px 16px; justify-content: center; }
+    .rankPageDiv .rank-requirements-summary > span:first-child { flex-basis: auto; }
+    .rankPageDiv .rank-requirements-summary strong { font-size: 1.5rem; }
+    .rankPageDiv .rank-requirement-sash { width: 145px; height: 38px; }
+    .rankPageDiv .rank-requirement-block { flex-basis: 220px; max-width: none; }
+}
+
+@media (max-width: 575.98px) {
+    .rankPageDiv .rank-requirements-actions { align-self: center; }
+    .rankPageDiv .rank-requirements-summary > span:first-child { width: 100%; text-align: center; }
+    .rankPageDiv .rank-requirements-block > div { min-height: 140px; }
+}
+/* Rank setup */
+.rankPageDiv .rank-setup-pane {
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px 22px 28px;
+    background: var(--primary-color);
+    color: #000;
+}
+
+.rankPageDiv .rank-setup-title {
+    width: fit-content;
+    margin: 0 auto 18px;
+    padding: 5px 34px;
+    background: royalblue;
+    color: yellow;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    font-weight: 700;
+    line-height: 1.1;
+    text-decoration: underline;
+}
+
+.rankPageDiv .rank-setup-instruction {
+    display: flex;
+    gap: 28px;
+    max-width: 930px;
+    margin: 0 auto 28px;
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.rankPageDiv .rank-setup-instruction p { margin: 0; }
+.rankPageDiv .rank-setup-fields,
+.rankPageDiv .rank-setup-example-table { width: 100%; border-collapse: collapse; text-align: center; }
+.rankPageDiv .rank-setup-fields { max-width: 855px; margin: 0 auto 40px; background: #fdbdc0; }
+.rankPageDiv .rank-setup-fields th { padding: 10px 8px; border: 1px solid #888; }
+.rankPageDiv .rank-setup-fields th::first-line { background: #fff; }
+.rankPageDiv .rank-setup-fields th { font-size: 1rem; }
+.rankPageDiv .rank-setup-fields th::after { content: ''; display: block; margin: -24px auto 0; width: max-content; }
+
+.rankPageDiv .rank-setup-note {
+    max-width: 910px;
+    margin: 0 auto 38px;
+    padding: 10px;
+    border: 2px solid #999;
+    outline: 1px solid #777;
+    outline-offset: -9px;
+    background: #fff;
+    font-size: clamp(.9rem, 1.7vw, 1.25rem);
+    font-weight: 700;
+    line-height: 1.28;
+}
+
+.rankPageDiv .rank-setup-example { max-width: 900px; margin: 0 auto; padding-bottom: 20px; }
+.rankPageDiv .rank-setup-example h2 { width: fit-content; margin: 0 0 14px; padding: 4px 14px; background: royalblue; font-size: 1.45rem; }
+.rankPageDiv .rank-setup-example-table-wrap { overflow-x: auto; padding: 8px 10px; border: 2px solid #999; background: #fff; }
+.rankPageDiv .rank-setup-example-table { min-width: 760px; font-size: .95rem; }
+.rankPageDiv .rank-setup-example-table th,
+.rankPageDiv .rank-setup-example-table td { border: 1px solid #999; padding: 7px 8px; font-weight: 700; }
+.rankPageDiv .rank-setup-example-table thead th { height: 72px; background: #f5c9a8; line-height: 1.1; }
+.rankPageDiv .rank-setup-example-table tbody th,
+.rankPageDiv .rank-setup-example-table tbody td { height: 43px; }
+.rankPageDiv .setup-color { display: block; width: 94px; height: 25px; margin: auto; border: 1px solid #999; background: #fff; }
+.rankPageDiv .setup-color.yellow { background: #ffff00; }
+.rankPageDiv .setup-color.orange { background: #ff9900; }
+.rankPageDiv .setup-color.green { background: #008000; }
+
+@media (max-width: 700px) {
+    .rankPageDiv .rank-setup-pane { padding: 7px 8px 20px; }
+    .rankPageDiv .rank-setup-instruction { gap: 12px; margin-bottom: 20px; }
+    .rankPageDiv .rank-setup-fields { min-width: 650px; margin-bottom: 28px; }
+    .rankPageDiv .rank-setup-note { margin-bottom: 28px; }
+    .rankPageDiv .rank-setup-example-table { font-size: .78rem; }
+    .rankPageDiv .rank-setup-example-table thead th { height: 62px; }
+}
+
+@media (max-width: 575.98px) {
+    .rankPageDiv .rank-setup-title { padding: 4px 20px; font-size: 1.65rem; }
+    .rankPageDiv .rank-setup-instruction { font-size: .85rem; }
+    .rankPageDiv .rank-setup-fields { min-width: 580px; font-size: .78rem; }
+    .rankPageDiv .rank-setup-note { font-size: .8rem; }
 }
