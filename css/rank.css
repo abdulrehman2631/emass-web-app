@@ -469,7 +469,7 @@ body {
 .rankPageDiv .rank-time-table thead th {
     height: 62px;
     background: #8FABDD;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 1.12;
 }
 
