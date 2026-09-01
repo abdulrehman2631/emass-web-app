@@ -768,7 +768,7 @@ margin-top: 12px;
 .rankPageDiv .rank-setup-instruction p { margin: 0; }
 .rankPageDiv .rank-setup-fields,
 .rankPageDiv .rank-setup-example-table { width: 100%; border-collapse: collapse; text-align: center; }
-.rankPageDiv .rank-setup-fields { max-width: 855px; margin: 0 auto 40px; background: #fdbdc0; }
+.rankPageDiv .rank-setup-fields { max-width: 855px; margin: 0 auto 40px; background: skyblue; }
 .rankPageDiv .rank-setup-fields th { padding: 10px 8px; border: 1px solid #888; }
 .rankPageDiv .rank-setup-fields th::first-line { background: #fff; }
 .rankPageDiv .rank-setup-fields th { font-size: 1rem; }
