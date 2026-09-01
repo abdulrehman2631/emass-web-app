@@ -152,16 +152,22 @@
                                     All Students Listed By Ranks
                                 </button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link " id="setSetNewRequirements-tab" data-bs-toggle="tab"
-                                    data-bs-target="#setSetNewRequirements" type="button" role="tab">
-                                    Set New Requirements
+                             <li class="nav-item" role="presentation">
+                                <button class="nav-link " id="RankTimeChart-tab" data-bs-toggle="tab"
+                                    data-bs-target="#RankTimeChart" type="button" role="tab">
+                                    Rank Time Chart
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="addNewRank-tab" data-bs-toggle="tab"
-                                    data-bs-target="#addNewRank" type="button" role="tab">
-                                    Add New Rank
+                                <button class="nav-link " id="RankRequirements-tab" data-bs-toggle="tab"
+                                    data-bs-target="#RankRequirements" type="button" role="tab">
+                                    Rank Requirements
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="RankSetup-tab" data-bs-toggle="tab"
+                                    data-bs-target="#RankSetup" type="button" role="tab">
+                                    Rank Setup
                                 </button>
                             </li>
                         </ul>
@@ -181,6 +187,7 @@
                                                 <thead><tr><th>Test<br>Fee<br>Paid</th><th>Test<br>Score<br><small>(Optional)</small></th><th>Promote</th></tr></thead>
                                                 <tbody>
                                                     <tr><td><input type="checkbox"></td><td><input type="text"></td><td><input type="checkbox" checked></td></tr>
+                                                    <tr><td><input type="checkbox"></td><td><input type="text"></td><td><input type="checkbox"></td></tr>
                                                     <tr><td><input type="checkbox"></td><td><input type="text"></td><td><input type="checkbox"></td></tr>
                                                     <tr><td><input type="checkbox"></td><td><input type="text"></td><td><input type="checkbox"></td></tr>
                                                     <tr><td><input type="checkbox"></td><td><input type="text"></td><td><input type="checkbox"></td></tr>
@@ -229,6 +236,8 @@
                                                 <tr><td>12</td><td><span class="sash black level-three"></span></td><td>Black Sash - Level III</td><td><input type="text"></td><td>156</td><td>78 Weeks</td><td><input type="text"></td></tr>
                                                 <tr><td>13</td><td><span class="sash black level-four"></span></td><td>Black Sash - Level IV</td><td><input type="text"></td><td>156</td><td>78 Weeks</td><td><input type="text"></td></tr>
                                                 <tr><td>14</td><td><span class="sash black level-five"></span></td><td>Black Sash - Level V</td><td><input type="text"></td><td>156</td><td>78 Weeks</td><td><input type="text"></td></tr>
+                                                <tr><td>15</td><td><span class="sash sifu"></span></td><td>Sifu</td><td><input type="text"></td></tr>
+                                            
                                             </tbody>
                                         </table>
                                         </div>
@@ -768,125 +777,91 @@ Notes
         </div>
     </div>
 </div>
-
-                            <div class="tab-pane fade" id="setSetNewRequirements" role="tabpanel">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col"><span id="setRequirementTabDate"></span></div>
-                                        <div class="col-xl-2 col-md-3  col-5 ">
-                                            <h5>Select Level</h5>
-                                            <select>
-                                                <option>Gray Sash</option>
-                                                <option>Orange Sash</option>
-                                                <option>Blue Sash</option>
-                                            </select>
+                            <div class="tab-pane fade RankTimeChart-pane" id="RankTimeChart" role="tabpanel" aria-labelledby="RankTimeChart-tab">
+                                <div class="rank-time-chart-heading">Rank Levels And Time Chart</div>
+                                <div class="rank-time-chart-scroll">
+                                    <div class="rank-time-chart-layout">
+                                        <div class="rank-time-table-wrap">
+                                            <table class="rank-time-table">
+                                                <caption class="visually-hidden">Rank levels and approximate time to next rank</caption>
+                                                <thead><tr><th scope="col">Level</th><th scope="col">Rank Symbol</th><th scope="col">Rank Name</th><th scope="col"># of Classes<br>Needed for<br>Next Level</th><th scope="col">Approximate Time<br>Needed for Next<br>Rank</th></tr></thead>
+                                                <tbody>
+                                                    <tr><th scope="row">0</th><td>None</td><td>Novice</td><td>8</td><td>4 Weeks</td></tr>
+                                                    <tr><th scope="row">1</th><td><span class="rank-time-sash white"></span></td><td>White Sash</td><td>10</td><td>5 Weeks</td></tr>
+                                                    <tr><th scope="row">2</th><td><span class="rank-time-sash yellow"></span></td><td>Yellow Sash</td><td>12</td><td>6 Weeks</td></tr>
+                                                    <tr><th scope="row">3</th><td><span class="rank-time-sash gold"></span></td><td>Gold Sash</td><td>24</td><td>12 Weeks</td></tr>
+                                                    <tr><th scope="row">4</th><td><span class="rank-time-sash orange"></span></td><td>Orange Sash</td><td>32</td><td>16 Weeks</td></tr>
+                                                    <tr><th scope="row">5</th><td><span class="rank-time-sash green"></span></td><td>Green Sash</td><td>40</td><td>20 Weeks</td></tr>
+                                                    <tr><th scope="row">6</th><td><span class="rank-time-sash blue"></span></td><td>Blue Sash</td><td>48</td><td>24 Weeks</td></tr>
+                                                    <tr><th scope="row">7</th><td><span class="rank-time-sash purple"></span></td><td>Purple Sash</td><td>64</td><td>32 Weeks</td></tr>
+                                                    <tr><th scope="row">8</th><td><span class="rank-time-sash maroon"></span></td><td>Maroon Sash</td><td>80</td><td>40 Weeks</td></tr>
+                                                    <tr><th scope="row">9</th><td><span class="rank-time-sash brown"></span></td><td>Brown Sash</td><td>104</td><td>52 Weeks</td></tr>
+                                                    <tr><th scope="row">10</th><td><span class="rank-time-sash black level-one"></span></td><td>Black Sash - Level I</td><td>156</td><td>78 Weeks</td></tr>
+                                                    <tr><th scope="row">11</th><td><span class="rank-time-sash black level-two"></span></td><td>Black Sash - Level II</td><td>156</td><td>78 Weeks</td></tr>
+                                                    <tr><th scope="row">12</th><td><span class="rank-time-sash black level-three"></span></td><td>Black Sash - Level III</td><td>156</td><td>78 Weeks</td></tr>
+                                                    <tr><th scope="row">13</th><td><span class="rank-time-sash black level-four"></span></td><td>Black Sash - Level IV</td><td>156</td><td>78 Weeks</td></tr>
+                                                    <tr><th scope="row">14</th><td><span class="rank-time-sash black level-five"></span></td><td>Black Sash - Level V</td><td>156</td><td>78 Weeks</td></tr>
+                                                    <tr><th scope="row">15</th><td><span class="rank-time-sash black sifu"></span></td><td>Sifu</td></tr>
+                                                </tbody>
+                                            </table>
                                         </div>
+                                        <aside class="attendance-parameters" aria-label="Attendance Parameters"><h2>Attendance<br>Parameters</h2><div><span>None</span><i></i></div><div><span>%</span><i></i></div></aside>
                                     </div>
-                                    <div class="row">
-                                        <div class="col ">
-                                            <div class="requirementHeading" style="max-width: 465px;">
-                                                <div class="fw-bold">Rank Requirements - Level1 (User Customizeable)
-                                                    <span
-                                                        class="SashColor">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-5 mt-2">
-                                        <div class="col-lg-4 col-md-6 col-12 mt-4">
-                                            <div class="blocks"></div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12 mt-4">
-                                            <div class="blocks"></div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12 mt-4">
-                                            <div class="blocks"></div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12 mt-4">
-                                            <div class="blocks"></div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12 mt-4">
-                                            <div class="blocks"></div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12 mt-4">
-                                            <div class="blocks"></div>
-                                        </div>
-
-                                    </div>
-
                                 </div>
-                            </div>
+                            </div>          
+                                <div class="tab-pane fade rank-requirements-pane" id="RankRequirements" role="tabpanel" aria-labelledby="RankRequirements-tab">
+    <div class="rank-requirements-heading">Rank Requirements</div>
+    <div class="rank-requirements-toolbar">
+        <div class="rank-requirements-summary">
+            <span>Level 14</span>
+            <strong class="text-center">Black Sash - Level V</strong>
+            <span class="rank-requirement-sash"></span>
+        </div>
+        <div class="rank-requirements-actions">
+            <label for="rankRequirementLevel">Select Level</label>
+            <select id="rankRequirementLevel"><option>14</option><option>13</option><option>12</option><option>11</option><option>10</option></select>
+            <button type="button">+ Create Requirement</button>
+        </div>
+    </div>
+    <div class="rank-requirements-blocks">
+        <section class="rank-requirement-block"><h2>Strikes</h2><div>Front Kick<br>Side Kick</div></section>
+        <section class="rank-requirement-block"><h2>Blocks</h2><div>Forward Defence<br>Tai Chi</div></section>
+        <section class="rank-requirement-block"><h2>Weapons</h2><div>Nun Chaku</div></section>
+        <section class="rank-requirement-block"><h2>Forms</h2><div>Long Form<br>Short Form</div></section>
+        <section class="rank-requirement-block"><h2>Fitness</h2><div>Push Ups<br>Running</div></section>
+        <section class="rank-requirement-block"><h2>Sparring</h2><div>Partner Drills<br>Free Sparring</div></section>
+    </div>
+</div>
 
 
 
                             <!-- Second Tab (Properly Moved Outside) -->
-                            <div class="tab-pane fade" id="addNewRank" role="tabpanel">
-                                <div class="container-fluid gx-0">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="rankAddForm">
-                                                <div class="container-fluid">
-                                                    <form class="px-lg-5 px-md-3 px-2 py-sm-5 py-3">
-                                                        <div class="row mb-2">
-                                                            <div class="col-4">
-                                                                <label class="form-label" for="level">Level</label>
-                                                            </div>
-                                                            <div class="col-8">
-                                                                <input type="text" class="form-control" id="level" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-2">
-                                                            <div class="col-4">
-                                                                <label class="form-label" for="color">Color</label>
-                                                            </div>
-                                                            <div class="col-8">
-                                                                <input type="text" class="form-control" id="color" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-2">
-                                                            <div class="col-4">
-                                                                <label class="form-label" for="rankName">Name Of
-                                                                    Rank</label>
-                                                            </div>
-                                                            <div class="col-8">
-                                                                <input type="text" class="form-control" id="rankName" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-2">
-                                                            <div class="col-4">
-                                                                <label class="form-label" for="classesNeeded">Classes
-                                                                    Needed For</label>
-                                                            </div>
-                                                            <div class="col-8">
-                                                                <input type="text" class="form-control"
-                                                                    id="classesNeeded" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-2">
-                                                            <div class="col-4">
-                                                                <label class="form-label" for="timeToNextLevel">
-                                                                    Approximate Time to Next Level
-                                                                </label>
-                                                            </div>
-                                                            <div class="col-8">
-                                                                <input type="text" class="form-control"
-                                                                    id="timeToNextLevel" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-2">
-                                                            <div class="col">
-                                                                <input type="submit" class="form-control"
-                                                                    style="background-color:lightgray;">
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="tab-pane fade rank-setup-pane" id="RankSetup" role="tabpanel" aria-labelledby="RankSetup-tab">
+    <div class="rank-setup-title">Rank Setup</div>
+    <div class="rank-setup-instruction"><strong>1.</strong><p>User Must Assign "Level", "Rank Image", "Rank Name", "# of Classes Needed For Next Level" and "Time Required to Reach Next Level"</p></div>
+
+    <table class="rank-setup-fields" aria-label="Rank setup fields">
+        <thead><tr><th>Level</th><th>Rank Image</th><th>Rank Name</th><th># of Classes<br>Needed For<br>Next Level</th><th>Time Required to<br>Reach Next Level</th></tr></thead>
+    </table>
+
+    <div class="rank-setup-note"><strong>Note:</strong> Test dates/Promotions/Graduations will be determined/generated by user-selected "Time Required to Reach Next Level" after each student promotion. It will start with the very first student promotion and be automatically generated after each promotion date.<br><br>Attendance can be used as an additional criterion for promotion by selecting the percentage of Attendance needed. (Example: if Johnny has only 50% Attendance, he could be ineligible to test without make-up classes or private lessons.) This Attendance percentage can be set up in the Attendance Profile. A red flag will appear.</div>
+
+    <section class="rank-setup-example">
+        <h2>Example 1:</h2>
+        <div class="rank-setup-example-table-wrap">
+            <table class="rank-setup-example-table">
+                <thead><tr><th>Levels</th><th>Names of Levels</th><th>Color / Images<br>of Levels</th><th><u># of Classes</u><br><small>Required to<br>Reach Next<br>Level</small></th><th><u>Time</u><br><small>Expected to Each<br>Reach Level<br>In Weeks</small></th></tr></thead>
+                <tbody>
+                    <tr><th>Level 0</th><td>Novice</td><td>(No Belt)</td><td>8</td><td>4 Weeks</td></tr>
+                    <tr><th>Level 1</th><td>White Belt</td><td><span class="setup-color white"></span></td><td>10</td><td>5 Weeks</td></tr>
+                    <tr><th>Level 2</th><td>Yellow Belt</td><td><span class="setup-color yellow"></span></td><td>24</td><td>12 Weeks</td></tr>
+                    <tr><th>Level 3</th><td>Orange Belt</td><td><span class="setup-color orange"></span></td><td>48</td><td>24 Weeks</td></tr>
+                    <tr><th>Level 4</th><td>Green Belt</td><td><span class="setup-color green"></span></td><td>52</td><td>26 Weeks</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
                             <!-- third tab -->
 
 
@@ -939,7 +914,7 @@ Notes
         tabButton.classList.add('active');
         tabButton.setAttribute('aria-selected', 'true');
         targetPane.classList.add('show', 'active');
-        targetPane.style.display = targetPane.classList.contains('upcoming-tests-pane') || targetPane.classList.contains('all-ranks-pane') ? 'flex' : 'block';
+        targetPane.style.display = targetPane.classList.contains('upcoming-tests-pane') || targetPane.classList.contains('all-ranks-pane') || targetPane.classList.contains('RankTimeChart-pane') ? 'flex' : 'block';
         targetPane.style.opacity = '1';
       }, true);
     });
