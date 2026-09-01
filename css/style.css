@@ -616,6 +616,7 @@ fieldset.group-box legend {
 .sash.level-three { background: repeating-linear-gradient(90deg, #050505 0 65%, #f00 65% 70%, #050505 70% 76%, #f00 76% 81%, #050505 81% 87%, #f00 87% 92%, #050505 92%); }
 .sash.level-four { background: repeating-linear-gradient(90deg, #050505 0 54%, #f00 54% 59%, #050505 59% 65%, #f00 65% 70%, #050505 70% 76%, #f00 76% 81%, #050505 81% 87%, #f00 87% 92%, #050505 92%); }
 .sash.level-five { background: repeating-linear-gradient(90deg, #050505 0 42%, #f00 42% 47%, #050505 47% 53%, #f00 53% 58%, #050505 58% 64%, #f00 64% 69%, #050505 69% 75%, #f00 75% 80%, #050505 80% 86%, #f00 86% 91%, #050505 91%); }
+
 @media (max-width: 991px) { .rank-promotion-heading { margin-left: 0; grid-template-columns: 1fr; gap: 6px; } .rank-promotion-heading h2 { text-align: center; } .rank-promotion-content { display: block; } .promote-controls { width: 205px; margin: 0 auto 10px; } }
 
 /* Upload student documents tab */
@@ -1083,109 +1084,6 @@ fieldset.group-box legend {
     margin: auto;
 }
 
-.rankPageDiv {
-    border: 2px solid black;
-    margin-right: 50px;
-}
-
-.rankPageDiv form {
-    border: 2px solid black;
-    padding: 0px 5px;
-    margin-top: 10px;
-    border-radius: 5px;
-    background-color: white;
-
-}
-
-.rankPageDiv form label {
-    font-weight: bold;
-}
-
-.rankPageDiv form input {
-    border: 2px solid black;
-    border-radius: 3px;
-
-}
-
-.rankPageDiv .styleName {
-    width: fit-content;
-    border: 1px solid #111;
-    font-weight: bold;
-    margin: auto;
-    margin-top: 15px;
-    padding: 5px 10px;
-    text-align: center;
-}
-
-.rankPageDiv #rankPageDate {
-    width: fit-content;
-    float: right;
-    padding-right: 5px;
-    font-weight: bold;
-    font-size: var(--font-size-heading);
-}
-
-.rankPageDiv .rankHeading {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.rankPageDiv .rankTableHeading {
-    border: 1px solid black;
-    font-weight: bold;
-    width: fit-content;
-    padding: 0px 5px;
-    text-align: center;
-    margin: auto;
-}
-
-.rankPageDiv .rankTable div {
-    border: 1px solid rgb(155, 148, 148);
-    text-align: center;
-}
-
-.rankPageDiv .rankTable .rankColor {
-    background-color: #c7c2c2;
-    width: 95%;
-    height: 20px;
-    margin: auto;
-}
-
-.rankPageDiv .tableContentRow {
-    margin: 0px 20px;
-    overflow-y: scroll;
-    height: 60vh;
-}
-
-.rankPageDiv .rankTable img {
-    max-height: 30px;
-}
-
-.rankPageDiv #requirementTabDate {
-    font-weight: bold;
-    font-size: var(--font-size-heading);
-}
-
-.rankPageDiv .SashColor {
-    border: 2px solid black;
-    background-color: orange;
-}
-
-.rankPageDiv .requirementHeading {
-    font-size: 30px;
-    margin: auto;
-}
-
-.rankPageDiv .movesForm {
-    height: 150px;
-}
-
-.rankPageDiv .blocks {
-    background-color: white;
-    max-width: 250px;
-    height: 150px;
-    margin: auto;
-}
 
 .ClassSheduleContent {
     border: 2px solid black;
