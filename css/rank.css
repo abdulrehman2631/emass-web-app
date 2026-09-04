@@ -468,7 +468,7 @@ body {
 
 .rankPageDiv .rank-time-table thead th {
     height: 62px;
-    background: #8FABDD;
+    background: #f4b184;
     font-weight: bold;
     line-height: 1.12;
 }
@@ -766,14 +766,42 @@ margin-top: 12px;
 }
 
 .rankPageDiv .rank-setup-instruction p { margin: 0; }
-.rankPageDiv .rank-setup-fields,
-.rankPageDiv .rank-setup-example-table { width: 100%; border-collapse: collapse; text-align: center; }
-.rankPageDiv .rank-setup-fields { max-width: 855px; margin: 0 auto 40px; background: #8FABDD; }
-.rankPageDiv .rank-setup-fields th { padding: 10px 8px; border: 1px solid #888; }
-.rankPageDiv .rank-setup-fields th::first-line { background: #fff; }
-.rankPageDiv .rank-setup-fields th { font-size: 1rem; }
-.rankPageDiv .rank-setup-fields th::after { content: ''; display: block; margin: -24px auto 0; width: max-content; }
+.rankPageDiv .rank-setup-fields-wrap {
+    max-width: 950px;
+    margin: 0 auto 40px;
+    overflow-x: auto;
+}
 
+.rankPageDiv .rank-setup-fields,
+.rankPageDiv .rank-setup-example-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.rankPageDiv .rank-setup-fields {
+    min-width: 850px;
+    table-layout: fixed;
+    background:#BDD7EE;
+}
+
+.rankPageDiv .rank-setup-fields th {
+    height: 70px;
+    padding: 10px 8px;
+    border: 1px solid #888;
+    background:#BDD7EE;
+    font-size: 0.77rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.rankPageDiv .rank-setup-fields th:nth-child(1) { width: 14%; }
+.rankPageDiv .rank-setup-fields th:nth-child(2) { width: 25%; }
+.rankPageDiv .rank-setup-fields th:nth-child(3) { width: 25%; }
+.rankPageDiv .rank-setup-fields th:nth-child(4) { width: 18%; }
+.rankPageDiv .rank-setup-fields th:nth-child(5) { width: 18%; }
 .rankPageDiv .rank-setup-note {
     max-width: 910px;
     margin: 0 auto 38px;
@@ -793,7 +821,7 @@ margin-top: 12px;
 .rankPageDiv .rank-setup-example-table { min-width: 760px; font-size: .95rem; }
 .rankPageDiv .rank-setup-example-table th,
 .rankPageDiv .rank-setup-example-table td { border: 1px solid #999; padding: 7px 8px; font-weight: 700; }
-.rankPageDiv .rank-setup-example-table thead th { height: 72px; background: #8FABDD;; line-height: 1.1; }
+.rankPageDiv .rank-setup-example-table thead th { height: 72px; background: #BDD7EE; line-height: 1.1; }
 .rankPageDiv .rank-setup-example-table tbody th,
 .rankPageDiv .rank-setup-example-table tbody td { height: 43px; }
 .rankPageDiv .setup-color { display: block; width: 94px; height: 25px; margin: auto; border: 1px solid #999; background: #fff; }
@@ -804,7 +832,22 @@ margin-top: 12px;
 @media (max-width: 700px) {
     .rankPageDiv .rank-setup-pane { padding: 7px 8px 20px; }
     .rankPageDiv .rank-setup-instruction { gap: 12px; margin-bottom: 20px; }
-    .rankPageDiv .rank-setup-fields { min-width: 650px; margin-bottom: 28px; }
+    .rankPageDiv .rank-setup-fields-wrap {
+        margin-bottom: 28px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .rankPageDiv .rank-setup-fields {
+        min-width: 680px;
+    }
+
+    .rankPageDiv .rank-setup-fields th {
+        height: 50px;
+        padding: 5px 4px;
+        font-size: .66rem;
+    }
+
     .rankPageDiv .rank-setup-note { margin-bottom: 28px; }
     .rankPageDiv .rank-setup-example-table { font-size: .78rem; }
     .rankPageDiv .rank-setup-example-table thead th { height: 62px; }
@@ -813,6 +856,118 @@ margin-top: 12px;
 @media (max-width: 575.98px) {
     .rankPageDiv .rank-setup-title { padding: 4px 20px; font-size: 1.65rem; }
     .rankPageDiv .rank-setup-instruction { font-size: .85rem; }
-    .rankPageDiv .rank-setup-fields { min-width: 580px; font-size: .78rem; }
+    .rankPageDiv .rank-setup-fields { min-width: 560px; font-size: .50rem; }
+    .rankPageDiv .rank-setup-fields th { height: 52px; padding: 4px 3px; }
     .rankPageDiv .rank-setup-note { font-size: .8rem; }
+}
+/* Additional rank setup examples and editable grid */
+.rankPageDiv .rank-setup-example + .rank-setup-example { margin-top: 22px; }
+.rankPageDiv .rank-setup-example-heading { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.rankPageDiv .rank-setup-example-heading h2 { margin: 0; }
+.rankPageDiv .rank-setup-example-heading strong,
+.rankPageDiv .rank-setup-example-heading span { padding: 5px 14px; border: 2px solid #999; background: #fff; font-size: 1.25rem; }
+.rankPageDiv .rank-setup-example-heading strong { background: #ffe082; }
+.rankPageDiv .rank-setup-example-table td, .rankPageDiv .rank-setup-example-table th { vertical-align: middle; }
+.rankPageDiv .setup-color.gold { background: #ffb000; }
+.rankPageDiv .setup-color.blue { background: #4169e1; }
+.rankPageDiv .setup-color.purple { background: #800080; }
+.rankPageDiv .setup-color.maroon { background: #800000; }
+.rankPageDiv .setup-color.brown { background: #a0522d; }
+.rankPageDiv .setup-color.black { background: #111; }
+.rankPageDiv .setup-color.sifu { background: linear-gradient(#111 0 58%, #ffbf00 58%); }
+.rankPageDiv .setup-color.stripe-one { background-image: linear-gradient(90deg, transparent 0 82%, #111 82% 87%, transparent 87%); }
+.rankPageDiv .setup-color.stripe-two { background-image: linear-gradient(90deg, transparent 0 78%, #111 78% 83%, transparent 83% 88%, #111 88% 93%, transparent 93%); }
+.rankPageDiv .setup-yin-yang { display: inline-block; width: 34px; height: 34px; border-radius: 50%; background: radial-gradient(circle at 50% 25%, #fff 0 10%, #222 11% 25%, transparent 26%), linear-gradient(90deg, currentColor 50%, #fff 50%); border: 1px solid #777; color: #239b56; }
+.rankPageDiv .setup-yin-yang.purple { color: #6c3ba8; }
+.rankPageDiv .setup-yin-yang.red { color: #d52b2b; }
+.rankPageDiv .setup-yin-yang.black { color: #111; }
+.rankPageDiv .rank-setup-completed h2 { margin-bottom: 8px; }
+.rankPageDiv .rank-setup-completed h3 { margin: 0 0 14px; text-align: center; font-size: clamp(1.4rem, 3vw, 2rem); }
+.rankPageDiv .rank-setup-editor { max-width: 930px; }
+.rankPageDiv .rank-setup-editor-table-wrap { overflow-x: auto; padding: 8px 10px; border: 2px solid #999; background: #fff; }
+.rankPageDiv .rank-setup-editor-table { min-width: 800px; width: 100%; border-collapse: collapse; text-align: center; table-layout: fixed; }
+.rankPageDiv .rank-setup-editor-table th:nth-child(1), .rankPageDiv .rank-setup-editor-table td:nth-child(1) { width: 16%; }
+.rankPageDiv .rank-setup-editor-table th:nth-child(2), .rankPageDiv .rank-setup-editor-table td:nth-child(2) { width: 18%; }
+.rankPageDiv .rank-setup-editor-table th:nth-child(3), .rankPageDiv .rank-setup-editor-table td:nth-child(3) { width: 20%; }
+.rankPageDiv .rank-setup-editor-table th:nth-child(4), .rankPageDiv .rank-setup-editor-table td:nth-child(4) { width: 12%; }
+.rankPageDiv .rank-setup-editor-table th:nth-child(5), .rankPageDiv .rank-setup-editor-table td:nth-child(5) { width: 15%; }
+.rankPageDiv .rank-setup-editor-table th:nth-child(6), .rankPageDiv .rank-setup-editor-table td:nth-child(6) { width: 6%; }
+.rankPageDiv .rank-setup-editor-table th, .rankPageDiv .rank-setup-editor-table td { border: 1px solid #999; padding: 5px; }
+.rankPageDiv .rank-setup-editor-table thead th { background: #BDD7EE; height: 75px; line-height: 1.1; }
+.rankPageDiv .rank-setup-editor-table tbody th { white-space: nowrap; }
+.rankPageDiv .rank-setup-editor-table input { width: 100%; min-width: 0; height: 27px; padding: 2px 5px; border: 1px solid #999; font-size: .9rem; }
+.rankPageDiv .rank-setup-editor-table input[type="checkbox"] { width: auto; min-width: 0; vertical-align: middle; }
+.rankPageDiv .rank-setup-editor-table td:nth-child(3) input { text-align: center; }
+.rankPageDiv .rank-setup-editor-table button { min-width: 92px; min-height: 27px; padding: 2px 8px; border: 1px solid #888; background: #f6f6f6; }
+.rankPageDiv .rank-setup-editor-table .editor-swatch { width: 135px; min-width: 135px; background: #fff; }
+.rankPageDiv .rank-setup-editor-table .editor-swatch.yellow { background: #ff0; }
+.rankPageDiv .rank-setup-editor-table .editor-swatch.gold { background: #ffb000; }
+.rankPageDiv .rank-setup-editor-table .editor-swatch.orange { background: #f58220; }
+.rankPageDiv .rank-setup-editor-table .editor-swatch.green { background: #00a651; }
+.rankPageDiv .rank-setup-editor-table .editor-swatch.blue { background: #0878bd; }
+.rankPageDiv .rank-setup-editor-table .editor-swatch.purple { background: #7d3caf; }
+.rankPageDiv .rank-setup-editor-table .editor-swatch.maroon { background: #8d0000; }
+.rankPageDiv .rank-setup-editor-table .editor-swatch.brown { background: #806000; }
+.rankPageDiv .rank-setup-editor-table .editor-swatch.black { background: #111; }
+.rankPageDiv .rank-setup-editor-table .editor-swatch.sifu { background: linear-gradient(#111 0 58%, #ffbf00 58%); }
+.rankPageDiv .rank-setup-editor-table .rank-delete { min-width: 34px; color: #e11; font-size: 1.6rem; line-height: 1; border: 0; background: transparent; }
+.rankPageDiv .rank-setup-editor-actions { display: flex; justify-content: flex-end; gap: 24px; margin: 22px 12px 8px; }
+.rankPageDiv .rank-setup-editor-actions button { padding: 7px 16px; border: 2px solid #999; background: #8cff00; font-size: 1.1rem; font-weight: 700; }
+@media (max-width: 700px) {
+    .rankPageDiv .rank-setup-example-table-wrap,
+    .rankPageDiv .rank-setup-editor-table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .rankPageDiv .rank-setup-example-table,
+    .rankPageDiv .rank-setup-editor-table {
+        min-width: 760px;
+    }
+
+    .rankPageDiv .rank-setup-editor-table {
+        min-width: 760px;
+        font-size: .72rem;
+    }
+
+    .rankPageDiv .rank-setup-editor-table th,
+    .rankPageDiv .rank-setup-editor-table td {
+        padding: 3px;
+    }
+
+    .rankPageDiv .rank-setup-editor-table thead th {
+        height: 58px;
+    }
+
+    .rankPageDiv .rank-setup-editor-table input {
+        height: 22px;
+        padding: 1px 3px;
+        font-size: .7rem;
+    }
+
+    .rankPageDiv .rank-setup-editor-table button {
+        min-width: 68px;
+        min-height: 22px;
+        padding: 1px 4px;
+        font-size: .68rem;
+    }
+
+    .rankPageDiv .rank-setup-editor-table .editor-swatch {
+        width: 92px;
+        min-width: 92px;
+    }
+
+    .rankPageDiv .rank-setup-editor-table .rank-delete {
+        min-width: 24px;
+        font-size: 1.2rem;
+    }
+
+    .rankPageDiv .rank-setup-example-heading {
+        gap: 7px;
+    }
+
+    .rankPageDiv .rank-setup-example-heading strong,
+    .rankPageDiv .rank-setup-example-heading span {
+        font-size: 1rem;
+    }
 }
