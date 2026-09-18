@@ -92,3 +92,25 @@ function timeFormat(selectedTime) {
     return `${hours}:${minutes.toString().padStart(2, '0')} ${amPm}`;
 }
 
+
+// Membership plan editor
+(() => {
+    const modal = document.getElementById("membershipModal");
+    const form = document.getElementById("membershipForm");
+    const cards = document.getElementById("membershipCards");
+    const openButton = document.getElementById("openMembershipModal");
+    const closeButton = document.getElementById("closeMembershipModal");
+    const cancelButton = document.getElementById("cancelMembershipModal");
+    if (!modal || !form || !cards || !openButton) return;
+    let editingCard = null;
+    const fields = { shortCode:document.getElementById("membershipShortCode"), fee:document.getElementById("membershipFee"), duration:document.getElementById("membershipDuration"), members:document.getElementById("membershipMembers"), days:document.getElementById("membershipDays") };
+    const setModalState = (isOpen) => { modal.hidden = !isOpen; if (isOpen) fields.shortCode.focus(); };
+    const resetForm = () => { form.reset(); editingCard = null; document.getElementById("membershipModalTitle").textContent = "Add/Edit Membership Plan"; };
+    const getPlanData = () => ({ shortCode:fields.shortCode.value.trim(), fee:Number(fields.fee.value || 0).toFixed(2), duration:fields.duration.value, members:fields.members.value, days:fields.days.value || "0" });
+    const updateCard = (card, plan) => { card.dataset.plan=plan.shortCode; card.dataset.fee=plan.fee; card.dataset.duration=plan.duration; card.dataset.members=plan.members; card.dataset.term=plan.days; card.dataset.days=plan.days; card.querySelector("h2").textContent=plan.shortCode; const values=card.querySelectorAll(".membership-card__details p span"); values[0].textContent=plan.members; values[1].textContent=`$${plan.fee}`; values[2].textContent=plan.duration; values[3].textContent=plan.days; };
+    openButton.addEventListener("click", () => { resetForm(); setModalState(true); });
+    cards.addEventListener("click", (event) => { const button=event.target.closest(".edit-membership-button"); if (!button) return; editingCard=button.closest(".membership-card"); fields.shortCode.value=editingCard.dataset.plan; fields.fee.value=editingCard.dataset.fee; fields.duration.value=editingCard.dataset.duration; fields.members.value=editingCard.dataset.members; fields.days.value=editingCard.dataset.days || editingCard.dataset.term || "0"; document.getElementById("membershipModalTitle").textContent="Edit Membership Plan"; setModalState(true); });
+    form.addEventListener("submit", (event) => { event.preventDefault(); const plan=getPlanData(); if (editingCard) updateCard(editingCard,plan); else { const card=document.createElement("article"); card.className="membership-card"; card.innerHTML='<header><h2></h2><i class="fa-solid fa-medal" aria-hidden="true"></i></header><div class="membership-card__details"><p><strong>Members:</strong><span></span></p><p><strong>Fee:</strong><span></span></p><p><strong>Duration:</strong><span></span></p><p><strong>Term:</strong><span></span></p><button class="edit-membership-button" type="button">Edit</button></div>'; cards.appendChild(card); updateCard(card,plan); } setModalState(false); resetForm(); });
+    [closeButton,cancelButton].forEach((button) => button.addEventListener("click", () => { setModalState(false); resetForm(); }));
+    modal.addEventListener("click", (event) => { if (event.target === modal) { setModalState(false); resetForm(); } });
+})();
