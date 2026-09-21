@@ -1,0 +1,234 @@
+﻿.LessonPlanCenterPanel {
+  background: #ffdf70;
+  min-height: 620px;
+  padding: 14px 6px;
+}
+
+.lesson-plan-heading {
+  text-align: center;
+}
+.lesson-plan-heading h1 {
+  display: inline-block;
+  background: #4169df;
+  color: #fff800;
+  font-size: 30px;
+  margin: 0 0 14px;
+  padding: 8px 15px;
+}
+.lesson-plan-week-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.lesson-plan-nav-button,
+.add-lesson-button,
+.lesson-plan-action-button {
+  border: 2px solid #888;
+  border-radius: 7px;
+  background: #fff9e6;
+  padding: 10px 14px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+.lesson-plan-nav-button:hover,
+.add-lesson-button:hover,
+.lesson-plan-action-button:hover {
+  background: #fff0b8;
+}
+.lesson-plan-week-summary {
+  text-align: center;
+}
+.lesson-plan-week-summary h2 {
+  margin: 0;
+  color: #061894;
+  font-size: 30px;
+}
+.lesson-plan-week-summary p {
+  margin: 5px 0 15px;
+}
+
+.lesson-plan-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 1px solid #aaa;
+  min-height: 545px;
+}
+.lesson-plan-day {
+  height: 545px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border-right: 2px solid #ccc;
+  background: #fff4c6;
+}
+.lesson-plan-day:nth-child(2) {
+  background: #e6f2df;
+}
+.lesson-plan-day:nth-child(3) {
+  background: #ffe0c2;
+}
+.lesson-plan-day:nth-child(4) {
+  background: #dce8f8;
+}
+.lesson-plan-day:nth-child(5) {
+  background: #ffe1ef;
+}
+.lesson-plan-day:nth-child(6) {
+  background: #fff0ad;
+}
+.lesson-plan-day:nth-child(7) {
+  background: #f0f0f0;
+}
+.lesson-plan-day header {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 11px 4px;
+}
+.lesson-plan-day h3 {
+  font-size: 18px;
+  margin: 0 0 22px;
+}
+.lesson-plan-day time {
+  font-size: 14px;
+}
+.lesson-plan-list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 8px 7px;
+  scrollbar-width: none;
+  cursor: default;
+}
+.lesson-plan-list::-webkit-scrollbar {
+  display: none;
+}
+.lesson-plan-list.lesson-plan-scroll-mode {
+  cursor: ns-resize;
+}
+.lesson-plan-empty {
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+}
+.lesson-plan-record {
+  display: block;
+  width: 100%;
+  margin-bottom: 7px;
+  padding: 7px;
+  text-align: left;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  background: #fffdf1;
+  cursor: pointer;
+}
+.lesson-plan-record b,
+.lesson-plan-record span {
+  display: block;
+}
+.lesson-plan-record span {
+  font-size: 13px;
+  margin-top: 4px;
+  white-space: pre-wrap;
+}
+.add-lesson-button {
+  margin: 8px 9px 10px;
+}
+
+.lesson-plan-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 15px;
+}
+.lesson-plan-modal[hidden] {
+  display: none;
+}
+.lesson-plan-modal-card {
+  width: min(430px, 100%);
+  padding: 0 20px 22px;
+  background: #fffdf3;
+  box-shadow: 0 3px 14px #333;
+}
+.lesson-plan-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.lesson-plan-modal-header h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.lesson-plan-close-button {
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+}
+.lesson-plan-modal label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: 700;
+}
+.lesson-plan-modal select,
+.lesson-plan-modal textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #999;
+  padding: 8px;
+  font: inherit;
+  background: #fff;
+}
+.lesson-plan-modal textarea {
+  resize: vertical;
+}
+.lesson-plan-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 20px;
+}
+.lesson-plan-delete-button {
+  color: #9b0000;
+}
+.lesson-plan-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+}
+.lesson-plan-toast.visible {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .lesson-plan-days {
+  overflow-x: auto;
+  grid-template-columns: repeat(7, minmax(145px, 1fr));
+}
+  .lesson-plan-heading h1 {
+  font-size: 24px;
+}
+  .lesson-plan-week-controls {
+  align-items: flex-start;
+}
+  .lesson-plan-nav-button {
+  padding: 8px 6px;
+  font-size: 12px;
+}
+}
+
+
+
+
+
+
