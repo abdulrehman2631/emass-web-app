@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -212,8 +212,102 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade merchandise-placeholder" id="inventoryDetails" role="tabpanel" aria-labelledby="inventory-tab"><h2>Inventory Details</h2></div>
-              <div class="tab-pane fade merchandise-placeholder" id="salesHistory" role="tabpanel" aria-labelledby="sales-history-tab"><h2>Sales History</h2></div>
+              <div class="tab-pane fade" id="inventoryDetails" role="tabpanel" aria-labelledby="inventory-tab">
+  <section class="inventory-dashboard" aria-labelledby="inventoryDetailsTitle">
+    <h1 class="inventory-dashboard__title" id="inventoryDetailsTitle">Inventory Details</h1>
+
+    <div class="inventory-summary" aria-label="Inventory summary">
+      <article class="inventory-summary__card inventory-summary__card--blue">
+        <h2>Total Products</h2>
+        <p>16</p>
+      </article>
+      <article class="inventory-summary__card inventory-summary__card--peach">
+        <h2>Total Sizes</h2>
+        <p>5</p>
+      </article>
+      <article class="inventory-summary__card inventory-summary__card--sky">
+        <h2>Today's Sales</h2>
+        <p>$0</p>
+      </article>
+      <article class="inventory-summary__card inventory-summary__card--green">
+        <h2>This Month</h2>
+        <p>$2,000</p>
+      </article>
+    </div>
+
+    <section class="inventory-table-card" aria-labelledby="inventoryItemsTitle">
+      <h2 id="inventoryItemsTitle">Inventory Items by Size</h2>
+      <div class="inventory-table-wrapper" tabindex="0" aria-label="Inventory items by size table">
+        <table class="inventory-table">
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Size</th>
+              <th scope="col">Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>att</td><td>L</td><td class="inventory-quantity inventory-quantity--ok">9</td></tr>
+            <tr><td>lessonplan</td><td>L</td><td class="inventory-quantity inventory-quantity--low">9</td></tr>
+            <tr><td>lessonplan</td><td>M</td><td class="inventory-quantity inventory-quantity--low">4</td></tr>
+            <tr><td>mkl</td><td>L</td><td class="inventory-quantity inventory-quantity--low">4</td></tr>
+            <tr><td>po</td><td>L</td><td class="inventory-quantity inventory-quantity--low">2</td></tr>
+            <tr><td>pp</td><td>S</td><td class="inventory-quantity inventory-quantity--low">3</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </section>
+</div>
+              <div class="tab-pane fade" id="salesHistory" role="tabpanel" aria-labelledby="sales-history-tab">
+  <section class="sales-history-dashboard" aria-labelledby="salesHistoryTitle">
+    <h1 class="sales-history-dashboard__title" id="salesHistoryTitle">Sales History</h1>
+
+    <form class="sales-history-filters">
+      <div class="sales-history-filter">
+        <label for="salesFromDate">From:</label>
+        <input type="date" id="salesFromDate" value="2025-09-22">
+      </div>
+      <div class="sales-history-filter">
+        <label for="salesToDate">To:</label>
+        <input type="date" id="salesToDate" value="2026-09-22">
+      </div>
+      <div class="sales-history-filter">
+        <label for="salesStudent">Student:</label>
+        <select id="salesStudent">
+          <option>All Students</option>
+          <option>dfafd d</option>
+          <option>Student 2</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="sales-history-table-wrapper" tabindex="0" aria-label="Sales history table">
+      <table class="sales-history-table">
+        <thead>
+          <tr>
+            <th scope="col">Sale #</th>
+            <th scope="col">Date</th>
+            <th scope="col">Student</th>
+            <th scope="col">Items</th>
+            <th scope="col">Total</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>13</td><td>09/14/2026</td><td>dfafd d</td><td>1</td><td>$45.00</td><td><button type="button" class="sales-history-view">View</button></td></tr>
+          <tr><td>12</td><td>09/14/2026</td><td>dfafd d</td><td>1</td><td>$52.00</td><td><button type="button" class="sales-history-view">View</button></td></tr>
+          <tr><td>11</td><td>09/14/2026</td><td>dfafd d</td><td>3</td><td>$113.00</td><td><button type="button" class="sales-history-view">View</button></td></tr>
+          <tr><td>10</td><td>09/11/2026</td><td>dfafd d</td><td>20</td><td>$1,040.00</td><td><button type="button" class="sales-history-view">View</button></td></tr>
+          <tr><td>9</td><td>09/11/2026</td><td>dfafd d</td><td>10</td><td>$200.00</td><td><button type="button" class="sales-history-view">View</button></td></tr>
+          <tr><td>8</td><td>09/11/2026</td><td>dfafd d</td><td>3</td><td>$234.00</td><td><button type="button" class="sales-history-view">View</button></td></tr>
+          <tr><td>7</td><td>09/10/2026</td><td>dfafd d</td><td>1</td><td>$52.00</td><td><button type="button" class="sales-history-view">View</button></td></tr>
+          <tr><td>6</td><td>09/10/2026</td><td>dfafd d</td><td>4</td><td>$201.00</td><td><button type="button" class="sales-history-view">View</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
               <div class="tab-pane fade merchandise-placeholder" id="addProduct" role="tabpanel" aria-labelledby="add-product-tab"><h2>Add Product</h2></div>
               <div class="tab-pane fade merchandise-placeholder" id="addCategories" role="tabpanel" aria-labelledby="add-categories-tab"><h2>Add Categories</h2></div>
             </div>
