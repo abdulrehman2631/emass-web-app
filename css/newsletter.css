@@ -1,0 +1,378 @@
+/* Newsletter directory */
+.newsletterContent {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  background: #ffdf70;
+}
+
+.newsletterContent .pay-tabs {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 4px 12px 0;
+  overflow-x: auto;
+}
+
+.newsletterContent .pay-tabs .nav-link {
+  padding: 5px 0px;
+  border: 1px solid #555;
+  border-radius: 0;
+  background: #fff;
+  color: #111;
+  font-size: 13px;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.newsletterContent .pay-tabs .nav-link.active {
+  background: #92d14f;
+}
+
+.newsletterContent .pay-tab-content {
+  min-width: 0;
+  min-height: calc(58vh - 150px);
+  padding: 4px 7px 16px 0px;
+}
+
+.newsletter-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.newsletter-table {
+  width: 100%;
+  min-width: 920px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  color: #000;
+  font-size: 15px;
+}
+
+.newsletter-table th,
+.newsletter-table td {
+  border: 2px solid #71808b;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.newsletter-table th {
+  height: 46px;
+  padding: 5px 3px;
+  background: #9fc4e8;
+  font-weight: 700;
+}
+
+.newsletter-table td {
+  height: 105px;
+  padding: 4px;
+  background: #ffdf70;
+}
+
+.newsletter-table td:nth-child(n + 5):nth-child(-n + 8) {
+  padding: 0;
+}
+
+.newsletter-table th:nth-child(-n + 2) {
+  width: 8%;
+}
+
+.newsletter-table th:nth-child(3) {
+  width: 16%;
+}
+
+.newsletter-table th:nth-child(4) {
+  width: 8%;
+}
+
+.newsletter-table th:nth-child(n + 5):nth-child(-n + 8) {
+  width: 9%;
+}
+
+.newsletter-table th:nth-child(n + 9) {
+  width: 7%;
+}
+
+/* Thumbnail-style page previews */
+.newsletter-preview {
+  width: 62px;
+  height: 86px;
+  margin: auto;
+  padding: 16px 7px 7px;
+  overflow: hidden;
+  border: 2px solid #87909a;
+  background: #fff;
+  color: #555;
+  font-size: 5px;
+  text-align: left;
+}
+
+.newsletter-preview span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.newsletter-preview i,
+.newsletter-preview b {
+  display: block;
+  height: 4px;
+  margin: 6px 3px;
+  border: 1px solid #c4cbd1;
+  background: #edf0f2;
+}
+
+.newsletter-preview b {
+  width: 38%;
+  margin-top: 13px;
+  border-color: #2b9448;
+  background: #38ae5a;
+}
+
+.preview-yellow {
+  background: #ffe17b;
+}
+
+.preview-yellow i {
+  background: #fff1ac;
+}
+
+.preview-form {
+  background: #ffe17b;
+}
+
+.preview-form i {
+  height: 8px;
+  background: #fff;
+}
+
+.preview-grid {
+  background: linear-gradient(#7aa6e8 0 20%, #eef2f8 20% 100%);
+}
+
+/* Directory actions */
+.newsletter-icon-button {
+  padding: 7px;
+  border: 0;
+  background: transparent;
+  color: #1010ec;
+  font-size: 23px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.newsletter-icon-button:hover,
+.newsletter-icon-button:focus-visible {
+  color: #00009c;
+  transform: scale(1.12);
+}
+
+.newsletter-empty-state {
+  padding: 45px 20px;
+  text-align: center;
+}
+
+/* Keep the wide directory scrollable on small screens. */
+@media (max-width: 700px) {
+  .newsletterContent .pay-tabs {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  .newsletterContent .pay-tab-content {
+    padding: 4px 0 14px;
+
+
+}
+
+  .newsletter-table {
+    min-width: 900px;
+    font-size: 13px;
+  }
+
+  .newsletter-preview {
+    width: 58px;
+    height: 76px;
+  }
+}
+/* Newsletter upload form */
+.newsletter-upload-form {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4px 16px 30px;
+  color: #000;
+  font-weight: 700;
+}
+
+.newsletter-upload-details {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(120px, 1fr));
+  gap: 18px 38px;
+  align-items: end;
+}
+
+.newsletter-upload-details label,
+.newsletter-page-upload > label {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 17px;
+}
+
+.newsletter-upload-details input,
+.newsletter-upload-details select {
+  width: 100%;
+  height: 28px;
+  border: 1px solid #777;
+  border-radius: 0;
+  background: #fff;
+  color: #111;
+  font: inherit;
+  font-size: 14px;
+}
+
+.newsletter-page-upload-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 22px;
+  margin-top: 47px;
+}
+
+.newsletter-page-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+.newsletter-page-upload > label {
+  align-items: center;
+  gap: 0;
+  font-size: 17px;
+}
+
+.newsletter-upload-preview {
+  width: 100%;
+  height: 130px;
+  border: 1px solid #777;
+  background: transparent;
+}
+
+.newsletter-upload-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.newsletter-browse-button,
+.newsletter-save-button,
+.newsletter-cancel-button {
+  min-width: 134px;
+  padding: 7px 25px;
+  border: 2px solid #5b4b00;
+  border-radius: 14px;
+  background: transparent;
+  color: #000;
+  font: inherit;
+  cursor: pointer;
+}
+
+.newsletter-browse-button:hover,
+.newsletter-cancel-button:hover,
+.newsletter-browse-button:focus-visible,
+.newsletter-cancel-button:focus-visible {
+  background: #ffeaa2;
+}
+
+.newsletter-upload-actions {
+  display: flex;
+  gap: 38px;
+  margin: 76px 0 0 24%;
+}
+
+.newsletter-save-button {
+  border-color: #183c9b;
+  background: #4169e1;
+  color: #fff;
+}
+
+.newsletter-save-button:hover,
+.newsletter-save-button:focus-visible {
+  background: #3156c7;
+}
+
+@media (max-width: 800px) {
+  .newsletter-upload-details {
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+    gap: 18px 20px;
+  }
+
+  .newsletter-page-upload-grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    margin-top: 32px;
+  }
+
+  .newsletter-upload-actions {
+    justify-content: center;
+    margin: 45px 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-upload-form {
+    padding: 4px 6px 24px;
+  }
+
+  .newsletter-upload-details,
+  .newsletter-page-upload-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-upload-preview {
+    max-width: 220px;
+  }
+
+  .newsletter-upload-actions {
+    gap: 12px;
+  }
+}
+/* Match the student page tab treatment */
+.newsletterContent .pay-tabs {
+  justify-content: flex-start;
+  padding: 4px 0px;
+}
+
+.newsletterContent .pay-tabs .nav-link {
+  padding: 3px 18px;
+  border: 1px solid #000;
+  border-radius: 0;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.newsletterContent .pay-tabs .nav-link.active {
+  background-color: #92d14f;
+  border-color: #000;
+  color: #000;
+}
+
+.newsletterContent .pay-tabs .nav-link:hover {
+  background-color: #e9ecef;
+  color: #000;
+}
+
+.newsletterContent .pay-tabs .nav-link.active:hover {
+  background-color: #92d14f;
+  color: #000;
+}
+
+@media (max-width: 700px) {
+  .newsletterContent .pay-tabs .nav-link {
+    padding-right: 6px;
+    padding-left: 6px;
+    font-size: 15px;
+  }
+}
