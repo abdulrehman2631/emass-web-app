@@ -1,0 +1,592 @@
+.DocumentContent #myTab {
+  border: none;
+}
+
+.DocumentContent .nav .nav-link {
+  border: 1px solid black;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0;
+}
+
+.DocumentContent .nav .nav-link.active {
+  background-color: #92D14F;
+  border-color: #000;
+}
+
+.DocumentContent .nav .nav-link:hover {
+  background-color: #e9ecef;
+  color: #000;
+}
+
+.DocumentContent .nav .nav-link.active:hover {
+  background-color: #92D14F;
+  color: #fff;
+}
+
+/* All Documents tab */
+.documents-all-pane {
+  background: #fff;
+  min-height: 64vh;
+  padding: 10px;
+}
+
+.documents-list {
+  width: 100%;
+}
+
+.documents-list__title {
+  margin: 0;
+  padding: 8px 12px;
+  background: #4169e1;
+  color: #ffff00;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.documents-list__search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 8px 20px;
+  color: #000;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.documents-list__search input {
+  width: min(100%, 290px);
+  height: 30px;
+  border: 1px solid #777;
+  padding: 3px 6px;
+}
+
+.documents-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.documents-table {
+  width: 100%;
+  min-width: 680px;
+  border: 1px solid #777;
+  border-collapse: collapse;
+  color: #000;
+  table-layout: fixed;
+}
+
+.documents-table th,
+.documents-table td {
+  border: 1px solid #777;
+  padding: 9px 16px;
+  text-align: left;
+}
+
+.documents-table th {
+  height: 46px;
+  background: #a9c8e9;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.documents-table td {
+  height: 50px;
+  font-size: .95rem;
+}
+
+.documents-table th:first-child,
+.documents-table td:first-child {
+  width: 38%;
+}
+
+.documents-table th:nth-child(2),
+.documents-table td:nth-child(2) {
+  width: 32%;
+}
+
+.documents-table__action {
+  width: 7.5%;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+  text-align: center !important;
+}
+
+.document-action {
+  border: 0;
+  background: transparent;
+  color: #0000ee;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 2px 5px;
+}
+
+.document-action:hover,
+.document-action:focus-visible {
+  color: #000099;
+  outline: 1px dotted currentColor;
+}
+
+.document-action--delete {
+  color: #0000ee;
+}
+
+@media (max-width: 575px) {
+  .documents-all-pane {
+    min-height: 0;
+    padding: 6px;
+  }
+
+  .documents-list__title {
+    font-size: 1.45rem;
+    padding: 7px 8px;
+  }
+
+  .documents-list__search {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 4px 14px;
+  }
+
+  .documents-list__search input {
+    width: 100%;
+  }
+
+  .documents-table th,
+  .documents-table td {
+    padding: 8px 10px;
+  }
+}
+
+/* Add Documents tab */
+.add-documents-pane {
+  min-height: 64vh;
+  background: #fff;
+  padding: 10px;
+}
+
+.add-documents-form {
+  width: 100%;
+  color: #000;
+  font-weight: 700;
+}
+
+.add-document-field {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 558px);
+  align-items: center;
+  column-gap: 10px;
+  margin: 18px 0;
+}
+
+.add-document-field > label {
+  padding-left: 32px;
+  font-size: 1.05rem;
+}
+
+.add-document-field input,
+.add-document-field select,
+.add-document-field textarea {
+  width: 100%;
+  border: 1px solid #777;
+  border-radius: 0;
+  background: #fff;
+  color: #222;
+  font: inherit;
+  font-weight: 400;
+  padding: 4px 6px;
+}
+
+.add-document-field input,
+.add-document-field select {
+  height: 30px;
+}
+
+.add-document-category-control {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.add-document-category-control select {
+  flex: 1;
+  min-width: 0;
+}
+
+.add-category-button,
+.upload-documents-button {
+  border: 2px solid #075d2a;
+  border-radius: 8px;
+  background: #008000;
+  color: #fff;
+  cursor: pointer;
+  font-size: .95rem;
+  font-weight: 700;
+  padding: 4px 7px;
+  white-space: nowrap;
+}
+
+.add-category-button:hover,
+.upload-documents-button:hover {
+  background: #006b00;
+}
+
+.add-document-field--description {
+  align-items: start;
+}
+
+.add-document-field--description > label {
+  padding-top: 6px;
+}
+
+.add-document-field textarea {
+  height: 79px;
+  resize: vertical;
+}
+
+.add-document-field--files {
+  align-items: start;
+  margin-top: 8px;
+}
+
+.add-document-field--files > label {
+  padding-top: 8px;
+}
+
+.selected-documents-box {
+  min-height: 232px;
+  max-height: 232px;
+  overflow-y: auto;
+  border: 1px solid #777;
+  padding: 4px;
+}
+
+.selected-documents-empty {
+  margin: 4px;
+  color: #777;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.selected-document-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 49px;
+  border: 1px solid #777;
+  margin-bottom: 4px;
+  padding: 5px 8px 5px 14px;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.selected-document-remove {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #aaa;
+  background: #fff;
+  color: #075d91;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.add-document-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  max-width: 778px;
+  margin-top: 20px;
+  padding-right: 2px;
+}
+
+.browse-documents-button {
+  border: 2px solid #555;
+  border-radius: 14px;
+  background: #d9d9d9;
+  color: #111;
+  cursor: pointer;
+  font-size: .95rem;
+  font-weight: 700;
+  padding: 7px 13px;
+}
+
+@media (max-width: 767px) {
+  .add-documents-pane {
+    min-height: 0;
+    padding: 6px;
+  }
+
+  .add-document-field {
+    display: block;
+    margin: 14px 0;
+  }
+
+  .add-document-field > label {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 0;
+  }
+
+  .add-document-category-control {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .add-category-button {
+    align-self: flex-start;
+  }
+
+  .selected-documents-box {
+    min-height: 180px;
+    max-height: 260px;
+  }
+
+  .add-document-actions {
+    justify-content: flex-start;
+    max-width: none;
+    padding-right: 0;
+  }
+}
+
+/* Keep the Add Documents content inside its tab area */
+.add-documents-pane {
+  height: 64vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .add-documents-pane {
+    height: 100vh;
+  }
+}
+
+
+
+/* Mobile: allow the Add Documents page to use the full page height */
+@media (max-width: 767px) {
+  .DocumentContent #myTabContent {
+    height: auto !important;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .add-documents-pane {
+    height: auto !important;
+    max-height: none !important;
+    min-height: calc(100vh - 180px);
+    overflow: visible;
+  }
+}
+
+/* Keep the documents page background gold for the full viewport */
+html,
+body {
+  min-height: 100%;
+}
+
+body > .CustomContainer {
+  min-height: 100vh;
+}
+
+/* Document category popup */
+.document-category-popup[hidden] {
+  display: none;
+}
+
+.document-category-popup {
+  position: fixed;
+  z-index: 1050;
+  inset: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, .18);
+  padding: 8px 4px;
+}
+
+.document-category-popup__panel {
+  width: min(1045px, 100%);
+  min-height: 630px;
+  border: 1px solid #555;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+}
+
+.document-category-popup__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 55px;
+  background: #4169e1;
+  color: #ffff00;
+}
+
+.document-category-popup__header h2 {
+  margin: 0;
+  font-size: 1.85rem;
+  font-weight: 700;
+}
+
+.document-category-popup__close {
+  position: absolute;
+  right: 17px;
+  top: 16px;
+  width: 35px;
+  height: 27px;
+  border: 0;
+  background: #f00000;
+  color: #000;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.document-category-popup__form {
+  display: grid;
+  grid-template-columns: 145px 135px 105px 160px 68px;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 32px 12px;
+  color: #000;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.document-category-popup__form input {
+  width: 100%;
+  height: 27px;
+  border: 1px solid #777;
+  padding: 3px 5px;
+  font: inherit;
+  font-size: .95rem;
+  font-weight: 400;
+}
+
+.document-category-popup__form button {
+  height: 24px;
+  border: 1px solid #aaa;
+  background: #e5e5e5;
+  color: #222;
+  cursor: pointer;
+}
+
+.document-category-popup__table-wrap {
+  overflow-x: auto;
+  padding: 0 25px;
+}
+
+.document-category-popup__table {
+  width: 100%;
+  min-width: 700px;
+  border: 2px solid #777;
+  border-collapse: collapse;
+  color: #000;
+  table-layout: fixed;
+}
+
+.document-category-popup__table th,
+.document-category-popup__table td {
+  border-bottom: 2px solid #777;
+  padding: 11px 15px;
+  text-align: left;
+}
+
+.document-category-popup__table th {
+  height: 54px;
+  background: #a9c8e9;
+  font-weight: 700;
+}
+
+.document-category-popup__table td {
+  height: 67px;
+  font-size: .95rem;
+}
+
+.document-category-popup__table th:nth-child(1),
+.document-category-popup__table td:nth-child(1) {
+  width: 30%;
+}
+
+.document-category-popup__table th:nth-child(2),
+.document-category-popup__table td:nth-child(2) {
+  width: 37%;
+}
+
+.document-category-popup__table th:nth-child(n+3),
+.document-category-popup__table td:nth-child(n+3) {
+  width: 11%;
+  text-align: center;
+}
+
+.category-popup-action {
+  border: 0;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  font-size: .95rem;
+}
+
+.category-popup-action:hover {
+  color: #0000ee;
+}
+
+@media (max-width: 600px) {
+  .document-category-popup {
+    padding: 0;
+  }
+
+  .document-category-popup__panel {
+    min-height: 100vh;
+  }
+
+  .document-category-popup__header h2 {
+    font-size: 1.35rem;
+  }
+
+  .document-category-popup__close {
+    right: 8px;
+  }
+
+  .document-category-popup__form {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 14px 16px;
+  }
+
+  .document-category-popup__form label {
+    margin-top: 4px;
+  }
+
+  .document-category-popup__form button {
+    width: 68px;
+    margin-top: 5px;
+  }
+
+  .document-category-popup__table-wrap {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .document-category-popup__form {
+    margin: 12px 0 14px;
+    padding: 16px 20px;
+    border: 2px solid #222;
+    border-radius: 6px;
+  }
+
+  .document-category-popup__table-wrap {
+    margin-top: 14px;
+    padding-bottom: 14px;
+  }
+}
