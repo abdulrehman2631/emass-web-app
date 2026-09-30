@@ -1,0 +1,124 @@
+.VideoContent {
+  margin-right: 5px;
+}
+
+.VideoContent #videoDirectory {
+  max-height: 64vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Match the tabs used on student.html. */
+.VideoContent #myTab {
+  border: none;
+}
+
+.VideoContent #myTab .nav-link {
+  border: 1px solid black;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.VideoContent #myTab .nav-link.active {
+  background-color: #92D14F;
+  border-color: #000;
+}
+
+
+
+.VideoContent #myTab .nav-link.active:hover {
+  background-color: #92D14F;
+ }
+
+.video-directory { height: auto; overflow: visible; padding: 14px 16px 20px; background: #fff; }
+.video-category { margin-bottom: 20px; }
+.video-category:last-child { margin-bottom: 0; }
+.video-category__heading { display: flex; align-items: center; gap: 8px; margin: 0 0 22px; padding: 8px 12px; min-height: 50px; background: #e5f0ff; color: #000; font-size: 21px; font-weight: 700; }
+.video-category__heading i { font-size: 20px; }
+.video-card-grid { display: flex; flex-wrap: wrap; gap: 18px; padding-left: 22px; }
+.video-card { width: 288px; min-height: 276px; padding: 12px; border: 1px solid #777; background: #fff; }
+.video-card img { display: block; width: 263px; height: 151px; object-fit: cover; }
+.video-card h3 { margin: 14px 3px 26px; font-size: 16px; font-weight: 700; }
+.video-card__actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 3px; }
+.video-card__actions a { color: #0000ee; font-size: 16px; text-decoration: underline; white-space: nowrap; }
+.video-card__actions a i { margin-right: 3px; font-size: 13px; }
+@media (max-width: 575.98px) { .VideoContent { margin-right: 0; } .video-directory { padding: 10px 8px 16px; } .video-category__heading { font-size: 18px; } .video-card-grid { padding-left: 0; } .video-card { width: 100%; } .video-card img { width: 100%; height: auto; max-height: 190px; } }
+@media (max-width: 800px) {
+  body {
+    background-color: #FFD966;
+  }
+
+  .VideoContent #videoDirectory {
+    height: auto;
+    max-height: none;
+  }
+}
+.video-upload-form {
+  min-height: 64vh;
+  padding: 48px 12%;
+  background: #fff;
+}
+
+.video-upload-field {
+  display: grid;
+  grid-template-columns: 180px minmax(280px, 472px);
+  align-items: center;
+  column-gap: 18px;
+  margin-bottom: 40px;
+}
+
+.video-upload-field label { color: #000; font-size: 19px; font-weight: 700; }
+.video-upload-field input,
+.video-upload-field select { width: 100%; height: 30px; border: 1px solid #999; border-radius: 0; background: #fff; color: #000; font-size: 16px; padding: 2px 5px; }
+.video-upload-field--order input { width: 133px; }
+.video-type-controls { display: flex; align-items: center; gap: 55px; }
+.video-type-controls select { width: 242px; }
+.manage-video-types { min-width: 176px; height: 30px; border: 2px solid #777; border-radius: 7px; background: #e7e7e7; color: #000; font-size: 17px; font-weight: 700; }
+.save-video-button { display: block; width: 153px; height: 43px; margin: 8px 0 0 517px; border: 2px solid #1b2d70; border-radius: 7px; background: #4169d8; color: #fff; font-size: 18px; font-weight: 700; }
+
+@media (max-width: 800px) {
+  .video-upload-form { min-height: auto; padding: 28px 7%; }
+  .video-upload-field { grid-template-columns: 1fr; gap: 8px; margin-bottom: 24px; }
+  .video-upload-field input, .video-upload-field--order input, .video-type-controls select { width: 100%; }
+  .video-type-controls { align-items: stretch; flex-direction: column; gap: 10px; }
+  .manage-video-types { width: 176px; }
+  .save-video-button { margin: 10px auto 0; }
+}
+.video-category-modal .modal-dialog { max-width: 670px; }
+.video-category-modal .modal-content { border: 1px solid #777; border-radius: 0; background: #f8f8f8; }
+.video-category-modal .modal-header { padding: 6px 12px; border-bottom: 0; background: #f8f8f8; }
+.video-category-modal .modal-title { color: #000; font-size: 18px; font-weight: 700; }
+.video-category-modal .modal-title i { margin-right: 5px; font-size: 14px; }
+.video-category-modal .modal-body { padding: 14px 18px 8px; }
+.category-type-form { max-width: 520px; }
+.category-form-field { display: grid; grid-template-columns: 130px 1fr; align-items: center; gap: 10px; margin-bottom: 18px; }
+.category-form-field label { color: #000; font-size: 18px; font-weight: 700; }
+.category-form-field input, .category-form-field select { width: 134px; height: 30px; border: 1px solid #999; background: #fff; font-size: 16px; }
+.category-form-field:first-child input { width: 134px; }
+.category-form-actions { display: flex; gap: 18px; margin: 4px 0 26px 105px; }
+.category-save-button, .category-clear-button, .category-close-button { min-width: 70px; height: 34px; border: 2px solid #555; border-radius: 9px; font-size: 17px; font-weight: 700; }
+.category-save-button { background: #4169d8; border-color: #1b2d70; color: #fff; }
+.category-clear-button, .category-close-button { background: #e7e7e7; color: #000; }
+.category-table-wrap { overflow-x: auto; }
+.category-type-table { width: 100%; border: 1px solid #777; border-collapse: collapse; color: #000; font-size: 15px; }
+.category-type-table th, .category-type-table td { height: 49px; padding: 7px 12px; border-bottom: 2px solid #777; text-align: left; white-space: nowrap; }
+.category-type-table th { font-weight: 700; }
+.category-type-table th:not(:first-child), .category-type-table td:not(:first-child) { text-align: center; }
+.category-type-table tr:last-child td { border-bottom: 0; }
+.category-icon-button { border: 0; background: transparent; color: #0000ee; font-size: 20px; }
+.video-category-modal .modal-footer { justify-content: center; padding: 28px 0 12px; border-top: 0; }
+
+@media (max-width: 575.98px) {
+  .video-category-modal .modal-dialog { margin: 10px; }
+  .video-category-modal .modal-body { padding: 12px 10px 4px; }
+  .category-form-field { grid-template-columns: 1fr; gap: 5px; margin-bottom: 14px; }
+  .category-form-field input, .category-form-field select, .category-form-field:first-child input { width: 100%; }
+  .category-form-actions { margin: 4px 0 20px; }
+  .category-type-table { font-size: 13px; }
+  .category-type-table th, .category-type-table td { padding: 6px 8px; }
+  .video-category-modal .modal-footer { padding-top: 18px; }
+}
