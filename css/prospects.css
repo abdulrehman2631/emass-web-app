@@ -1,0 +1,619 @@
+/* =========================================================
+   PROSPECTS MAIN CONTAINER
+========================================================= */
+
+.prospectsContent {
+    width: 100%;
+}
+
+.prospects-wrapper {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.prospects-header {
+    min-height: 58px;
+    background: #4169df;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 23px;
+    box-sizing: border-box;
+}
+
+.prospects-header h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.add-prospect-btn {
+    background: #008000 !important;
+    border-color: #005c00 !important;
+    color: #ffffff !important;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 7px;
+    padding: 7px 13px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.add-prospect-btn:hover {
+    background: #006d00 !important;
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.prospects-filters {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 275px 275px;
+    gap: 25px;
+    align-items: end;
+    padding: 7px 13px 5px;
+    background: #ffffff;
+}
+
+.prospect-search input {
+    height: 33px;
+    border: 1px solid #999;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.date-filter {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.date-filter label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+}
+
+.date-input-wrapper {
+    flex: 1;
+}
+
+.date-input-wrapper input {
+    height: 33px;
+    border: 1px solid #999;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.prospects-table-wrapper {
+    margin: 0 13px;
+    border: 1px solid #999;
+
+    /*
+       Allows horizontal and vertical scrolling
+       when required.
+    */
+    overflow: auto;
+
+    max-height: 350px;
+}
+
+.prospects-table {
+    width: 100%;
+    min-width: 900px;
+    margin: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.prospects-table thead th {
+    background: #ffffff;
+    border: 1px solid #aaa;
+    color: #111;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 8px;
+    white-space: nowrap;
+}
+
+.prospects-table tbody td {
+    height: 45px;
+    border: 1px solid #999;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #111;
+    padding: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prospects-table tbody tr {
+    cursor: pointer;
+}
+
+.prospects-table tbody tr:hover {
+    background-color: #f4f7ff;
+}
+
+
+/* Column widths */
+
+.prospects-table th:nth-child(1),
+.prospects-table td:nth-child(1) {
+    width: 60px;
+}
+
+.prospects-table th:nth-child(2),
+.prospects-table td:nth-child(2) {
+    width: 120px;
+}
+
+.prospects-table th:nth-child(3),
+.prospects-table td:nth-child(3) {
+    width: 120px;
+}
+
+.prospects-table th:nth-child(4),
+.prospects-table td:nth-child(4) {
+    width: 150px;
+}
+
+.prospects-table th:nth-child(5),
+.prospects-table td:nth-child(5) {
+    width: 150px;
+}
+
+.prospects-table th:nth-child(6),
+.prospects-table td:nth-child(6) {
+    width: 100px;
+}
+
+.prospects-table th:nth-child(7),
+.prospects-table td:nth-child(7) {
+    width: 150px;
+}
+
+
+/* Notes */
+
+.notes-cell {
+    text-align: left !important;
+    padding-left: 15px !important;
+}
+
+
+/* =========================================================
+   STATUS BADGES
+========================================================= */
+
+.status-badge {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.status-confirmed {
+    color: #111;
+}
+
+.status-scheduled {
+    color: #111;
+}
+
+.status-completed {
+    color: #111;
+}
+
+
+/* =========================================================
+   BOTTOM BUTTONS
+========================================================= */
+
+.prospects-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    padding: 27px 15px 20px;
+}
+
+.prospect-action-btn {
+    width: 180px;
+    height: 47px;
+    border-radius: 12px;
+    border: 2px solid #222;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.prospect-action-btn i {
+    margin-right: 6px;
+}
+
+.edit-btn {
+    background: #008b00;
+    border-color: #005d00;
+}
+
+.edit-btn:hover {
+    background: #007000;
+}
+
+.delete-btn {
+    background: #ff0000;
+    border-color: #a90000;
+}
+
+.delete-btn:hover {
+    background: #d90000;
+}
+
+.details-btn {
+    background: #82c9e7;
+    border-color: #5c96ad;
+    color: #111;
+}
+
+.details-btn:hover {
+    background: #66b6d7;
+}
+
+
+/* =========================================================
+   ADD / EDIT MODAL
+========================================================= */
+
+.prospect-modal-dialog {
+    max-width: 630px;
+}
+
+.prospect-modal {
+    border-radius: 0;
+    border: 1px solid #777;
+}
+
+.prospect-modal-header {
+    padding: 8px 12px;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.prospect-modal-header .modal-title {
+    font-size: 17px;
+    font-weight: 500;
+    color: #111;
+}
+
+.prospect-modal .modal-body {
+    padding: 18px 28px 12px;
+    min-height: 500px;
+}
+
+
+/* Form rows */
+
+.prospect-form-row {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.prospect-form-row label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.prospect-form-row label span {
+    color: #111;
+}
+
+.prospect-form-row input,
+.prospect-form-row select {
+    height: 37px;
+    border-radius: 0;
+    border: 1px solid #999;
+    font-size: 14px;
+}
+
+.prospect-form-row textarea {
+    border-radius: 0;
+    border: 1px solid #999;
+    resize: vertical;
+    min-height: 87px;
+}
+
+.notes-row {
+    align-items: start;
+}
+
+.notes-row label {
+    padding-top: 5px;
+}
+
+
+/* SMS checkbox */
+
+.sms-checkbox {
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 7px;
+}
+
+.sms-checkbox .form-check-input {
+    width: 17px;
+    height: 17px;
+    border-radius: 0;
+    border: 1px solid #777;
+    margin: 0;
+}
+
+.sms-checkbox label {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+/* Modal footer */
+
+.prospect-modal-footer {
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding: 10px 10px;
+    justify-content: flex-end;
+}
+
+.prospect-save-btn {
+    min-width: 92px;
+    background: #1683c5;
+    border: 1px solid #0870ad;
+    color: #ffffff;
+    border-radius: 0;
+    height: 43px;
+}
+
+.prospect-save-btn:hover {
+    background: #086fa9;
+    color: #fff;
+}
+
+.prospect-cancel-btn {
+    min-width: 92px;
+    background: #888;
+    border: 1px solid #777;
+    color: #ffffff;
+    border-radius: 0;
+    height: 43px;
+}
+
+.prospect-cancel-btn:hover {
+    background: #707070;
+    color: #fff;
+}
+
+
+/* =========================================================
+   DETAILS MODAL
+========================================================= */
+
+.details-item {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.details-item strong {
+    width: 120px;
+}
+
+.details-item span {
+    flex: 1;
+}
+
+
+/* =========================================================
+   TABLE SCROLLBAR
+========================================================= */
+
+.prospects-table-wrapper::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.prospects-table-wrapper::-webkit-scrollbar-track {
+    background: #eeeeee;
+}
+
+.prospects-table-wrapper::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 2px;
+}
+
+.prospects-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .prospects-filters {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .prospect-search {
+        grid-column: 1 / -1;
+    }
+
+    .prospects-actions {
+        gap: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .prospects-header {
+        padding: 10px 12px;
+        min-height: auto;
+        gap: 10px;
+    }
+
+    .prospects-header h3 {
+        font-size: 18px;
+    }
+
+    .add-prospect-btn {
+        font-size: 13px;
+        padding: 7px 9px;
+        white-space: nowrap;
+    }
+
+
+    /* Filters */
+
+    .prospects-filters {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .prospect-search {
+        width: 100%;
+    }
+
+    .date-filter {
+        width: 100%;
+    }
+
+
+    /* Horizontal table scrolling */
+
+    .prospects-table-wrapper {
+        margin: 0 8px;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    .prospects-table {
+        min-width: 1000px;
+    }
+
+
+    /* Buttons */
+
+    .prospects-actions {
+        flex-direction: column;
+        gap: 10px;
+        padding: 18px 10px;
+    }
+
+    .prospect-action-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* Modal */
+
+    .prospect-modal-dialog {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+    }
+
+    .prospect-modal .modal-body {
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .prospect-form-row {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        margin-bottom: 12px;
+    }
+
+    .prospect-form-row label {
+        font-size: 14px;
+    }
+
+    .prospect-form-row input,
+    .prospect-form-row select {
+        width: 100%;
+    }
+
+    .sms-checkbox {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .prospect-modal-footer {
+        padding: 10px;
+    }
+
+    .prospect-save-btn,
+    .prospect-cancel-btn {
+        flex: 1;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .prospects-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .add-prospect-btn {
+        width: 100%;
+    }
+
+    .prospects-header h3 {
+        text-align: center;
+    }
+
+}
